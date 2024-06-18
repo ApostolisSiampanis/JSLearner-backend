@@ -7,10 +7,11 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-def upload_course(cid, title, description_short, description_long):
+def upload_course(cid, level, title, description_short, description_long):
     try:
         course_ref = db.collection('courses').document(str(cid))
         course_ref.set({
+            'level': level,
             'title': title,
             'descriptionShort': description_short,
             'descriptionLong': description_long
@@ -51,6 +52,7 @@ def upload_question(cid, lid, qid, question_type, hint, question_description, op
 
 courses = [
     {
+        'level': 'BEGINNER',
         'title': 'JavaScript Basics',
         'descriptionShort': 'Learn the basics of JavaScript',
         'descriptionLong': 'This course covers the fundamentals of JavaScript.',
@@ -125,6 +127,7 @@ courses = [
         ]
     },
     {
+        'level': 'INTERMEDIATE',
         'title': 'Intermediate JavaScript',
         'descriptionShort': 'Deepen your understanding of JavaScript',
         'descriptionLong': 'This course covers intermediate JavaScript topics.',
@@ -171,7 +174,7 @@ courses = [
 # Upload courses
 for course_index, course in enumerate(courses, start=1):
     cid = f"{course_index:02}"
-    upload_course(cid, course['title'], course['descriptionShort'], course['descriptionLong'])
+    upload_course(cid, course['level'], course['title'], course['descriptionShort'], course['descriptionLong'])
 
     # Upload lessons and their questions
     for lesson_index, lesson in enumerate(course['lessons'], start=1):
