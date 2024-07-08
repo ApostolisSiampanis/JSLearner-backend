@@ -13,21 +13,22 @@ def upload_course(cid, level, title, description_short, description_long):
         course_ref.set({
             'level': level,
             'title': title,
-            'descriptionShort': description_short,
-            'descriptionLong': description_long
+            'description_short': description_short,
+            'description_long': description_long
         })
         print(f"Course {cid} uploaded successfully.")
     except Exception as e:
         print(f"Failed to upload course {cid}: {e}")
 
 
-def upload_lesson(cid, lid, title, theories_list, extra_info):
+def upload_lesson(cid, lid, title, theories_list, description, url):
     try:
         lesson_ref = db.collection('courses').document(str(cid)).collection('lessons').document(str(lid))
         lesson_ref.set({
             'title': title,
-            'theoriesList': theories_list,
-            'extraInfo': extra_info
+            'theories_list': theories_list,
+            'description': description,
+            'url': url
         })
         print(f"Lesson {lid} uploaded successfully.")
     except Exception as e:
@@ -39,11 +40,11 @@ def upload_question(cid, lid, qid, question_type, hint, question_description, op
         question_ref = db.collection('courses').document(str(cid)).collection('lessons').document(str(lid)).collection(
             'questions').document(str(qid))
         question_ref.set({
-            'questionType': question_type,
+            'question_type': question_type,
             'hint': hint,
-            'questionDescription': question_description,
+            'question_description': question_description,
             'options': options,
-            'correctAnswers': correct_answers
+            'correct_answers': correct_answers
         })
         print(f"Question {qid} uploaded successfully.")
     except Exception as e:
@@ -54,136 +55,690 @@ courses = [
     {
         'level': 'BEGINNER',
         'title': 'JavaScript Basics',
-        'descriptionShort': 'Learn the basics of JavaScript',
-        'descriptionLong': 'This course covers the fundamentals of JavaScript.',
+        'description_short': 'Learn the basics of JavaScript',
+        'description_long': 'This course covers the fundamentals of JavaScript, including variables, data types, operators, and control flow.',
         'lessons': [
             {
                 'title': 'Introduction to JavaScript',
-                'theoriesList': [
+                'theories_list': [
                     'JavaScript is a high-level, interpreted programming language.',
                     'It is one of the core technologies of the World Wide Web.',
-                    'JavaScript can be used for both client-side and server-side development.'
+                    'JavaScript can be used for both client-side (in web browsers) and server-side development (with Node.js).',
+                    'JavaScript code is typically embedded in HTML pages or linked as external files.'
                 ],
-                'extraInfo': 'For more information, visit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction',
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'questionType': 'multiple_choice',
+                        'question_type': 'multiple_choice',
                         'hint': 'JavaScript is primarily used for web development.',
-                        'questionDescription': 'What is JavaScript primarily used for?',
+                        'question_description': 'What is JavaScript primarily used for?',
                         'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
-                        'correctAnswers': ['Web development']
+                        'correct_answers': ['Web development']
                     },
                     {
-                        'questionType': 'true_false',
+                        'question_type': 'true_false',
                         'hint': 'JavaScript is a scripting language.',
-                        'questionDescription': 'JavaScript is the same as Java.',
+                        'question_description': 'JavaScript is the same as Java.',
                         'options': [],
-                        'correctAnswers': ['false']
+                        'correct_answers': ['false']
                     },
                     {
-                        'questionType': 'fill_in_the_blanks',
+                        'question_type': 'fill_in_the_blanks',
                         'hint': 'Consider where JavaScript is commonly run.',
-                        'questionDescription': 'JavaScript can run in the browser and on the ____.',
+                        'question_description': 'JavaScript can run in the browser and on the ____.',
                         'options': [],
-                        'correctAnswers': ['server']
+                        'correct_answers': ['server']
                     },
-                    # Add 2 more questions for this lesson...
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the file extension for JavaScript code.',
+                        'question_description': 'What is the file extension for JavaScript code?',
+                        'options': ['.js', '.java', '.py', '.html'],
+                        'correct_answers': ['.js']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider how you embed JavaScript in HTML.',
+                        'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
+                        'options': [],
+                        'correct_answers': ['<script>']
+                    }
                 ]
             },
             {
                 'title': 'Variables and Data Types',
-                'theoriesList': [
+                'theories_list': [
                     'Variables are containers for storing data values.',
-                    'In JavaScript, we use the var, let, or const keywords to declare variables.',
-                    'JavaScript supports different data types like string, number, and boolean.'
+                    'In JavaScript, we use the `var`, `let`, or `const` keywords to declare variables.',
+                    'JavaScript supports different data types like string, number, boolean, null, undefined, object, and symbol.',
+                    'Strings are for text, numbers for numeric values, booleans for true/false, and objects for collections of data.'
                 ],
-                'extraInfo': 'For more information, visit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types',
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'questionType': 'multiple_choice',
+                        'question_type': 'multiple_choice',
                         'hint': 'Think about the keywords used to declare variables.',
-                        'questionDescription': 'Which keyword is used to declare a variable in JavaScript?',
+                        'question_description': 'Which keyword is used to declare a variable in JavaScript?',
                         'options': ['var', 'let', 'const', 'all of the above'],
-                        'correctAnswers': ['all of the above']
+                        'correct_answers': ['all of the above']
                     },
                     {
-                        'questionType': 'true_false',
+                        'question_type': 'true_false',
                         'hint': 'Consider the mutability of variables.',
-                        'questionDescription': 'A variable declared with const can be reassigned.',
+                        'question_description': 'A variable declared with `const` can be reassigned.',
                         'options': [],
-                        'correctAnswers': ['false']
+                        'correct_answers': ['false']
                     },
                     {
-                        'questionType': 'fill_in_the_blanks',
+                        'question_type': 'fill_in_the_blanks',
                         'hint': 'Pay attention to the syntax of variable declaration.',
-                        'questionDescription': 'Declare a variable named "x" with the value 10 using let.',
+                        'question_description': 'Declare a variable named "message" and assign it the string value "Hello, world!".',
                         'options': [],
-                        'correctAnswers': ['let x = 10;']
+                        'correct_answers': ['let message = "Hello, world!";', 'var message = "Hello, world!";',
+                                            'const message = "Hello, world!";']
                     },
-                    # Add 2 more questions for this lesson...
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the data type used for storing whole numbers.',
+                        'question_description': 'Which data type is used to represent whole numbers in JavaScript?',
+                        'options': ['string', 'number', 'boolean', 'object'],
+                        'correct_answers': ['number']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Consider the difference between null and undefined.',
+                        'question_description': 'In JavaScript, `null` and `undefined` represent the same thing.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    }
                 ]
-            },
-            # Add 3-8 more lessons...
+            }
         ]
     },
     {
         'level': 'INTERMEDIATE',
         'title': 'Intermediate JavaScript',
-        'descriptionShort': 'Deepen your understanding of JavaScript',
-        'descriptionLong': 'This course covers intermediate JavaScript topics.',
+        'description_short': 'Deepen your understanding of JavaScript',
+        'description_long': 'This course covers intermediate JavaScript topics.',
         'lessons': [
             {
-                'title': 'Functions in JavaScript',
-                'theoriesList': [
-                    'Functions are reusable blocks of code that perform a specific task.',
-                    'Functions can take parameters and return values.',
-                    'JavaScript supports different types of functions such as named, anonymous, and arrow functions.'
+                'title': 'Object-Oriented Programming (OOP) in JavaScript',
+                'theories_list': [
+                    'JavaScript supports OOP through prototypes and classes.',
+                    'Classes provide a blueprint for creating objects.',
+                    'Objects are instances of classes and can have properties and methods.'
                 ],
-                'extraInfo': 'For more information, visit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions',
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'questionType': 'multiple_choice',
-                        'hint': 'Consider the syntax of function declaration.',
-                        'questionDescription': 'How do you declare a function in JavaScript?',
-                        'options': ['function myFunction() {}', 'def myFunction() {}', 'func myFunction() {}', 'myFunction: function() {}'],
-                        'correctAnswers': ['function myFunction() {}']
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the keywords used for OOP.',
+                        'question_description': 'Which keyword is used to define a class in JavaScript?',
+                        'options': ['function', 'class', 'object', 'constructor'],
+                        'correct_answers': ['class']
                     },
                     {
-                        'questionType': 'true_false',
-                        'hint': 'Consider the scope of variables inside functions.',
-                        'questionDescription': 'Variables declared inside a function are globally scoped.',
+                        'question_type': 'true_false',
+                        'hint': 'Think about the relationship between classes and objects.',
+                        'question_description': 'An object is an instance of a class.',
                         'options': [],
-                        'correctAnswers': ['false']
+                        'correct_answers': ['true']
                     },
                     {
-                        'questionType': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax of an arrow function.',
-                        'questionDescription': 'Write an arrow function that takes two parameters and returns their sum.',
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating an object.',
+                        'question_description': 'Create an object named "person" with a property "name" set to "Alice".',
                         'options': [],
-                        'correctAnswers': ['(a, b) => a + b']
+                        'correct_answers': ['const person = { name: "Alice" };']
                     },
-                    # Add 2-3 more questions for this lesson...
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the purpose of the constructor method.',
+                        'question_description': 'What is the purpose of the constructor method in a class?',
+                        'options': ["To initialize the object's properties", "To define the object's methods",
+                                    'To create a new instance of the class',
+                                    'To inherit properties from another class'],
+                        'correct_answers': ["To initialize the object's properties"]
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Consider the concept of inheritance in OOP.',
+                        'question_description': 'JavaScript supports multiple inheritance.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    }
                 ]
             },
-            # Add 4-9 more lessons...
+            {
+                'title': 'Asynchronous JavaScript',
+                'theories_list': [
+                    'JavaScript is single-threaded, but it can handle asynchronous operations using callbacks, promises, and async/await.',
+                    'Callbacks are functions passed as arguments to other functions and executed later.',
+                    'Promises represent the eventual result of an asynchronous operation.',
+                    'Async/await provides a cleaner syntax for working with promises.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the order of execution in asynchronous code.',
+                        'question_description': 'Which of the following is used to handle asynchronous operations in JavaScript?',
+                        'options': ['Callbacks', 'Promises', 'Async/await', 'All of the above'],
+                        'correct_answers': ['All of the above']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': "Think about the nature of JavaScript's execution model.",
+                        'question_description': 'JavaScript is a multi-threaded language.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a promise.',
+                        'question_description': 'Create a promise that resolves with the value "Success" after 1 second.',
+                        'options': [],
+                        'correct_answers': [
+                            'const promise = new Promise((resolve, reject) => { setTimeout(() => resolve("Success"), 1000); });']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the purpose of the "catch" block in a promise chain.',
+                        'question_description': 'What is the purpose of the "catch" block in a promise chain?',
+                        'options': ['To handle successful promise resolutions', 'To handle promise rejections',
+                                    'To transform the resolved value of a promise', 'To create a new promise'],
+                        'correct_answers': ['To handle promise rejections']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Consider the relationship between async/await and promises.',
+                        'question_description': 'Async/await is built on top of promises.',
+                        'options': [],
+                        'correct_answers': ['true']
+                    }
+                ]
+            }
         ]
     },
-    # Add 13 more courses...
+    {
+        'level': 'ADVANCED',
+        'title': 'Asynchronous JavaScript',
+        'description_short': 'Master asynchronous operations in JavaScript',
+        'description_long': 'This course covers advanced asynchronous JavaScript concepts like callbacks, promises, async/await, and error handling.',
+        'lessons': [
+            {
+                'title': 'Callbacks and Promises',
+                'theories_list': [
+                    'Callbacks are functions passed as arguments to other functions, executed later.',
+                    'Promises represent the eventual result of an asynchronous operation.',
+                    'Promises can be chained to handle sequential asynchronous tasks.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the order of execution in asynchronous code.',
+                        'question_description': 'Which of the following is NOT a way to handle asynchronous operations in JavaScript?',
+                        'options': ['Callbacks', 'Promises', 'Async/await', 'Threads'],
+                        'correct_answers': ['Threads']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the states a promise can be in.',
+                        'question_description': 'A promise can be in one of three states: pending, fulfilled, or rejected.',
+                        'options': [],
+                        'correct_answers': ['true']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the method used to handle a fulfilled promise.',
+                        'question_description': 'The ____ method is used to handle the successful resolution of a promise.',
+                        'options': [],
+                        'correct_answers': ['then']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the purpose of the catch method.',
+                        'question_description': 'What is the purpose of the catch method in a promise chain?',
+                        'options': ['To handle the successful resolution of a promise',
+                                    'To handle errors that occur during the promise chain', 'To initiate a new promise',
+                                    'To transform the result of a promise'],
+                        'correct_answers': ['To handle errors that occur during the promise chain']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a promise.',
+                        'question_description': 'Create a promise that resolves with the value "Hello" after 1 second.',
+                        'options': [],
+                        'correct_answers': ['new Promise((resolve) => setTimeout(() => resolve("Hello"), 1000));']
+                    }
+                ]
+            },
+            {
+                'title': 'Async/Await and Error Handling',
+                'theories_list': [
+                    'Async/await provides a cleaner syntax for working with promises.',
+                    'The async keyword is used to declare a function that returns a promise.',
+                    'The await keyword is used to pause execution until a promise is resolved.',
+                    'Error handling in async/await is done using try...catch blocks.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the syntax of async functions.',
+                        'question_description': 'How do you declare an async function in JavaScript?',
+                        'options': ['async function myFunction() {}', 'function async myFunction() {}',
+                                    'async myFunction() {}', 'function myFunction() async {}'],
+                        'correct_answers': ['async function myFunction() {}']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the return value of async functions.',
+                        'question_description': 'Async functions always return a promise.',
+                        'options': [],
+                        'correct_answers': ['true']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the keyword used to pause execution in async functions.',
+                        'question_description': 'The ____ keyword is used to wait for a promise to resolve in an async function.',
+                        'options': [],
+                        'correct_answers': ['await']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the purpose of try...catch blocks.',
+                        'question_description': 'What is the purpose of a try...catch block in an async function?',
+                        'options': ['To handle the successful resolution of a promise',
+                                    'To handle errors that occur during the async function',
+                                    'To initiate a new promise', 'To transform the result of a promise'],
+                        'correct_answers': ['To handle errors that occur during the async function']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for handling errors in async functions.',
+                        'question_description': 'Write an async function that fetches data from an API and handles potential errors using try...catch.',
+                        'options': [],
+                        'correct_answers': [
+                            'async function fetchData() {\n  try {\n    const response = await fetch(\'https://api.example.com/data\');\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error(\'Error fetching data:\', error);\n  }\n}']
+                    }
+                ]
+            },
+            {
+                'title': 'Async/Await and Error Handling',
+                'theories_list': [
+                    'Async/await provides a cleaner syntax for working with promises.',
+                    'The async keyword is used to declare a function that returns a promise.',
+                    'The await keyword is used to pause execution until a promise is resolved.',
+                    'Error handling in async/await is done using try...catch blocks.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the syntax of async functions.',
+                        'question_description': 'How do you declare an async function in JavaScript?',
+                        'options': ['async function myFunction() {}', 'function async myFunction() {}',
+                                    'async myFunction() {}', 'function myFunction() async {}'],
+                        'correct_answers': ['async function myFunction() {}']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the return value of async functions.',
+                        'question_description': 'Async functions always return a promise.',
+                        'options': [],
+                        'correct_answers': ['true']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the keyword used to pause execution in async functions.',
+                        'question_description': 'The ____ keyword is used to wait for a promise to resolve in an async function.',
+                        'options': [],
+                        'correct_answers': ['await']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the purpose of try...catch blocks.',
+                        'question_description': 'What is the purpose of a try...catch block in an async function?',
+                        'options': ['To handle the successful resolution of a promise',
+                                    'To handle errors that occur during the async function',
+                                    'To initiate a new promise', 'To transform the result of a promise'],
+                        'correct_answers': ['To handle errors that occur during the async function']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for handling errors in async functions.',
+                        'question_description': 'Write an async function that fetches data from an API and handles potential errors using try...catch.',
+                        'options': [],
+                        'correct_answers': [
+                            'async function fetchData() {\n  try {\n    const response = await fetch(\'https://api.example.com/data\');\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error(\'Error fetching data:\', error);\n  }\n}']
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'level': 'ADVANCED',
+        'title': 'Modules and Classes',
+        'description_short': 'Organize and structure your JavaScript code',
+        'description_long': 'This course covers advanced JavaScript concepts like modules, classes, and object-oriented programming (OOP) principles.',
+        'lessons': [
+            {
+                'title': 'Modules in JavaScript',
+                'theories_list': [
+                    'Modules are reusable pieces of code that encapsulate functionality.',
+                    'Modules help organize code and prevent naming collisions.',
+                    'JavaScript supports different module systems like CommonJS and ECMAScript modules (ESM).',
+                    'Modules can be imported and exported using specific syntax.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the benefits of using modules.',
+                        'question_description': 'Which of the following is NOT a benefit of using modules in JavaScript?',
+                        'options': ['Code reusability', 'Improved code organization', 'Global scope pollution',
+                                    'Easier maintenance'],
+                        'correct_answers': ['Global scope pollution']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the different module systems in JavaScript.',
+                        'question_description': 'CommonJS and ECMAScript modules (ESM) are interchangeable.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for importing a module in ESM.',
+                        'question_description': 'How do you import a module named "myModule" in ECMAScript modules (ESM)?',
+                        'options': [],
+                        'correct_answers': ['import myModule from \'./myModule.js\';']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to make parts of a module accessible to other modules.',
+                        'question_description': 'Which keyword is used to export functionality from a module?',
+                        'options': ['import', 'export', 'module', 'require'],
+                        'correct_answers': ['export']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for exporting a function named "myFunction" from a module.',
+                        'question_description': 'How do you export a function named "myFunction" from a module?',
+                        'options': [],
+                        'correct_answers': ['export function myFunction() {}']
+                    }
+                ]
+            },
+            {
+                'title': 'Classes and Inheritance',
+                'theories_list': [
+                    'Classes are blueprints for creating objects with properties and methods.',
+                    'JavaScript supports prototypal inheritance through classes.',
+                    'Inheritance allows objects to inherit properties and methods from other objects.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the purpose of classes in JavaScript.',
+                        'question_description': 'What is the purpose of classes in JavaScript?',
+                        'options': ['To create objects with properties and methods', 'To define functions',
+                                    'To handle asynchronous operations', 'To import modules'],
+                        'correct_answers': ['To create objects with properties and methods']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the relationship between classes and objects.',
+                        'question_description': 'Classes are instances of objects.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a class.',
+                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
+                        'options': [],
+                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to inherit properties from another class.',
+                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
+                        'options': ['extends', 'super', 'inherit', 'class'],
+                        'correct_answers': ['extends']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for inheriting properties from another class.',
+                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
+                        'options': [],
+                        'correct_answers': ['class Student extends Person {}']
+                    }
+                ]
+            },
+            {
+                'title': 'Modules in JavaScript',
+                'theories_list': [
+                    'Modules are reusable pieces of code that encapsulate functionality.',
+                    'Modules help organize code and prevent naming collisions.',
+                    'JavaScript supports different module systems like CommonJS and ECMAScript modules (ESM).',
+                    'Modules can be imported and exported using specific syntax.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the benefits of using modules.',
+                        'question_description': 'Which of the following is NOT a benefit of using modules in JavaScript?',
+                        'options': ['Code reusability', 'Improved code organization', 'Global scope pollution',
+                                    'Easier maintenance'],
+                        'correct_answers': ['Global scope pollution']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the different module systems in JavaScript.',
+                        'question_description': 'CommonJS and ECMAScript modules (ESM) are interchangeable.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for importing a module in ESM.',
+                        'question_description': 'How do you import a module named "myModule" in ECMAScript modules (ESM)?',
+                        'options': [],
+                        'correct_answers': ['import myModule from \'./myModule.js\';']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to make parts of a module accessible to other modules.',
+                        'question_description': 'Which keyword is used to export functionality from a module?',
+                        'options': ['import', 'export', 'module', 'require'],
+                        'correct_answers': ['export']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for exporting a function named "myFunction" from a module.',
+                        'question_description': 'How do you export a function named "myFunction" from a module?',
+                        'options': [],
+                        'correct_answers': ['export function myFunction() {}']
+                    }
+                ]
+            },
+            {
+                'title': 'Classes and Inheritance',
+                'theories_list': [
+                    'Classes are blueprints for creating objects with properties and methods.',
+                    'JavaScript supports prototypal inheritance through classes.',
+                    'Inheritance allows objects to inherit properties and methods from other objects.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the purpose of classes in JavaScript.',
+                        'question_description': 'What is the purpose of classes in JavaScript?',
+                        'options': ['To create objects with properties and methods', 'To define functions',
+                                    'To handle asynchronous operations', 'To import modules'],
+                        'correct_answers': ['To create objects with properties and methods']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the relationship between classes and objects.',
+                        'question_description': 'Classes are instances of objects.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a class.',
+                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
+                        'options': [],
+                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to inherit properties from another class.',
+                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
+                        'options': ['extends', 'super', 'inherit', 'class'],
+                        'correct_answers': ['extends']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for inheriting properties from another class.',
+                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
+                        'options': [],
+                        'correct_answers': ['class Student extends Person {}']
+                    }
+                ]
+            },
+            {
+                'title': 'Classes and Inheritance',
+                'theories_list': [
+                    'Classes are blueprints for creating objects with properties and methods.',
+                    'JavaScript supports prototypal inheritance through classes.',
+                    'Inheritance allows objects to inherit properties and methods from other objects.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the purpose of classes in JavaScript.',
+                        'question_description': 'What is the purpose of classes in JavaScript?',
+                        'options': ['To create objects with properties and methods', 'To define functions',
+                                    'To handle asynchronous operations', 'To import modules'],
+                        'correct_answers': ['To create objects with properties and methods']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the relationship between classes and objects.',
+                        'question_description': 'Classes are instances of objects.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a class.',
+                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
+                        'options': [],
+                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to inherit properties from another class.',
+                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
+                        'options': ['extends', 'super', 'inherit', 'class'],
+                        'correct_answers': ['extends']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for inheriting properties from another class.',
+                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
+                        'options': [],
+                        'correct_answers': ['class Student extends Person {}']
+                    }
+                ]
+            },
+            {
+                'title': 'Classes and Inheritance',
+                'theories_list': [
+                    'Classes are blueprints for creating objects with properties and methods.',
+                    'JavaScript supports prototypal inheritance through classes.',
+                    'Inheritance allows objects to inherit properties and methods from other objects.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Consider the purpose of classes in JavaScript.',
+                        'question_description': 'What is the purpose of classes in JavaScript?',
+                        'options': ['To create objects with properties and methods', 'To define functions',
+                                    'To handle asynchronous operations', 'To import modules'],
+                        'correct_answers': ['To create objects with properties and methods']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Think about the relationship between classes and objects.',
+                        'question_description': 'Classes are instances of objects.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for creating a class.',
+                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
+                        'options': [],
+                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keyword used to inherit properties from another class.',
+                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
+                        'options': ['extends', 'super', 'inherit', 'class'],
+                        'correct_answers': ['extends']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider the syntax for inheriting properties from another class.',
+                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
+                        'options': [],
+                        'correct_answers': ['class Student extends Person {}']
+                    }
+                ]
+            }
+        ]
+    }
 ]
 
 # Upload courses
 for course_index, course in enumerate(courses, start=1):
     cid = f"{course_index:02}"
-    upload_course(cid, course['level'], course['title'], course['descriptionShort'], course['descriptionLong'])
+    upload_course(cid, course['level'], course['title'], course['description_short'], course['description_long'])
 
     # Upload lessons and their questions
     for lesson_index, lesson in enumerate(course['lessons'], start=1):
         lid = f"{cid}{lesson_index:02}"
-        upload_lesson(cid, lid, lesson['title'], lesson['theoriesList'], lesson['extraInfo'])
+        upload_lesson(cid, lid, lesson['title'], lesson['theories_list'], lesson['description'], lesson['url'])
 
         for question_index, question in enumerate(lesson['questions'], start=1):
             qid = f"{lid}{question_index:02}"
-            upload_question(cid, lid, qid, question['questionType'], question['hint'], question['questionDescription'],
-                            question['options'], question['correctAnswers'])
+            upload_question(cid, lid, qid, question['question_type'], question['hint'],
+                            question['question_description'],
+                            question['options'], question['correct_answers'])
 
 print("Data uploaded successfully!")
