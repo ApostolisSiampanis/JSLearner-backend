@@ -108,12 +108,10 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the JavaScript concepts with their descriptions.',
                         'question_description': 'Match the following JavaScript concepts with their descriptions.',
-                        'options': [
-                            {'JavaScript': 'A high-level, interpreted programming language.'},
-                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
-                            {'HTML': 'Standard markup language for creating web pages.'},
-                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
-                        ],
+                        'options': {
+                            'options_A': ['JavaScript', 'Node.js', 'HTML', 'CSS'],
+                            'options_B': ['A high-level, interpreted programming language.', 'JavaScript runtime built on Chrome\'s V8 engine.', 'Standard markup language for creating web pages.', 'Style sheet language used for describing the presentation of a document written in HTML or XML.']
+                        },
                         'correct_answers': [
                             {'JavaScript': 'A high-level, interpreted programming language.'},
                             {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
@@ -173,12 +171,15 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the JavaScript data types with their correct descriptions.',
                         'question_description': 'Match the following JavaScript data types with their correct descriptions.',
-                        'options': [
-                            {'String': 'For storing text values.'},
-                            {'Number': 'For storing numeric values.'},
-                            {'Boolean': 'For true/false values.'},
-                            {'Object': 'For collections of data.'}
-                        ],
+                        'options': {
+                            'options_A': ['String', 'Number', 'Boolean', 'Object'],
+                            'options_B': [
+                                'For storing text values.',
+                                'For storing numeric values.',
+                                'For true/false values.',
+                                'For collections of data.'
+                            ]
+                        },
                         'correct_answers': [
                             {'String': 'For storing text values.'},
                             {'Number': 'For storing numeric values.'},
@@ -246,19 +247,20 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the JavaScript concepts with their descriptions.',
                         'question_description': 'Match the following JavaScript concepts with their descriptions.',
-                        'options': [
-                            {'JavaScript': 'A high-level, interpreted programming language.'},
-                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
-                            {'HTML': 'Standard markup language for creating web pages.'},
-                            {
-                                'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
-                        ],
+                        'options': {
+                            'options_A': ['JavaScript', 'Node.js', 'HTML', 'CSS'],
+                            'options_B': [
+                                'A high-level, interpreted programming language.',
+                                'JavaScript runtime built on Chrome\'s V8 engine.',
+                                'Standard markup language for creating web pages.',
+                                'Style sheet language used for describing the presentation of a document written in HTML or XML.'
+                            ]
+                        },
                         'correct_answers': [
                             {'JavaScript': 'A high-level, interpreted programming language.'},
                             {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
                             {'HTML': 'Standard markup language for creating web pages.'},
-                            {
-                                'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
+                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
                         ]
                     }
                 ]
@@ -314,12 +316,15 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the JavaScript data types with their correct descriptions.',
                         'question_description': 'Match the following JavaScript data types with their correct descriptions.',
-                        'options': [
-                            {'String': 'For storing text values.'},
-                            {'Number': 'For storing numeric values.'},
-                            {'Boolean': 'For true/false values.'},
-                            {'Object': 'For collections of data.'}
-                        ],
+                        'options': {
+                            'options_A': ['String', 'Number', 'Boolean', 'Object'],
+                            'options_B': [
+                                'For storing text values.',
+                                'For storing numeric values.',
+                                'For true/false values.',
+                                'For collections of data.'
+                            ]
+                        },
                         'correct_answers': [
                             {'String': 'For storing text values.'},
                             {'Number': 'For storing numeric values.'},
@@ -388,12 +393,15 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the OOP concepts with their descriptions.',
                         'question_description': 'Match the following OOP concepts with their descriptions.',
-                        'options': [
-                            {'Class': 'A blueprint for creating objects.'},
-                            {'Object': 'An instance of a class.'},
-                            {'Constructor': 'A method for initializing properties.'},
-                            {'Inheritance': 'Mechanism for a class to inherit properties from another class.'}
-                        ],
+                        'options': {
+                            'options_A': ['Class', 'Object', 'Constructor', 'Inheritance'],
+                            'options_B': [
+                                'A blueprint for creating objects.',
+                                'An instance of a class.',
+                                'A method for initializing properties.',
+                                'Mechanism for a class to inherit properties from another class.'
+                            ]
+                        },
                         'correct_answers': [
                             {'Class': 'A blueprint for creating objects.'},
                             {'Object': 'An instance of a class.'},
@@ -455,12 +463,15 @@ courses = [
                         'question_type': 'matching',
                         'hint': 'Match the asynchronous JavaScript concepts with their descriptions.',
                         'question_description': 'Match the following asynchronous JavaScript concepts with their descriptions.',
-                        'options': [
-                            {'Callbacks': 'Functions passed as arguments to other functions and executed later.'},
-                            {'Promises': 'Represent the eventual result of an asynchronous operation.'},
-                            {'Async/await': 'Provides a cleaner syntax for working with promises.'},
-                            {'Single-threaded': 'JavaScript execution model.'}
-                        ],
+                        'options': {
+                            'options_A': ['Callbacks', 'Promises', 'Async/await', 'Single-threaded'],
+                            'options_B': [
+                                'Functions passed as arguments to other functions and executed later.',
+                                'Represent the eventual result of an asynchronous operation.',
+                                'Provides a cleaner syntax for working with promises.',
+                                'JavaScript execution model.'
+                            ]
+                        },
                         'correct_answers': [
                             {'Callbacks': 'Functions passed as arguments to other functions and executed later.'},
                             {'Promises': 'Represent the eventual result of an asynchronous operation.'},
