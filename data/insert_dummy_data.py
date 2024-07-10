@@ -103,6 +103,163 @@ courses = [
                         'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
                         'options': [],
                         'correct_answers': ['<script>']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the JavaScript concepts with their descriptions.',
+                        'question_description': 'Match the following JavaScript concepts with their descriptions.',
+                        'options': [
+                            {'JavaScript': 'A high-level, interpreted programming language.'},
+                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
+                            {'HTML': 'Standard markup language for creating web pages.'},
+                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
+                        ],
+                        'correct_answers': [
+                            {'JavaScript': 'A high-level, interpreted programming language.'},
+                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
+                            {'HTML': 'Standard markup language for creating web pages.'},
+                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
+                        ]
+                    }
+                ]
+            },
+            {
+                'title': 'Variables and Data Types',
+                'theories_list': [
+                    'Variables are containers for storing data values.',
+                    'In JavaScript, we use the `var`, `let`, or `const` keywords to declare variables.',
+                    'JavaScript supports different data types like string, number, boolean, null, undefined, object, and symbol.',
+                    'Strings are for text, numbers for numeric values, booleans for true/false, and objects for collections of data.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the keywords used to declare variables.',
+                        'question_description': 'Which keyword is used to declare a variable in JavaScript?',
+                        'options': ['var', 'let', 'const', 'all of the above'],
+                        'correct_answers': ['all of the above']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Consider the mutability of variables.',
+                        'question_description': 'A variable declared with `const` can be reassigned.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Pay attention to the syntax of variable declaration.',
+                        'question_description': 'Declare a variable named "message" and assign it the string value "Hello, world!".',
+                        'options': [],
+                        'correct_answers': ['let message = "Hello, world!";', 'var message = "Hello, world!";', 'const message = "Hello, world!";']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the data type used for storing whole numbers.',
+                        'question_description': 'Which data type is used to represent whole numbers in JavaScript?',
+                        'options': ['string', 'number', 'boolean', 'object'],
+                        'correct_answers': ['number']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'Consider the difference between null and undefined.',
+                        'question_description': 'In JavaScript, `null` and `undefined` represent the same thing.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the JavaScript data types with their correct descriptions.',
+                        'question_description': 'Match the following JavaScript data types with their correct descriptions.',
+                        'options': [
+                            {'String': 'For storing text values.'},
+                            {'Number': 'For storing numeric values.'},
+                            {'Boolean': 'For true/false values.'},
+                            {'Object': 'For collections of data.'}
+                        ],
+                        'correct_answers': [
+                            {'String': 'For storing text values.'},
+                            {'Number': 'For storing numeric values.'},
+                            {'Boolean': 'For true/false values.'},
+                            {'Object': 'For collections of data.'}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'level': 'BEGINNER',
+        'title': 'JavaScript Basics',
+        'description_short': 'Learn the basics of JavaScript',
+        'description_long': 'This course covers the fundamentals of JavaScript, including variables, data types, operators, and control flow.',
+        'lessons': [
+            {
+                'title': 'Introduction to JavaScript',
+                'theories_list': [
+                    'JavaScript is a high-level, interpreted programming language.',
+                    'It is one of the core technologies of the World Wide Web.',
+                    'JavaScript can be used for both client-side (in web browsers) and server-side development (with Node.js).',
+                    'JavaScript code is typically embedded in HTML pages or linked as external files.'
+                ],
+                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
+                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
+                'questions': [
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'JavaScript is primarily used for web development.',
+                        'question_description': 'What is JavaScript primarily used for?',
+                        'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
+                        'correct_answers': ['Web development']
+                    },
+                    {
+                        'question_type': 'true_false',
+                        'hint': 'JavaScript is a scripting language.',
+                        'question_description': 'JavaScript is the same as Java.',
+                        'options': [],
+                        'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider where JavaScript is commonly run.',
+                        'question_description': 'JavaScript can run in the browser and on the ____.',
+                        'options': [],
+                        'correct_answers': ['server']
+                    },
+                    {
+                        'question_type': 'multiple_choice',
+                        'hint': 'Think about the file extension for JavaScript code.',
+                        'question_description': 'What is the file extension for JavaScript code?',
+                        'options': ['.js', '.java', '.py', '.html'],
+                        'correct_answers': ['.js']
+                    },
+                    {
+                        'question_type': 'fill_in_the_blanks',
+                        'hint': 'Consider how you embed JavaScript in HTML.',
+                        'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
+                        'options': [],
+                        'correct_answers': ['<script>']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the JavaScript concepts with their descriptions.',
+                        'question_description': 'Match the following JavaScript concepts with their descriptions.',
+                        'options': [
+                            {'JavaScript': 'A high-level, interpreted programming language.'},
+                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
+                            {'HTML': 'Standard markup language for creating web pages.'},
+                            {
+                                'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
+                        ],
+                        'correct_answers': [
+                            {'JavaScript': 'A high-level, interpreted programming language.'},
+                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
+                            {'HTML': 'Standard markup language for creating web pages.'},
+                            {
+                                'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
+                        ]
                     }
                 ]
             },
@@ -152,6 +309,23 @@ courses = [
                         'question_description': 'In JavaScript, `null` and `undefined` represent the same thing.',
                         'options': [],
                         'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the JavaScript data types with their correct descriptions.',
+                        'question_description': 'Match the following JavaScript data types with their correct descriptions.',
+                        'options': [
+                            {'String': 'For storing text values.'},
+                            {'Number': 'For storing numeric values.'},
+                            {'Boolean': 'For true/false values.'},
+                            {'Object': 'For collections of data.'}
+                        ],
+                        'correct_answers': [
+                            {'String': 'For storing text values.'},
+                            {'Number': 'For storing numeric values.'},
+                            {'Boolean': 'For true/false values.'},
+                            {'Object': 'For collections of data.'}
+                        ]
                     }
                 ]
             }
@@ -209,6 +383,23 @@ courses = [
                         'question_description': 'JavaScript supports multiple inheritance.',
                         'options': [],
                         'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the OOP concepts with their descriptions.',
+                        'question_description': 'Match the following OOP concepts with their descriptions.',
+                        'options': [
+                            {'Class': 'A blueprint for creating objects.'},
+                            {'Object': 'An instance of a class.'},
+                            {'Constructor': 'A method for initializing properties.'},
+                            {'Inheritance': 'Mechanism for a class to inherit properties from another class.'}
+                        ],
+                        'correct_answers': [
+                            {'Class': 'A blueprint for creating objects.'},
+                            {'Object': 'An instance of a class.'},
+                            {'Constructor': 'A method for initializing properties.'},
+                            {'Inheritance': 'Mechanism for a class to inherit properties from another class.'}
+                        ]
                     }
                 ]
             },
@@ -259,6 +450,23 @@ courses = [
                         'question_description': 'Async/await is built on top of promises.',
                         'options': [],
                         'correct_answers': ['true']
+                    },
+                    {
+                        'question_type': 'matching',
+                        'hint': 'Match the asynchronous JavaScript concepts with their descriptions.',
+                        'question_description': 'Match the following asynchronous JavaScript concepts with their descriptions.',
+                        'options': [
+                            {'Callbacks': 'Functions passed as arguments to other functions and executed later.'},
+                            {'Promises': 'Represent the eventual result of an asynchronous operation.'},
+                            {'Async/await': 'Provides a cleaner syntax for working with promises.'},
+                            {'Single-threaded': 'JavaScript execution model.'}
+                        ],
+                        'correct_answers': [
+                            {'Callbacks': 'Functions passed as arguments to other functions and executed later.'},
+                            {'Promises': 'Represent the eventual result of an asynchronous operation.'},
+                            {'Async/await': 'Provides a cleaner syntax for working with promises.'},
+                            {'Single-threaded': 'JavaScript execution model.'}
+                        ]
                     }
                 ]
             }
@@ -425,304 +633,6 @@ courses = [
             }
         ]
     },
-    {
-        'level': 'ADVANCED',
-        'title': 'Modules and Classes',
-        'description_short': 'Organize and structure your JavaScript code',
-        'description_long': 'This course covers advanced JavaScript concepts like modules, classes, and object-oriented programming (OOP) principles.',
-        'lessons': [
-            {
-                'title': 'Modules in JavaScript',
-                'theories_list': [
-                    'Modules are reusable pieces of code that encapsulate functionality.',
-                    'Modules help organize code and prevent naming collisions.',
-                    'JavaScript supports different module systems like CommonJS and ECMAScript modules (ESM).',
-                    'Modules can be imported and exported using specific syntax.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the benefits of using modules.',
-                        'question_description': 'Which of the following is NOT a benefit of using modules in JavaScript?',
-                        'options': ['Code reusability', 'Improved code organization', 'Global scope pollution',
-                                    'Easier maintenance'],
-                        'correct_answers': ['Global scope pollution']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the different module systems in JavaScript.',
-                        'question_description': 'CommonJS and ECMAScript modules (ESM) are interchangeable.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for importing a module in ESM.',
-                        'question_description': 'How do you import a module named "myModule" in ECMAScript modules (ESM)?',
-                        'options': [],
-                        'correct_answers': ['import myModule from \'./myModule.js\';']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to make parts of a module accessible to other modules.',
-                        'question_description': 'Which keyword is used to export functionality from a module?',
-                        'options': ['import', 'export', 'module', 'require'],
-                        'correct_answers': ['export']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for exporting a function named "myFunction" from a module.',
-                        'question_description': 'How do you export a function named "myFunction" from a module?',
-                        'options': [],
-                        'correct_answers': ['export function myFunction() {}']
-                    }
-                ]
-            },
-            {
-                'title': 'Classes and Inheritance',
-                'theories_list': [
-                    'Classes are blueprints for creating objects with properties and methods.',
-                    'JavaScript supports prototypal inheritance through classes.',
-                    'Inheritance allows objects to inherit properties and methods from other objects.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the purpose of classes in JavaScript.',
-                        'question_description': 'What is the purpose of classes in JavaScript?',
-                        'options': ['To create objects with properties and methods', 'To define functions',
-                                    'To handle asynchronous operations', 'To import modules'],
-                        'correct_answers': ['To create objects with properties and methods']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the relationship between classes and objects.',
-                        'question_description': 'Classes are instances of objects.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for creating a class.',
-                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
-                        'options': [],
-                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to inherit properties from another class.',
-                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
-                        'options': ['extends', 'super', 'inherit', 'class'],
-                        'correct_answers': ['extends']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for inheriting properties from another class.',
-                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
-                        'options': [],
-                        'correct_answers': ['class Student extends Person {}']
-                    }
-                ]
-            },
-            {
-                'title': 'Modules in JavaScript',
-                'theories_list': [
-                    'Modules are reusable pieces of code that encapsulate functionality.',
-                    'Modules help organize code and prevent naming collisions.',
-                    'JavaScript supports different module systems like CommonJS and ECMAScript modules (ESM).',
-                    'Modules can be imported and exported using specific syntax.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the benefits of using modules.',
-                        'question_description': 'Which of the following is NOT a benefit of using modules in JavaScript?',
-                        'options': ['Code reusability', 'Improved code organization', 'Global scope pollution',
-                                    'Easier maintenance'],
-                        'correct_answers': ['Global scope pollution']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the different module systems in JavaScript.',
-                        'question_description': 'CommonJS and ECMAScript modules (ESM) are interchangeable.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for importing a module in ESM.',
-                        'question_description': 'How do you import a module named "myModule" in ECMAScript modules (ESM)?',
-                        'options': [],
-                        'correct_answers': ['import myModule from \'./myModule.js\';']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to make parts of a module accessible to other modules.',
-                        'question_description': 'Which keyword is used to export functionality from a module?',
-                        'options': ['import', 'export', 'module', 'require'],
-                        'correct_answers': ['export']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for exporting a function named "myFunction" from a module.',
-                        'question_description': 'How do you export a function named "myFunction" from a module?',
-                        'options': [],
-                        'correct_answers': ['export function myFunction() {}']
-                    }
-                ]
-            },
-            {
-                'title': 'Classes and Inheritance',
-                'theories_list': [
-                    'Classes are blueprints for creating objects with properties and methods.',
-                    'JavaScript supports prototypal inheritance through classes.',
-                    'Inheritance allows objects to inherit properties and methods from other objects.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the purpose of classes in JavaScript.',
-                        'question_description': 'What is the purpose of classes in JavaScript?',
-                        'options': ['To create objects with properties and methods', 'To define functions',
-                                    'To handle asynchronous operations', 'To import modules'],
-                        'correct_answers': ['To create objects with properties and methods']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the relationship between classes and objects.',
-                        'question_description': 'Classes are instances of objects.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for creating a class.',
-                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
-                        'options': [],
-                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to inherit properties from another class.',
-                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
-                        'options': ['extends', 'super', 'inherit', 'class'],
-                        'correct_answers': ['extends']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for inheriting properties from another class.',
-                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
-                        'options': [],
-                        'correct_answers': ['class Student extends Person {}']
-                    }
-                ]
-            },
-            {
-                'title': 'Classes and Inheritance',
-                'theories_list': [
-                    'Classes are blueprints for creating objects with properties and methods.',
-                    'JavaScript supports prototypal inheritance through classes.',
-                    'Inheritance allows objects to inherit properties and methods from other objects.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the purpose of classes in JavaScript.',
-                        'question_description': 'What is the purpose of classes in JavaScript?',
-                        'options': ['To create objects with properties and methods', 'To define functions',
-                                    'To handle asynchronous operations', 'To import modules'],
-                        'correct_answers': ['To create objects with properties and methods']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the relationship between classes and objects.',
-                        'question_description': 'Classes are instances of objects.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for creating a class.',
-                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
-                        'options': [],
-                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to inherit properties from another class.',
-                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
-                        'options': ['extends', 'super', 'inherit', 'class'],
-                        'correct_answers': ['extends']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for inheriting properties from another class.',
-                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
-                        'options': [],
-                        'correct_answers': ['class Student extends Person {}']
-                    }
-                ]
-            },
-            {
-                'title': 'Classes and Inheritance',
-                'theories_list': [
-                    'Classes are blueprints for creating objects with properties and methods.',
-                    'JavaScript supports prototypal inheritance through classes.',
-                    'Inheritance allows objects to inherit properties and methods from other objects.'
-                ],
-                'description': 'In this lesson, you will learn the basics of JavaScript and its role in web development.',
-                'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
-                'questions': [
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Consider the purpose of classes in JavaScript.',
-                        'question_description': 'What is the purpose of classes in JavaScript?',
-                        'options': ['To create objects with properties and methods', 'To define functions',
-                                    'To handle asynchronous operations', 'To import modules'],
-                        'correct_answers': ['To create objects with properties and methods']
-                    },
-                    {
-                        'question_type': 'true_false',
-                        'hint': 'Think about the relationship between classes and objects.',
-                        'question_description': 'Classes are instances of objects.',
-                        'options': [],
-                        'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for creating a class.',
-                        'question_description': 'Create a class named "Person" with a constructor that takes a "name" parameter.',
-                        'options': [],
-                        'correct_answers': ['class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the keyword used to inherit properties from another class.',
-                        'question_description': 'Which keyword is used to inherit properties from another class in JavaScript?',
-                        'options': ['extends', 'super', 'inherit', 'class'],
-                        'correct_answers': ['extends']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for inheriting properties from another class.',
-                        'question_description': 'Create a class named "Student" that inherits from the "Person" class.',
-                        'options': [],
-                        'correct_answers': ['class Student extends Person {}']
-                    }
-                ]
-            }
-        ]
-    }
 ]
 
 # Upload courses
