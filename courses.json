@@ -162,5 +162,10 @@
                 ]
             }
         ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Data Structures I",
+        "description_short" : ""
     }
 ]
