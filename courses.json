@@ -373,5 +373,150 @@
                 ]
             }
         ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Expressions and Operators I",
+        "description_short" : ,
+        "description_long" : "At a high level, an expression is a valid unit of code that resolves to a value. There are two types of expressions: those that have side effects (such as assigning values) and those that purely evaluate. The expression x = 7 is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to 7. The expression 3 + 4 is an example of the second type. This expression uses the + operator to add 3 and 4 together and produces a value, 7. However, if it’s not eventually part of a bigger construct (for example, a variable declaration like const z = 3 + 4), its result will be immediately discarded — this is usually a programmer mistake because the evaluation doesn’t produce any effects. As the examples above also illustrate, all complex expressions are joined by operators, such as = and +.",
+        "lessons" : [
+            {
+                "title" : "Assignment Operators",
+                "theories_list" : [
+                    "An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal (=), which assigns the value of its right operand to its left operand. That is, x = f() is an assignment expression that assigns the value of f() to x."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Comparison Operators",
+                "theories_list" : [
+                    "Comparison operators are the operators that compare values and return true or false. The operators include: >, <, >=, <=, ==, ===, != and !==."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Arithmetic operators",
+                "theories_list" : [
+                    "The Arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and remainder operations.",
+                    "Arithmetic operators in JavaScript are as follows:\n\n- Addition (+)\n- Subtraction (-)\n- Multiplication (*)\n- Exponentiation (**)\n- Division (/)\n- Modulus i.e. Remainder (%)\n- Increment (++)\n- Decrement (--)"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Logical Operators",
+                "theories_list" : [
+                    "There are four logical operators in JavaScript:\n\n- Logical AND (&&)\n- Logical OR (||)\n- Logical NOT (!)\n- Logical nullish assignment (??)"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "String Operators",
+                "theories_list" : [
+                    "In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.\nThe shorthand assignment operator += can also be used to concatenate strings."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Conditional Operators",
+                "theories_list" : [
+                    "Conditional operator also known as Ternary operator is the only JS operator that takes three operands.\nThe operator can have one of two values based on a condition.\nSyntax: condition ? val_for_true : val_for_false"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Comma Operator",
+                "theories_list" : [
+                    "The comma operator (,) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression’s final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a for loop."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Unary Operators",
+                "theories_list" : [
+                    "JavaScript Unary Operators are the special operators that consider a single operand and perform all the types of operations on that single operand. These operators include unary plus, unary minus, prefix increments, postfix increments, prefix decrements, and postfix decrements."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
