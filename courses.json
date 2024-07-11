@@ -1001,5 +1001,59 @@
                 "description" : "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6."
             }
         ]
+    },
+    {
+        "level" : "EXPERT",
+        "title" : "Equality Comparisons II",
+        "description_short" : ,
+        "description_long": ,
+        "lessons" : [
+            {
+                "title" : "Equality algorithms",
+                "theories_list" : [
+                    "Equality algorithms are used to perform equality comparisons of values or variables in JavaScript. Each equality algorithm works slightly differently, and the one you use depends on the type of comparison you want to make.",
+                    "“isLooselyEqual”\n\nisLooselyEqual checks whether its two operands are equal, returning a Boolean result. It attempts to convert and compare operands that are of different types.",
+                    "“isStrictlyEqual”\n\nisStrictlyEqual checks whether its two operands are equal, returning a Boolean result. It always considers operands of different types to be different.",
+                    "“Same zero zero”\n\nSameValueZero equality determines whether two values are functionally identical in all contexts with +0 and -0 are also considered equal.",
+                    "“Same value”\n\nSameValue equality determines whether two values are functionally identical in all contexts."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "EXPERT",
+        "title" : "Asynchronous JavaScript II",
+        "description_short" : ,
+        "description_long" : ,
+        "lessons" : [
+            {
+                "title" : "Event Loop",
+                "theories_list" : [
+                    "The Event Loop is one of the most important aspects to understand about Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the “killer feature” of Node.js, which made it this successful."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
