@@ -37,7 +37,7 @@
     {
         "level" : "BEGINNER",
         "title" : "All about Variables",
-        "description_short" : "",
+        "description_short" : ,
         "description_long" : "Most of the time, a JavaScript application needs to work with information. To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.",
         "lessons" : [
             {
@@ -104,7 +104,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Data Types",
-        "description_short" : "",
+        "description_short" : ,
         "description_long" : "Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.",
         "lessons" : [
             {
@@ -166,7 +166,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Data Structures I",
-        "description_short" : "",
+        "description_short" : ,
         "description_long" : "A Data structure is a format to organize, manage and store data in a way that allows efficient access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in) data structures. Primitive data structures come by default with the programming language and you can implement them out of the box (like arrays and objects). Non-primitive data structures don’t come by default and you have to code them up if you want to use them.",
         "lessons" : [
             {
@@ -192,6 +192,33 @@
                 "theories_list" : [
                     "Structured data is used by search-engines, like Google, to understand the content of the page, as well as to gather information about the web and the world in general.\nIt is also coded using in-page markup on the page that the information applies to.",
                     "JSON\n\nJavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Equality Comparisons I",
+        "description_short" : ,
+        "description_long" : "Comparison operators are used in logical statements to determine equality or difference between variables or values. Comparison operators can be used in conditional statements to compare values and take action depending on the result.",
+        "lessons" : [
+            {
+                "title" : "Value Comparison Operators",
+                "theories_list" : [
+                    "In javascript, the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values and the data types of the operands. The Object.is() method determines whether two values are the same value: Object.is(value1, value2).",
+                    "Object.is() is not equivalent to the == operator. The == operator applies various coercions to both sides (if they are not the same type) before testing for equality (resulting in such behavior as \"\" == false being true), but Object.is() doesn’t coerce either value.",
+                    "Object.is() is also not equivalent to the === operator. The only difference between Object.is() and === is in their treatment of signed zeros and NaN values. The === operator (and the == operator) treats the number values -0 and +0 as equal but treats NaN as not equal to each other."
                 ],
                 "description" : ,
                 "url" : ,
