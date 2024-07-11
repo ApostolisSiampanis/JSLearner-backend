@@ -1,0 +1,377 @@
+[
+    {
+        "level" : "BEGINNER",
+        "title" : "Introduction",
+        "description_short" : "Introduction to JavaScript",
+        "description_long" : "Introduction to JavaScript",
+        "lessons" : [
+            {
+                "title" : "What is JavaScript?",
+                "theories_list" : [
+                    "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add interactivity to pages e.g. you might have seen sliders, alerts, click interactions, popups, etc on different websites — all of that is built using JavaScript. Apart from being used in the browser, it is also used in other non-browser environments as well, such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications, and so on."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            },
+            {
+                "title" : "History of JavaScript",
+                "theories_list" : [
+                    "JavaScript was initially created by Brendan Eich of NetScape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially, it was named Mocha by the creator, which was later renamed LiveScript. In 1996, about a year later after the release, NetScape decided to rename it to JavaScript with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            },
+            {
+                "title" : "How to run JavaScript?",
+                "theories_list" : [
+                    "JavaScript can be run in the browser by including the external script file using the script tag, writing it within the HTML page using the script tag again, running it in the browser console or you can also use REPL."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "All about Variables",
+        "description_short" : ,
+        "description_long" : "Most of the time, a JavaScript application needs to work with information. To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.",
+        "lessons" : [
+            {
+                "title" : "Variables",
+                "theories_list" : [
+                    "“var” keyword\n\nThe var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.",
+                    "“let” keyword\n\nThe let declaration declares a block-scoped local variable, optionally initializing it to a value.",
+                    "“const” keyword\n\nConstants are block-scoped, much like variables declared using the let keyword. The value of a constant can’t be changed through reassignment (i.e. by using the assignment operator), and it can’t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed."
+                ],
+                "description" : "To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the var, let, or const keywords.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Naming Rules",
+                "theories_list" : [
+                    "The rules we must follow when naming variables in JavaScript are as follows:",
+                    "1. Names can only contain alphanumeric characters (a-z, A-Z, 0-9) and the _ (underscore) and $ (dollar sign) characters; nothing else. Hence, first-name is invalid since it contains a hyphen (-) which is illegal to put in a variable name.",
+                    "2. Names can't begin with a digit. Hence, 2nd is invalid.",
+                    "3. Names can't contain spaces. Hence, first word is invalid.",
+                    "4. Names can't be reserved keywords. Hence, var is invalid."
+                ],
+                "description" : "A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Scopes",
+                "theories_list" : [
+                    "Block Scope:\n\nThis scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.",
+                    "Function Scope:\n\nWhen a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.",
+                    "Global Scope:\n\nVariables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var, let and const are quite similar when declared outside a block."
+                ],
+                "description" : "In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Data Types",
+        "description_short" : ,
+        "description_long" : "Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.",
+        "lessons" : [
+            {
+                "title" : "Object",
+                "theories_list" : [
+                    "JavaScript object is a data structure that allows us to have key-value pairs; so we can have distinct keys and each key is mapped to a value that can be of any JavaScript data type. Comparing it to a real-world object, a pen is an object with several properties such as color, design, the material it is made of, etc. In the same way, JavaScript objects can have properties that define their characteristics.",
+                    "Built-in objects, or “global objects”, are those built into the language specification itself. There are numerous built-in objects with the JavaScript language, all of which are accessible at the global scope. Some examples are:\n\n- Number\n- Math\n- Date\n- String\n- Error\n- Function\n- Boolean"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "TypeOf Operator",
+                "theories_list" : [
+                    "You can use the typeOf operator to find the data type of a JavaScript variable. It returns a string indicating the type of provided operand’s value."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Primitive Types",
+                "theories_list" : [
+                    "In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. A significant difference between primitive data types and non-primitives is that primitive types can only contain one value, and that value must be of the same primitive type. In contrast, non-primitives can accommodate a variable number of values, and these values can be of different primitive types. This flexibility is evident in data structures like arrays and objects.",
+                    "In the context of primitives, it’s important to note that they do not possess methods or properties. However, JavaScript enables access to methods and properties associated with primitive types such as string, number, and boolean. this functionality is due to JavaScript’s ability to implicitly convert primitives to objects with wrapper objects when necessary. When properties are accessed on primitives, JavaScript auto-boxes the value into a wrapper object and accesses the property on that object instead.",
+                    "There are 7 primitive data types:\n\n- string\n- number\n- bigint\n- boolean\n- undefined\n- symbol\n- null\n\nMost of the time, a primitive value is represented directly at the lowest level of the language implementation."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Data Structures I",
+        "description_short" : ,
+        "description_long" : "A Data structure is a format to organize, manage and store data in a way that allows efficient access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in) data structures. Primitive data structures come by default with the programming language and you can implement them out of the box (like arrays and objects). Non-primitive data structures don’t come by default and you have to code them up if you want to use them.",
+        "lessons" : [
+            {
+                "title" : "Indexed collections",
+                "theories_list" : [
+                    "Indexed Collections are collections that have numeric indices i.e. the collections of data that are ordered by an index value. In JavaScript, an array is an indexed collection. An array is an ordered set of values that has a numeric index.",
+                    "Arrays are objects that store a collection of items and can be assigned to a variable. They have their methods that can perform operations on the array."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Structured data",
+                "theories_list" : [
+                    "Structured data is used by search-engines, like Google, to understand the content of the page, as well as to gather information about the web and the world in general.\nIt is also coded using in-page markup on the page that the information applies to.",
+                    "JSON\n\nJavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Equality Comparisons I",
+        "description_short" : ,
+        "description_long" : "Comparison operators are used in logical statements to determine equality or difference between variables or values. Comparison operators can be used in conditional statements to compare values and take action depending on the result.",
+        "lessons" : [
+            {
+                "title" : "Value Comparison Operators",
+                "theories_list" : [
+                    "In javascript, the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values and the data types of the operands. The Object.is() method determines whether two values are the same value: Object.is(value1, value2).",
+                    "Object.is() is not equivalent to the == operator. The == operator applies various coercions to both sides (if they are not the same type) before testing for equality (resulting in such behavior as \"\" == false being true), but Object.is() doesn’t coerce either value.",
+                    "Object.is() is also not equivalent to the === operator. The only difference between Object.is() and === is in their treatment of signed zeros and NaN values. The === operator (and the == operator) treats the number values -0 and +0 as equal but treats NaN as not equal to each other."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Loops and Iterations",
+        "description_short" : "Loops offer a quick and easy way to do something repeatedly.",
+        "description_long" : "You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another.",
+        "lessons" : [
+            {
+                "title" : "The “for” loop",
+                "theories_list" : [
+                    "The for loop is a standard control-flow construct in many programming languages, including JavaScript. It’s commonly used to iterate over given sequences or iterate a known number of times and execute a piece of code for each iteration."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“do…while” statement",
+                "theories_list" : [
+                    "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“while” statement",
+                "theories_list" : [
+                    "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“break/continue”",
+                "theories_list" : [
+                    "break statement, without a label reference, can only be used to jump out of a loop or a switch block.",
+                    "continue statement, with or without a label reference, can only be used to skip one loop iteration."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Labeled statement",
+                "theories_list" : [
+                    "JavaScript label statements are used to prefix a label to an identifier. It can be used with break and continue statement to control the flow more precisely.\nA label is simply an identifier followed by a colon(:) that is applied to a block of code."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Control Flow",
+        "description short": ,
+        "description_long" : "In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statement that changes the control flow of the program such as loops, conditionals, etc.\nWe can control the flow of the program through any of these control structures:\n- Sequential (default mode)\n- Conditional Statements\n- Exception Handling\n- Loops and Iterations",
+        "lessons" : [
+            {
+                "title" : "Conditional Statements",
+                "theories_list" : [
+                    "If…else:\n\nThe if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.",
+                    "Switch:\n\nThe switch statement evaluates an expression, matching the expression’s value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression’s value."
+                ],
+                "description" : "When you write code, you often want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript, we have three conditional statements: if, if...else, and switch.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Exception Handling",
+                "theories_list" : [
+                    "“throw” statement\n\nThe throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won’t be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.",
+                    "“Try/catch/finally”\n\nThese are ways of handling errors in your JavaScript code. Inside the try code block we have the code to run, inside the catch block we handle the errors, and inside the finally block we have code that runs after the execution of the previous code blocks, regardless of the result.",
+                    "Utilizing Error Objects\n\nWhen a runtime error occurs, a new Error object is created and thrown. With this Error object, we can determine the type of the Error and handle it according to its type.",
+                    "Types of Errors:\n\nBesides error constructors, Javascript also has other core Error constructors.\n\nFor example:\n\n- AggregateError\n- EvalError\n- InternalError\n- RangeError\n- ReferenceErrorn\n- SyntaxError"
+                ],
+                "description" : "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    }
+]
