@@ -166,6 +166,45 @@
     {
         "level" : "BEGINNER",
         "title" : "Data Structures I",
-        "description_short" : ""
+        "description_short" : "",
+        "description_long" : "A Data structure is a format to organize, manage and store data in a way that allows efficient access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in) data structures. Primitive data structures come by default with the programming language and you can implement them out of the box (like arrays and objects). Non-primitive data structures don’t come by default and you have to code them up if you want to use them.",
+        "lessons" : [
+            {
+                "title" : "Indexed collections",
+                "theories_list" : [
+                    "Indexed Collections are collections that have numeric indices i.e. the collections of data that are ordered by an index value. In JavaScript, an array is an indexed collection. An array is an ordered set of values that has a numeric index.",
+                    "Arrays are objects that store a collection of items and can be assigned to a variable. They have their methods that can perform operations on the array."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Structured data",
+                "theories_list" : [
+                    "Structured data is used by search-engines, like Google, to understand the content of the page, as well as to gather information about the web and the world in general.\nIt is also coded using in-page markup on the page that the information applies to.",
+                    "JSON\n\nJavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
