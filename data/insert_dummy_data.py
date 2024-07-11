@@ -70,55 +70,40 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'JavaScript is primarily used for web development.',
                         'question_description': 'What is JavaScript primarily used for?',
                         'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
                         'correct_answers': ['Web development']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'JavaScript is a scripting language.',
                         'question_description': 'JavaScript is the same as Java.',
                         'options': [],
                         'correct_answers': ['false']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider where JavaScript is commonly run.',
                         'question_description': 'JavaScript can run in the browser and on the ____.',
                         'options': [],
                         'correct_answers': ['server']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the file extension for JavaScript code.',
                         'question_description': 'What is the file extension for JavaScript code?',
                         'options': ['.js', '.java', '.py', '.html'],
                         'correct_answers': ['.js']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider how you embed JavaScript in HTML.',
                         'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
                         'options': [],
                         'correct_answers': ['<script>']
                     },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the JavaScript concepts with their descriptions.',
-                        'question_description': 'Match the following JavaScript concepts with their descriptions.',
-                        'options': {
-                            'options_A': ['JavaScript', 'Node.js', 'HTML', 'CSS'],
-                            'options_B': ['A high-level, interpreted programming language.', 'JavaScript runtime built on Chrome\'s V8 engine.', 'Standard markup language for creating web pages.', 'Style sheet language used for describing the presentation of a document written in HTML or XML.']
-                        },
-                        'correct_answers': [
-                            {'JavaScript': 'A high-level, interpreted programming language.'},
-                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
-                            {'HTML': 'Standard markup language for creating web pages.'},
-                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
-                        ]
-                    }
                 ]
             },
             {
@@ -133,59 +118,39 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the keywords used to declare variables.',
                         'question_description': 'Which keyword is used to declare a variable in JavaScript?',
                         'options': ['var', 'let', 'const', 'all of the above'],
                         'correct_answers': ['all of the above']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the mutability of variables.',
                         'question_description': 'A variable declared with `const` can be reassigned.',
                         'options': [],
                         'correct_answers': ['false']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Pay attention to the syntax of variable declaration.',
                         'question_description': 'Declare a variable named "message" and assign it the string value "Hello, world!".',
                         'options': [],
                         'correct_answers': ['let message = "Hello, world!";', 'var message = "Hello, world!";', 'const message = "Hello, world!";']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the data type used for storing whole numbers.',
                         'question_description': 'Which data type is used to represent whole numbers in JavaScript?',
                         'options': ['string', 'number', 'boolean', 'object'],
                         'correct_answers': ['number']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the difference between null and undefined.',
                         'question_description': 'In JavaScript, `null` and `undefined` represent the same thing.',
                         'options': [],
                         'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the JavaScript data types with their correct descriptions.',
-                        'question_description': 'Match the following JavaScript data types with their correct descriptions.',
-                        'options': {
-                            'options_A': ['String', 'Number', 'Boolean', 'Object'],
-                            'options_B': [
-                                'For storing text values.',
-                                'For storing numeric values.',
-                                'For true/false values.',
-                                'For collections of data.'
-                            ]
-                        },
-                        'correct_answers': [
-                            {'String': 'For storing text values.'},
-                            {'Number': 'For storing numeric values.'},
-                            {'Boolean': 'For true/false values.'},
-                            {'Object': 'For collections of data.'}
-                        ]
                     }
                 ]
             }
@@ -209,59 +174,39 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'JavaScript is primarily used for web development.',
                         'question_description': 'What is JavaScript primarily used for?',
                         'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
                         'correct_answers': ['Web development']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'JavaScript is a scripting language.',
                         'question_description': 'JavaScript is the same as Java.',
                         'options': [],
                         'correct_answers': ['false']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider where JavaScript is commonly run.',
                         'question_description': 'JavaScript can run in the browser and on the ____.',
                         'options': [],
                         'correct_answers': ['server']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the file extension for JavaScript code.',
                         'question_description': 'What is the file extension for JavaScript code?',
                         'options': ['.js', '.java', '.py', '.html'],
                         'correct_answers': ['.js']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider how you embed JavaScript in HTML.',
                         'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
                         'options': [],
                         'correct_answers': ['<script>']
-                    },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the JavaScript concepts with their descriptions.',
-                        'question_description': 'Match the following JavaScript concepts with their descriptions.',
-                        'options': {
-                            'options_A': ['JavaScript', 'Node.js', 'HTML', 'CSS'],
-                            'options_B': [
-                                'A high-level, interpreted programming language.',
-                                'JavaScript runtime built on Chrome\'s V8 engine.',
-                                'Standard markup language for creating web pages.',
-                                'Style sheet language used for describing the presentation of a document written in HTML or XML.'
-                            ]
-                        },
-                        'correct_answers': [
-                            {'JavaScript': 'A high-level, interpreted programming language.'},
-                            {'Node.js': 'JavaScript runtime built on Chrome\'s V8 engine.'},
-                            {'HTML': 'Standard markup language for creating web pages.'},
-                            {'CSS': 'Style sheet language used for describing the presentation of a document written in HTML or XML.'}
-                        ]
                     }
                 ]
             },
@@ -277,21 +222,21 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the keywords used to declare variables.',
                         'question_description': 'Which keyword is used to declare a variable in JavaScript?',
                         'options': ['var', 'let', 'const', 'all of the above'],
                         'correct_answers': ['all of the above']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the mutability of variables.',
                         'question_description': 'A variable declared with `const` can be reassigned.',
                         'options': [],
                         'correct_answers': ['false']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Pay attention to the syntax of variable declaration.',
                         'question_description': 'Declare a variable named "message" and assign it the string value "Hello, world!".',
                         'options': [],
@@ -299,38 +244,18 @@ courses = [
                                             'const message = "Hello, world!";']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the data type used for storing whole numbers.',
                         'question_description': 'Which data type is used to represent whole numbers in JavaScript?',
                         'options': ['string', 'number', 'boolean', 'object'],
                         'correct_answers': ['number']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the difference between null and undefined.',
                         'question_description': 'In JavaScript, `null` and `undefined` represent the same thing.',
                         'options': [],
                         'correct_answers': ['false']
-                    },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the JavaScript data types with their correct descriptions.',
-                        'question_description': 'Match the following JavaScript data types with their correct descriptions.',
-                        'options': {
-                            'options_A': ['String', 'Number', 'Boolean', 'Object'],
-                            'options_B': [
-                                'For storing text values.',
-                                'For storing numeric values.',
-                                'For true/false values.',
-                                'For collections of data.'
-                            ]
-                        },
-                        'correct_answers': [
-                            {'String': 'For storing text values.'},
-                            {'Number': 'For storing numeric values.'},
-                            {'Boolean': 'For true/false values.'},
-                            {'Object': 'For collections of data.'}
-                        ]
                     }
                 ]
             }
@@ -353,28 +278,28 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Consider the keywords used for OOP.',
                         'question_description': 'Which keyword is used to define a class in JavaScript?',
                         'options': ['function', 'class', 'object', 'constructor'],
                         'correct_answers': ['class']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Think about the relationship between classes and objects.',
                         'question_description': 'An object is an instance of a class.',
                         'options': [],
                         'correct_answers': ['true']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the syntax for creating an object.',
                         'question_description': 'Create an object named "person" with a property "name" set to "Alice".',
                         'options': [],
                         'correct_answers': ['const person = { name: "Alice" };']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the purpose of the constructor method.',
                         'question_description': 'What is the purpose of the constructor method in a class?',
                         'options': ["To initialize the object's properties", "To define the object's methods",
@@ -383,32 +308,12 @@ courses = [
                         'correct_answers': ["To initialize the object's properties"]
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the concept of inheritance in OOP.',
                         'question_description': 'JavaScript supports multiple inheritance.',
                         'options': [],
                         'correct_answers': ['false']
                     },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the OOP concepts with their descriptions.',
-                        'question_description': 'Match the following OOP concepts with their descriptions.',
-                        'options': {
-                            'options_A': ['Class', 'Object', 'Constructor', 'Inheritance'],
-                            'options_B': [
-                                'A blueprint for creating objects.',
-                                'An instance of a class.',
-                                'A method for initializing properties.',
-                                'Mechanism for a class to inherit properties from another class.'
-                            ]
-                        },
-                        'correct_answers': [
-                            {'Class': 'A blueprint for creating objects.'},
-                            {'Object': 'An instance of a class.'},
-                            {'Constructor': 'A method for initializing properties.'},
-                            {'Inheritance': 'Mechanism for a class to inherit properties from another class.'}
-                        ]
-                    }
                 ]
             },
             {
@@ -423,21 +328,21 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Consider the order of execution in asynchronous code.',
                         'question_description': 'Which of the following is used to handle asynchronous operations in JavaScript?',
                         'options': ['Callbacks', 'Promises', 'Async/await', 'All of the above'],
                         'correct_answers': ['All of the above']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': "Think about the nature of JavaScript's execution model.",
                         'question_description': 'JavaScript is a multi-threaded language.',
                         'options': [],
                         'correct_answers': ['false']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the syntax for creating a promise.',
                         'question_description': 'Create a promise that resolves with the value "Success" after 1 second.',
                         'options': [],
@@ -445,7 +350,7 @@ courses = [
                             'const promise = new Promise((resolve, reject) => { setTimeout(() => resolve("Success"), 1000); });']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the purpose of the "catch" block in a promise chain.',
                         'question_description': 'What is the purpose of the "catch" block in a promise chain?',
                         'options': ['To handle successful promise resolutions', 'To handle promise rejections',
@@ -453,31 +358,11 @@ courses = [
                         'correct_answers': ['To handle promise rejections']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Consider the relationship between async/await and promises.',
                         'question_description': 'Async/await is built on top of promises.',
                         'options': [],
                         'correct_answers': ['true']
-                    },
-                    {
-                        'question_type': 'matching',
-                        'hint': 'Match the asynchronous JavaScript concepts with their descriptions.',
-                        'question_description': 'Match the following asynchronous JavaScript concepts with their descriptions.',
-                        'options': {
-                            'options_A': ['Callbacks', 'Promises', 'Async/await', 'Single-threaded'],
-                            'options_B': [
-                                'Functions passed as arguments to other functions and executed later.',
-                                'Represent the eventual result of an asynchronous operation.',
-                                'Provides a cleaner syntax for working with promises.',
-                                'JavaScript execution model.'
-                            ]
-                        },
-                        'correct_answers': [
-                            {'Callbacks': 'Functions passed as arguments to other functions and executed later.'},
-                            {'Promises': 'Represent the eventual result of an asynchronous operation.'},
-                            {'Async/await': 'Provides a cleaner syntax for working with promises.'},
-                            {'Single-threaded': 'JavaScript execution model.'}
-                        ]
                     }
                 ]
             }
@@ -500,41 +385,25 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Consider the order of execution in asynchronous code.',
                         'question_description': 'Which of the following is NOT a way to handle asynchronous operations in JavaScript?',
                         'options': ['Callbacks', 'Promises', 'Async/await', 'Threads'],
                         'correct_answers': ['Threads']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Think about the states a promise can be in.',
                         'question_description': 'A promise can be in one of three states: pending, fulfilled, or rejected.',
                         'options': [],
                         'correct_answers': ['true']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the method used to handle a fulfilled promise.',
                         'question_description': 'The ____ method is used to handle the successful resolution of a promise.',
                         'options': [],
                         'correct_answers': ['then']
-                    },
-                    {
-                        'question_type': 'multiple_choice',
-                        'hint': 'Think about the purpose of the catch method.',
-                        'question_description': 'What is the purpose of the catch method in a promise chain?',
-                        'options': ['To handle the successful resolution of a promise',
-                                    'To handle errors that occur during the promise chain', 'To initiate a new promise',
-                                    'To transform the result of a promise'],
-                        'correct_answers': ['To handle errors that occur during the promise chain']
-                    },
-                    {
-                        'question_type': 'fill_in_the_blanks',
-                        'hint': 'Consider the syntax for creating a promise.',
-                        'question_description': 'Create a promise that resolves with the value "Hello" after 1 second.',
-                        'options': [],
-                        'correct_answers': ['new Promise((resolve) => setTimeout(() => resolve("Hello"), 1000));']
                     }
                 ]
             },
@@ -550,7 +419,7 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Consider the syntax of async functions.',
                         'question_description': 'How do you declare an async function in JavaScript?',
                         'options': ['async function myFunction() {}', 'function async myFunction() {}',
@@ -558,21 +427,21 @@ courses = [
                         'correct_answers': ['async function myFunction() {}']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Think about the return value of async functions.',
                         'question_description': 'Async functions always return a promise.',
                         'options': [],
                         'correct_answers': ['true']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the keyword used to pause execution in async functions.',
                         'question_description': 'The ____ keyword is used to wait for a promise to resolve in an async function.',
                         'options': [],
                         'correct_answers': ['await']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the purpose of try...catch blocks.',
                         'question_description': 'What is the purpose of a try...catch block in an async function?',
                         'options': ['To handle the successful resolution of a promise',
@@ -581,7 +450,7 @@ courses = [
                         'correct_answers': ['To handle errors that occur during the async function']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the syntax for handling errors in async functions.',
                         'question_description': 'Write an async function that fetches data from an API and handles potential errors using try...catch.',
                         'options': [],
@@ -602,7 +471,7 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Consider the syntax of async functions.',
                         'question_description': 'How do you declare an async function in JavaScript?',
                         'options': ['async function myFunction() {}', 'function async myFunction() {}',
@@ -610,21 +479,21 @@ courses = [
                         'correct_answers': ['async function myFunction() {}']
                     },
                     {
-                        'question_type': 'true_false',
+                        'question_type': 'TRUE_FALSE',
                         'hint': 'Think about the return value of async functions.',
                         'question_description': 'Async functions always return a promise.',
                         'options': [],
                         'correct_answers': ['true']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the keyword used to pause execution in async functions.',
                         'question_description': 'The ____ keyword is used to wait for a promise to resolve in an async function.',
                         'options': [],
                         'correct_answers': ['await']
                     },
                     {
-                        'question_type': 'multiple_choice',
+                        'question_type': 'MULTIPLE_CHOICE',
                         'hint': 'Think about the purpose of try...catch blocks.',
                         'question_description': 'What is the purpose of a try...catch block in an async function?',
                         'options': ['To handle the successful resolution of a promise',
@@ -633,7 +502,7 @@ courses = [
                         'correct_answers': ['To handle errors that occur during the async function']
                     },
                     {
-                        'question_type': 'fill_in_the_blanks',
+                        'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider the syntax for handling errors in async functions.',
                         'question_description': 'Write an async function that fetches data from an API and handles potential errors using try...catch.',
                         'options': [],
