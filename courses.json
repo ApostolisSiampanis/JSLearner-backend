@@ -1,0 +1,166 @@
+[
+    {
+        "level" : "BEGINNER",
+        "title" : "Introduction",
+        "description_short" : "Introduction to JavaScript",
+        "description_long" : "Introduction to JavaScript",
+        "lessons" : [
+            {
+                "title" : "What is JavaScript?",
+                "theories_list" : [
+                    "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add interactivity to pages e.g. you might have seen sliders, alerts, click interactions, popups, etc on different websites — all of that is built using JavaScript. Apart from being used in the browser, it is also used in other non-browser environments as well, such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications, and so on."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            },
+            {
+                "title" : "History of JavaScript",
+                "theories_list" : [
+                    "JavaScript was initially created by Brendan Eich of NetScape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially, it was named Mocha by the creator, which was later renamed LiveScript. In 1996, about a year later after the release, NetScape decided to rename it to JavaScript with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            },
+            {
+                "title" : "How to run JavaScript?",
+                "theories_list" : [
+                    "JavaScript can be run in the browser by including the external script file using the script tag, writing it within the HTML page using the script tag again, running it in the browser console or you can also use REPL."
+                ],
+                "description" : "",
+                "url" : "",
+                "questions" : null
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "All about Variables",
+        "description_short" : "",
+        "description_long" : "Most of the time, a JavaScript application needs to work with information. To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.",
+        "lessons" : [
+            {
+                "title" : "Variables",
+                "theories_list" : [
+                    "“var” keyword\n\nThe var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.",
+                    "“let” keyword\n\nThe let declaration declares a block-scoped local variable, optionally initializing it to a value.",
+                    "“const” keyword\n\nConstants are block-scoped, much like variables declared using the let keyword. The value of a constant can’t be changed through reassignment (i.e. by using the assignment operator), and it can’t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed."
+                ],
+                "description" : "To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the var, let, or const keywords.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Naming Rules",
+                "theories_list" : [
+                    "The rules we must follow when naming variables in JavaScript are as follows:",
+                    "1. Names can only contain alphanumeric characters (a-z, A-Z, 0-9) and the _ (underscore) and $ (dollar sign) characters; nothing else. Hence, first-name is invalid since it contains a hyphen (-) which is illegal to put in a variable name.",
+                    "2. Names can't begin with a digit. Hence, 2nd is invalid.",
+                    "3. Names can't contain spaces. Hence, first word is invalid.",
+                    "4. Names can't be reserved keywords. Hence, var is invalid."
+                ],
+                "description" : "A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Scopes",
+                "theories_list" : [
+                    "Block Scope:\n\nThis scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.",
+                    "Function Scope:\n\nWhen a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.",
+                    "Global Scope:\n\nVariables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var, let and const are quite similar when declared outside a block."
+                ],
+                "description" : "In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Data Types",
+        "description_short" : "",
+        "description_long" : "Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.",
+        "lessons" : [
+            {
+                "title" : "Object",
+                "theories_list" : [
+                    "JavaScript object is a data structure that allows us to have key-value pairs; so we can have distinct keys and each key is mapped to a value that can be of any JavaScript data type. Comparing it to a real-world object, a pen is an object with several properties such as color, design, the material it is made of, etc. In the same way, JavaScript objects can have properties that define their characteristics.",
+                    "Built-in objects, or “global objects”, are those built into the language specification itself. There are numerous built-in objects with the JavaScript language, all of which are accessible at the global scope. Some examples are:\n\n- Number\n- Math\n- Date\n- String\n- Error\n- Function\n- Boolean"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "TypeOf Operator",
+                "theories_list" : [
+                    "You can use the typeOf operator to find the data type of a JavaScript variable. It returns a string indicating the type of provided operand’s value."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Primitive Types",
+                "theories_list" : [
+                    "In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. A significant difference between primitive data types and non-primitives is that primitive types can only contain one value, and that value must be of the same primitive type. In contrast, non-primitives can accommodate a variable number of values, and these values can be of different primitive types. This flexibility is evident in data structures like arrays and objects.",
+                    "In the context of primitives, it’s important to note that they do not possess methods or properties. However, JavaScript enables access to methods and properties associated with primitive types such as string, number, and boolean. this functionality is due to JavaScript’s ability to implicitly convert primitives to objects with wrapper objects when necessary. When properties are accessed on primitives, JavaScript auto-boxes the value into a wrapper object and accesses the property on that object instead.",
+                    "There are 7 primitive data types:\n\n- string\n- number\n- bigint\n- boolean\n- undefined\n- symbol\n- null\n\nMost of the time, a primitive value is represented directly at the lowest level of the language implementation."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
+    }
+]
