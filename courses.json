@@ -233,5 +233,99 @@
                 ]
             }
         ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Loops and Iterations",
+        "description_short" : "Loops offer a quick and easy way to do something repeatedly.",
+        "description_long" : "You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another.",
+        "lessons" : [
+            {
+                "title" : "The “for” loop",
+                "theories_list" : [
+                    "The for loop is a standard control-flow construct in many programming languages, including JavaScript. It’s commonly used to iterate over given sequences or iterate a known number of times and execute a piece of code for each iteration."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“do…while” statement",
+                "theories_list" : [
+                    "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“while” statement",
+                "theories_list" : [
+                    "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "“break/continue”",
+                "theories_list" : [
+                    "break statement, without a label reference, can only be used to jump out of a loop or a switch block.",
+                    "continue statement, with or without a label reference, can only be used to skip one loop iteration."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Labeled statement",
+                "theories_list" : [
+                    "JavaScript label statements are used to prefix a label to an identifier. It can be used with break and continue statement to control the flow more precisely.\nA label is simply an identifier followed by a colon(:) that is applied to a block of code."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
