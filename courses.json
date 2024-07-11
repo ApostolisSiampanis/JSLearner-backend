@@ -581,5 +581,65 @@
                 ]
             }
         ]
+    },
+    {
+        "level" : "INTERMEDIATE",
+        "title" : "Expressions and Operators II",
+        "description_short" : ,
+        "description_long" : ,
+        "lessons" : [
+            {
+                "title" : "Bitwise operators",
+                "theories_list" : [
+                    "Bitwise operators treat arguments as 32-bits (zeros & ones) and work on the level of their binary representation. Ex. Decimal number 9 has a binary representation of 1001. Bitwise operators perform their operations on such binary representations, but they return standard JavaScript numerical values.",
+                    "Bitwise operators in JavaScript are as follows:\n\n- Bitwise AND (&)\n- Bitwise OR (|)\n- Bitwise XOR (^)\n- Bitwise NOT (~)\n- Left shift (<<)\n- Sign-propagating right shift (>>)\n- Zero-fill right shift (>>>)"
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "BigInt Operators",
+                "theories_list" : [
+                    "Most operators that can be used with the Number data type will also work with BigInt values (e.g. arithmetic, comparison, etc.). However, the unsigned right shift >>> operator is an exception and is not supported. Similarly, some operators may have slight differences in behaviour (for example, division with BigInt will round towards zero)."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Relational Operators",
+                "theories_list" : [
+                    "Relational operators are also known as comparison operators. They are used to find the relationship between two values or compare the relationship between them; on the comparison, they yield the result true or false."
+                ],
+                "description" : ,
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
