@@ -327,5 +327,51 @@
                 ]
             }
         ]
+    },
+    {
+        "level" : "BEGINNER",
+        "title" : "Control Flow",
+        "description short": ,
+        "description_long" : "In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statement that changes the control flow of the program such as loops, conditionals, etc.\nWe can control the flow of the program through any of these control structures:\n- Sequential (default mode)\n- Conditional Statements\n- Exception Handling\n- Loops and Iterations",
+        "lessons" : [
+            {
+                "title" : "Conditional Statements",
+                "theories_list" : [
+                    "If…else:\n\nThe if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.",
+                    "Switch:\n\nThe switch statement evaluates an expression, matching the expression’s value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression’s value."
+                ],
+                "description" : "When you write code, you often want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript, we have three conditional statements: if, if...else, and switch.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            },
+            {
+                "title" : "Exception Handling",
+                "theories_list" : [
+                    "“throw” statement\n\nThe throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won’t be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.",
+                    "“Try/catch/finally”\n\nThese are ways of handling errors in your JavaScript code. Inside the try code block we have the code to run, inside the catch block we handle the errors, and inside the finally block we have code that runs after the execution of the previous code blocks, regardless of the result.",
+                    "Utilizing Error Objects\n\nWhen a runtime error occurs, a new Error object is created and thrown. With this Error object, we can determine the type of the Error and handle it according to its type.",
+                    "Types of Errors:\n\nBesides error constructors, Javascript also has other core Error constructors.\n\nFor example:\n\n- AggregateError\n- EvalError\n- InternalError\n- RangeError\n- ReferenceErrorn\n- SyntaxError"
+                ],
+                "description" : "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object.",
+                "url" : ,
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+                    }
+                ]
+            }
+        ]
     }
 ]
