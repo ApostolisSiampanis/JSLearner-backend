@@ -585,8 +585,8 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Expressions and Operators II",
-        "description_short" : "This lesson dives into more complex operators, including bitwise operators and BigInt operators, which perform operations on binary representations and large integers.",
-        "description_long" : "",
+        "description_short" : "This is the level 2 of Expressions and Operators course",
+        "description_long" : "This lesson dives into more complex operators, including bitwise operators and BigInt operators, which perform operations on binary representations and large integers.",
         "lessons" : [
             {
                 "title" : "Bitwise operators",
@@ -645,8 +645,8 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Functions II",
-        "description_short" : ,
-        "description_long" : ,
+        "description_short" :"This is the level 2 of Functions course",
+        "description_long" : "Students learn advanced function concepts, such as higher-order functions, closures, and the use of the this keyword, to write more powerful and flexible code.",
         "lessons" : [
             {
                 "title" : "Arguments object",
@@ -692,8 +692,8 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Strict Mode",
-        "description_short" : ,
-        "description_long" : ,
+        "description_short" : "This lesson introduces strict mode in JavaScript, which helps catch common coding mistakes and ensures cleaner code by enforcing stricter parsing and error handling.",
+        "description_long" : "Strict mode helps catch common coding mistakes and ensures cleaner code by enforcing stricter parsing and error handling. This lesson introduces how to enable strict mode and the benefits it provides. Students will learn about the restrictions and errors that strict mode enforces, helping them write more secure and robust JavaScript code.",
         "lessons" : [
             {
                 "title": ,
@@ -718,7 +718,7 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Using (this) keyword",
-        "description_short" : ,
+        "description_short" : "Students learn the intricacies of the this keyword in JavaScript, including its behavior in different contexts and how to control its value using methods like call, apply, and bind.",
         "description_long" : "In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences between strict mode and non-strict mode.\n\n- In an object method, this refers to the object\n- Alone, this refers to the global object\n- In a function, this refers to the global object\n- In a function, in strict mode, this is undefined\n- In an event, this refers to the element that received the event\n- Methods like call(), apply(), and bind() can refer this to any object",
         "lessons" : [
             {
@@ -845,7 +845,7 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Asynchronous JavaScript I",
-        "description_short" : ,
+        "description_short" : "This lesson covers the basics of asynchronous programming, including callbacks, promises, and the async/await syntax, which are essential for handling asynchronous operations.",
         "description_long" : "Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.\nMany functions provided by browsers, especially the most interesting ones, can potentially take a long time, and therefore, are asynchronous. For example:\n\n- Making HTTP requests using fetch()\n- Accessing a user’s camera or microphone using getUserMedia()\n- Asking a user to select files using showOpenFilePicker()\n\nSo even though you may not have to implement your own asynchronous functions very often, you are very likely to need to use them correctly.",
         "lessons" : [
             {
@@ -924,7 +924,7 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Working with APIs",
-        "description_short" : ,
+        "description_short" : "Students learn how to interact with external APIs using JavaScript, including making HTTP requests, handling responses, and processing data from APIs.",
         "description_long" : "When working with remote APIs, you need a way to interact with those APIs. Modern JavaScript provides two native ways to send HTTP requests to remote servers, XMLHttpRequest and Fetch.",
         "lessons" : [
             {
@@ -966,7 +966,7 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Classes",
-        "description_short" : ,
+        "description_short" : "This lesson introduces classes in JavaScript, including class declarations, constructors, inheritance, and methods, providing a foundation for object-oriented programming.",
         "description_long" : "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics.",
         "lessons" : [
             {
@@ -989,7 +989,7 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Modules in JavaScript",
-        "description_short" : ,
+        "description_short" : "Students learn about modules in JavaScript, including how to organize code into reusable modules using import and export statements, which helps in maintaining large codebases.",
         "description_long" : "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6.",
         "lessons" : [
             {
@@ -1005,8 +1005,8 @@
     {
         "level" : "EXPERT",
         "title" : "Equality Comparisons II",
-        "description_short" : ,
-        "description_long": ,
+        "description_short" : "This is the level 2 of Equality Comparisons course",
+        "description_long": "This lesson covers advanced equality algorithms, including isLooselyEqual, isStrictlyEqual, SameValueZero, and SameValue, and their differences in handling type conversion and comparison.",
         "lessons" : [
             {
                 "title" : "Equality algorithms",
