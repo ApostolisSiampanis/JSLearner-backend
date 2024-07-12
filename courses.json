@@ -113,7 +113,7 @@
                     "JavaScript object is a data structure that allows us to have key-value pairs; so we can have distinct keys and each key is mapped to a value that can be of any JavaScript data type. Comparing it to a real-world object, a pen is an object with several properties such as color, design, the material it is made of, etc. In the same way, JavaScript objects can have properties that define their characteristics.",
                     "Built-in objects, or “global objects”, are those built into the language specification itself. There are numerous built-in objects with the JavaScript language, all of which are accessible at the global scope. Some examples are:\n\n- Number\n- Math\n- Date\n- String\n- Error\n- Function\n- Boolean"
                 ],
-                "description" : ,
+                "description" : "A collection of key-value pairs used to store complex data structures.",
                 "url" : "https://www.w3schools.com/js/js_object_definition.asp",
                 "questions" : [
                     {
@@ -130,7 +130,7 @@
                 "theories_list" : [
                     "You can use the typeOf operator to find the data type of a JavaScript variable. It returns a string indicating the type of provided operand’s value."
                 ],
-                "description" : ,
+                "description" : "An operator used to determine the type of a variable or value.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
                 "questions" : [
                     {
@@ -149,7 +149,7 @@
                     "In the context of primitives, it’s important to note that they do not possess methods or properties. However, JavaScript enables access to methods and properties associated with primitive types such as string, number, and boolean. this functionality is due to JavaScript’s ability to implicitly convert primitives to objects with wrapper objects when necessary. When properties are accessed on primitives, JavaScript auto-boxes the value into a wrapper object and accesses the property on that object instead.",
                     "There are 7 primitive data types:\n\n- string\n- number\n- bigint\n- boolean\n- undefined\n- symbol\n- null\n\nMost of the time, a primitive value is represented directly at the lowest level of the language implementation."
                 ],
-                "description" : ,
+                "description" : "Overview of number, string, boolean, null, undefined, symbol, and bigint." ,
                 "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Primitive",
                 "questions" : [
                     {
@@ -175,7 +175,7 @@
                     "Indexed Collections are collections that have numeric indices i.e. the collections of data that are ordered by an index value. In JavaScript, an array is an indexed collection. An array is an ordered set of values that has a numeric index.",
                     "Arrays are objects that store a collection of items and can be assigned to a variable. They have their methods that can perform operations on the array."
                 ],
-                "description" : ,
+                "description" : "Arrays that store multiple values in an ordered list, accessible by index.",
                 "url" : "https://www.geeksforgeeks.org/javascript-indexed-collections/",
                 "questions" : [
                     {
@@ -193,8 +193,8 @@
                     "Structured data is used by search-engines, like Google, to understand the content of the page, as well as to gather information about the web and the world in general.\nIt is also coded using in-page markup on the page that the information applies to.",
                     "JSON\n\nJavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)."
                 ],
-                "description" : ,
-                "url" : ,
+                "description" : "Using objects and JSON to organize and store data in a hierarchical structure.",
+                "url" : "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
                 "questions" : [
                     {
                         "questionType": ,
@@ -220,7 +220,7 @@
                     "Object.is() is not equivalent to the == operator. The == operator applies various coercions to both sides (if they are not the same type) before testing for equality (resulting in such behavior as \"\" == false being true), but Object.is() doesn’t coerce either value.",
                     "Object.is() is also not equivalent to the === operator. The only difference between Object.is() and === is in their treatment of signed zeros and NaN values. The === operator (and the == operator) treats the number values -0 and +0 as equal but treats NaN as not equal to each other."
                 ],
-                "description" : ,
+                "description" : "Operators such as '==', '===', and 'Object.is()' used to compare values for equality or difference.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is",
                 "questions" : [
                     {
@@ -245,7 +245,7 @@
                 "theories_list" : [
                     "The for loop is a standard control-flow construct in many programming languages, including JavaScript. It’s commonly used to iterate over given sequences or iterate a known number of times and execute a piece of code for each iteration."
                 ],
-                "description" : ,
+                "description" : "Iterating with a counter.",
                 "url" : "https://www.codeguage.com/courses/js/loops-for-loop",
                 "questions" : [
                     {
@@ -262,7 +262,7 @@
                 "theories_list" : [
                     "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
                 ],
-                "description" : ,
+                "description" : "Iterating at least once before checking the condition.",
                 "url" : "https://www.w3schools.com/jsref/jsref_dowhile.asp",
                 "questions" : [
                     {
@@ -279,7 +279,7 @@
                 "theories_list" : [
                     "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement."
                 ],
-                "description" : ,
+                "description" : "Iterating based on a condition.",
                 "url" : "https://www.codeguage.com/courses/js/loops-while-loop",
                 "questions" : [
                     {
@@ -297,7 +297,7 @@
                     "break statement, without a label reference, can only be used to jump out of a loop or a switch block.",
                     "continue statement, with or without a label reference, can only be used to skip one loop iteration."
                 ],
-                "description" : ,
+                "description" : "Statements used to exit a loop or skip to the next iteration, respectively.",
                 "url" : "https://www.w3schools.com/js/js_break.asp",
                 "questions" : [
                     {
@@ -314,7 +314,7 @@
                 "theories_list" : [
                     "JavaScript label statements are used to prefix a label to an identifier. It can be used with break and continue statement to control the flow more precisely.\nA label is simply an identifier followed by a colon(:) that is applied to a block of code."
                 ],
-                "description" : ,
+                "description" : "A label that provides a named reference for break and continue statements within nested loops.",
                 "url" : "https://www.tutorialspoint.com/What-are-label-statements-in-JavaScript",
                 "questions" : [
                     {
@@ -385,7 +385,7 @@
                 "theories_list" : [
                     "An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal (=), which assigns the value of its right operand to its left operand. That is, x = f() is an assignment expression that assigns the value of f() to x."
                 ],
-                "description" : ,
+                "description" : "Operators that assign values to variables, such as '=', '+=', '-=', '*=', '/='",
                 "url" : "https://javascript.info/operators#assignment",
                 "questions" : [
                     {
@@ -402,7 +402,7 @@
                 "theories_list" : [
                     "Comparison operators are the operators that compare values and return true or false. The operators include: >, <, >=, <=, ==, ===, != and !==."
                 ],
-                "description" : ,
+                "description" : "Operators that compare two values, such as '==', '===', '!=', '!==', '>', '<', '>=', '<='.",
                 "url" : "https://www.w3schools.com/js/js_comparisons.asp",
                 "questions" : [
                     {
@@ -420,7 +420,7 @@
                     "The Arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and remainder operations.",
                     "Arithmetic operators in JavaScript are as follows:\n\n- Addition (+)\n- Subtraction (-)\n- Multiplication (*)\n- Exponentiation (**)\n- Division (/)\n- Modulus i.e. Remainder (%)\n- Increment (++)\n- Decrement (--)"
                 ],
-                "description" : ,
+                "description" : "Operators that perform mathematical operations, such as '+', '-', '*', '/', '%', '++', '--'.",
                 "url" : "https://javascript.info/operators#maths",
                 "questions" : [
                     {
@@ -437,7 +437,7 @@
                 "theories_list" : [
                     "There are four logical operators in JavaScript:\n\n- Logical AND (&&)\n- Logical OR (||)\n- Logical NOT (!)\n- Logical nullish assignment (??)"
                 ],
-                "description" : ,
+                "description" : "Operators that combine boolean values, such as '&&', '||', '!'.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators",
                 "questions" : [
                     {
@@ -454,7 +454,7 @@
                 "theories_list" : [
                     "In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.\nThe shorthand assignment operator += can also be used to concatenate strings."
                 ],
-                "description" : ,
+                "description" : "Operators that manipulate string values, including concatenation using '+'.",
                 "url" : "https://javascript.info/operators#string-concatenation-with-binary",
                 "questions" : [
                     {
@@ -471,7 +471,7 @@
                 "theories_list" : [
                     "Conditional operator also known as Ternary operator is the only JS operator that takes three operands.\nThe operator can have one of two values based on a condition.\nSyntax: condition ? val_for_true : val_for_false"
                 ],
-                "description" : ,
+                "description" : "The ternary operator '? :' that returns one of two values based on a condition.",
                 "url" : "https://www.w3schools.com/js/js_comparisons.asp",
                 "questions" : [
                     {
@@ -488,7 +488,7 @@
                 "theories_list" : [
                     "The comma operator (,) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression’s final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a for loop."
                 ],
-                "description" : ,
+                "description" : "An operator that allows multiple expressions to be evaluated in a single statement, returning the last expression's value." ,
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator",
                 "questions" : [
                     {
@@ -505,7 +505,7 @@
                 "theories_list" : [
                     "JavaScript Unary Operators are the special operators that consider a single operand and perform all the types of operations on that single operand. These operators include unary plus, unary minus, prefix increments, postfix increments, prefix decrements, and postfix decrements."
                 ],
-                "description" : ,
+                "description" : "Operators that operate on a single operand, such as 'typeof', 'delete', 'void', '+', '-', '!'.",
                 "url" : "https://www.educba.com/unary-operators-in-javascript/",
                 "questions" : [
                     {
@@ -532,7 +532,7 @@
                     "Default Params:\n\nDefault function parameters allow named parameters to be initialized with default values if no value or undefined is passed.",
                     "Rest Params:\n\nThe rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent variadic functions in JavaScript."
                 ],
-                "description" : ,
+                "description" : "Passing values into functions.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_parameters",
                 "questions" : [
                     {
@@ -549,7 +549,7 @@
                 "theories_list" : [
                     "Arrow Function is a new way of creating functions with the “=>” operator with a shorter syntax."
                 ],
-                "description" : ,
+                "description" : "Concise syntax for defining functions.",
                 "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
                 "questions" : [
                     {
@@ -568,7 +568,7 @@
                     "To differentiate between properties and methods, we can think of it this way: A property is what an object has, while a method is what an object does.",
                     "Since JavaScript methods are actions that can be performed on objects, we first need to have objects to start with. There are several objects built into JavaScript which we can use."
                 ],
-                "description" : ,
+                "description" : "Predefined functions provided by JavaScript, such as alert(), parseInt(), and setTimeout(), which perform common tasks." ,
                 "url" : "https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm",
                 "questions" : [
                     {
@@ -594,7 +594,7 @@
                     "Bitwise operators treat arguments as 32-bits (zeros & ones) and work on the level of their binary representation. Ex. Decimal number 9 has a binary representation of 1001. Bitwise operators perform their operations on such binary representations, but they return standard JavaScript numerical values.",
                     "Bitwise operators in JavaScript are as follows:\n\n- Bitwise AND (&)\n- Bitwise OR (|)\n- Bitwise XOR (^)\n- Bitwise NOT (~)\n- Left shift (<<)\n- Sign-propagating right shift (>>)\n- Zero-fill right shift (>>>)"
                 ],
-                "description" : ,
+                "description" : "Manipulating binary representations of numbers.",
                 "url" : "https://javascript.info/operators#bitwise-operators",
                 "questions" : [
                     {
@@ -611,7 +611,7 @@
                 "theories_list" : [
                     "Most operators that can be used with the Number data type will also work with BigInt values (e.g. arithmetic, comparison, etc.). However, the unsigned right shift >>> operator is an exception and is not supported. Similarly, some operators may have slight differences in behaviour (for example, division with BigInt will round towards zero)."
                 ],
-                "description" : ,
+                "description" : "Working with very large integers.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#bigint_operators",
                 "questions" : [
                     {
@@ -628,7 +628,7 @@
                 "theories_list" : [
                     "Relational operators are also known as comparison operators. They are used to find the relationship between two values or compare the relationship between them; on the comparison, they yield the result true or false."
                 ],
-                "description" : ,
+                "description" : "Operators used to compare the relationship between two values, such as '<', '<=','>', and '>='.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators",
                 "questions" : [
                     {
