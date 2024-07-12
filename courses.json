@@ -3,7 +3,7 @@
         "level" : "BEGINNER",
         "title" : "Introduction",
         "description_short" : "Introduction to JavaScript",
-        "description_long" : "Introduction to JavaScript",
+        "description_long" : "This section introduces JavaScript, its history, and its applications.",
         "lessons" : [
             {
                 "title" : "What is JavaScript?",
@@ -37,7 +37,7 @@
     {
         "level" : "BEGINNER",
         "title" : "All about Variables",
-        "description_short" : ,
+        "description_short" : "Students learn about JavaScript variables, including the var, let, and const keywords, naming rules, and variable scopes (block scope, function scope, and global scope).",
         "description_long" : "Most of the time, a JavaScript application needs to work with information. To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.",
         "lessons" : [
             {
@@ -104,7 +104,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Data Types",
-        "description_short" : ,
+        "description_short" : "This lesson covers the different data types in JavaScript, including primitive types (number, string, boolean, null, undefined, symbol, bigint) and non-primitive types (objects and arrays).",
         "description_long" : "Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.",
         "lessons" : [
             {
@@ -166,7 +166,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Data Structures I",
-        "description_short" : ,
+        "description_short" : "Students are introduced to data structures, focusing on arrays and JSON (JavaScript Object Notation), which are essential for organizing and managing data efficiently.",
         "description_long" : "A Data structure is a format to organize, manage and store data in a way that allows efficient access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in) data structures. Primitive data structures come by default with the programming language and you can implement them out of the box (like arrays and objects). Non-primitive data structures don’t come by default and you have to code them up if you want to use them.",
         "lessons" : [
             {
@@ -210,7 +210,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Equality Comparisons I",
-        "description_short" : ,
+        "description_short" : "This lesson covers comparison operators, including ==, ===, and Object.is(), and their usage in determining equality or difference between variables or values.",
         "description_long" : "Comparison operators are used in logical statements to determine equality or difference between variables or values. Comparison operators can be used in conditional statements to compare values and take action depending on the result.",
         "lessons" : [
             {
@@ -331,7 +331,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Control Flow",
-        "description short": ,
+        "description short": "This lesson covers control flow statements in JavaScript, such as if, else, switch, and try...catch, which are used to control the execution of code based on certain conditions.",
         "description_long" : "In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statement that changes the control flow of the program such as loops, conditionals, etc.\nWe can control the flow of the program through any of these control structures:\n- Sequential (default mode)\n- Conditional Statements\n- Exception Handling\n- Loops and Iterations",
         "lessons" : [
             {
@@ -377,7 +377,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Expressions and Operators I",
-        "description_short" : ,
+        "description_short" : "Students are introduced to various operators in JavaScript, including arithmetic, comparison, logical, and assignment operators, and how they are used to perform different operations on variables and values.",
         "description_long" : "At a high level, an expression is a valid unit of code that resolves to a value. There are two types of expressions: those that have side effects (such as assigning values) and those that purely evaluate. The expression x = 7 is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to 7. The expression 3 + 4 is an example of the second type. This expression uses the + operator to add 3 and 4 together and produces a value, 7. However, if it’s not eventually part of a bigger construct (for example, a variable declaration like const z = 3 + 4), its result will be immediately discarded — this is usually a programmer mistake because the evaluation doesn’t produce any effects. As the examples above also illustrate, all complex expressions are joined by operators, such as = and +.",
         "lessons" : [
             {
@@ -522,7 +522,7 @@
     {
         "level" : "BEGINNER",
         "title" : "Functions I",
-        "description_short" : ,
+        "description_short" : "This lesson covers the basics of functions in JavaScript, including function declarations, expressions, parameters, and arrow functions, emphasizing their importance in creating reusable code blocks.",
         "description_long" : "Functions exist so we can reuse code. They are blocks of code that execute whenever they are invoked. Each function is typically written to perform a particular task, like an addition function used to find the sum of two or more numbers. When numbers need to be added anywhere within your code, the addition function can be invoked as many times as necessary.",
         "lessons" : [
             {
@@ -585,8 +585,8 @@
     {
         "level" : "INTERMEDIATE",
         "title" : "Expressions and Operators II",
-        "description_short" : ,
-        "description_long" : ,
+        "description_short" : "This lesson dives into more complex operators, including bitwise operators and BigInt operators, which perform operations on binary representations and large integers.",
+        "description_long" : "",
         "lessons" : [
             {
                 "title" : "Bitwise operators",
