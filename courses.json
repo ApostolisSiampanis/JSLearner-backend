@@ -1034,8 +1034,8 @@
     {
         "level" : "EXPERT",
         "title" : "Asynchronous JavaScript II",
-        "description_short" : ,
-        "description_long" : ,
+        "description_short" : "This is the level 2 of Asynchronous JavaScript course",
+        "description_long" : "Building on the basics, this lesson covers advanced topics in asynchronous programming, such as error handling in async code, working with multiple promises, and using async iterators.",
         "lessons" : [
             {
                 "title" : "Event Loop",
@@ -1059,7 +1059,7 @@
     {
         "level" : "EXPERT",
         "title" : "JavaScript Iterators and Generators",
-        "description_short" : ,
+        "description_short" : "Students learn about iterators and generators in JavaScript, including how to create and use them to control the iteration behavior of objects and manage asynchronous data streams.",
         "description_long" : "Iterators and generators, introduced into JavaScript with ECMAScript 6, represent an extremely useful concept related to iteration in the language. Iterators are objects, abiding by the iterator protocol, that allows us to easily iterate over a given sequence in various ways, such as using the for...of loop. Generators, on the other hand, allow us to use functions and the yield keyword to easily define iterable sequences that are iterators as well.",
         "lessons" : [
             {
@@ -1083,7 +1083,7 @@
     {
         "level" : "EXPERT",
         "title" : "Memory Management",
-        "description_short" : ,
+        "description_short" : "This lesson covers memory management in JavaScript, including how the garbage collector works, memory leaks, and best practices for efficient memory usage.",
         "description_long" : "Low-level languages like C, have manual memory management primitives such as malloc() and free(). In contrast, JavaScript automatically allocates memory when objects are created and frees it when they are not used anymore (garbage collection). This automaticity is a potential source of confusion: it can give developers the false impression that they don’t need to worry about memory management.",
         "lessons" : [
             {
