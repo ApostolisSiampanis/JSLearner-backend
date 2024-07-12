@@ -653,7 +653,7 @@
                 "theories_list" : [
                     "The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function, available within all non-arrow functions. You can refer to a function’s arguments inside that function by using its arguments object. It has entries for each argument the function was called with, with the first entry’s index at 0. But, in modern code, rest parameters should be preferred."
                 ],
-                "description" : ,
+                "description" : "An array-like object accessible within functions that contains the values of the arguments passed to the function.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments",
                 "questions" : [
                     {
@@ -675,7 +675,7 @@
                     "Lexical scoping:\n\nBefore one can make an intuition of closures in JavaScript, it’s important to first get the hang of the term ‘lexical environment’. In simple words, the lexical environment for a function f simply refers to the environment enclosing that function’s definition in the source code.",
                     "Closures:\n\nFunction closures are one of the most powerful, yet most misunderstood, concepts of JavaScript that are actually really simple to understand. A closure refers to a function along with its lexical environment. It is essentially what allows us to return a function A, from another function B, that remembers the local variables defined in B, even after B exits. The idea of closures is employed in nearly every other JavaScript program, hence, it’s paramount for a JavaScript developer to know it really well."
                 ],
-                "description" : ,
+                "description" : "The context in which variables are accessible and the order of function calls leading to the current execution point.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Scope",
                 "questions" : [
                     {
@@ -696,12 +696,12 @@
         "description_long" : "Strict mode helps catch common coding mistakes and ensures cleaner code by enforcing stricter parsing and error handling. This lesson introduces how to enable strict mode and the benefits it provides. Students will learn about the restrictions and errors that strict mode enforces, helping them write more secure and robust JavaScript code.",
         "lessons" : [
             {
-                "title": ,
+                "title": "" ,
                 "theories_list" : [
                     "JavaScript’s strict mode is a way to opt-in to a restricted variant of JavaScript, thereby implicitly opting out of “sloppy mode”. Strict mode isn’t just a subset: it intentionally has different semantics from regular code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don’t rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist so that scripts can opt into strict mode incrementally.",
                     "Strict mode makes several changes to normal JavaScript semantics:\n\n- Eliminates some JavaScript silent errors by changing them to throw errors.\n- Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes run faster than identical code that’s not strict mode.\n- Prohibits some syntax likely to be defined in future versions of ECMAScript."
                 ],
-                "description" : ,
+                "description" : "A way to opt in to a restricted variant of JavaScript by using 'use strict' to enforce stricter parsing and error handling.",
                 "url" : "https://javascript.info/strict-mode",
                 "questions" : [
                     {
@@ -726,7 +726,7 @@
                 "theories_list" : [
                     "Function borrowing allows us to use the methods of one object on a different object without having to make a copy of that method and maintain it in two separate places. It is accomplished through the use of .call(), .apply(), or .bind(), all of which exist to explicitly set this on the method we are borrowing."
                 ],
-                "description" : ,
+                "description" : "Using a method from one object on a different object by setting the 'this' context to the borrowing object.",
                 "url" : "https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4",
                 "questions" : [
                     {
@@ -743,7 +743,7 @@
                 "theories_list" : [
                     "Methods are properties of an object which are functions. The value of this inside a method is equal to the calling object. In simple words, this value is the object “before dot”, the one used to call the method."
                 ],
-                "description" : ,
+                "description" : "Refers to the object that is calling the method.",
                 "url" : "https://javascript.info/object-methods#this-in-methods",
                 "questions" : [
                     {
@@ -760,7 +760,7 @@
                 "theories_list" : [
                     "The keyword this when used in a function refers to the global object.\n\nNote: in a browser window the global object is the window object."
                 ],
-                "description" : ,
+                "description" : "Refers to the global object (or 'undefined' in strict mode) when used in a regular function.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
@@ -777,7 +777,7 @@
                 "theories_list" : [
                     "The keyword this when used alone refers to the global object.\n\nNote: in a browser window the global object is the window object."
                 ],
-                "description" : ,
+                "description" : "Refers to the global object in non-strict mode and 'undefined' in strict mode.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
@@ -794,7 +794,7 @@
                 "theories_list" : [
                     "The keyword this when used in an event handler refers to the element that received the event."
                 ],
-                "description" : ,
+                "description" : "Refers to the element that received the event.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
@@ -811,7 +811,7 @@
                 "theories_list" : [
                     "The keyword this when used in an arrow function refers to the parent object."
                 ],
-                "description" : ,
+                "description" : "Lexically binds 'this' from the surrounding scope, not creating its own 'this' context.",
                 "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
                 "questions" : [
                     {
@@ -828,7 +828,7 @@
                 "theories_list" : [
                     "Explicit binding is when you use the call or apply methods to explicitly set the value of this in a function. Explicit Binding can be applied using call(), apply(), and bind()."
                 ],
-                "description" : ,
+                "description" : "Using 'call()', 'apply()', or 'bind()' to explicitly set the value of this.",
                 "url" : "https://medium.com/@msinha2801/explicit-binding-rule-for-this-keyword-in-js-712405b0a11",
                 "questions" : [
                     {
@@ -854,7 +854,7 @@
                     "A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.",
                     "Callback hell\n\nThe callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many }) at the end."
                 ],
-                "description" : ,
+                "description" : "Functions passed as arguments to be executed after the completion of an asynchronous operation.",
                 "url" : "https://javascript.info/callbacks",
                 "questions" : [
                     {
@@ -872,7 +872,7 @@
                     "Promises are a much better way to work with asynchronous code in JavaScript than the old and error-prone callback approach. They were introduced into JavaScript with ECMAScript 6. Using promises, we can manage extremely complex asynchronous code with rigorous error-handling setup, write code in a more or less synchronous style, and keep ourselves from running into the so-called callback hell.",
                     "Async/Await\n\nasync/await is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise."
                 ],
-                "description" : ,
+                "description" : "Objects representing the eventual completion or failure of an asynchronous operation, allowing for chained then and catch methods.",
                 "url" : "https://www.codeguage.com/courses/advanced-js/promises-introduction",
                 "questions" : [
                     {
@@ -889,7 +889,7 @@
                 "theories_list" : [
                     "The setTimeout runs a function after the specified period expires. Times are declared in milliseconds."
                 ],
-                "description" : ,
+                "description" : "A function that executes a specified function after a set delay.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout",
                 "questions" : [
                     {
@@ -907,7 +907,7 @@
                     "The setInterval() method helps us to repeatedly execute a function after a fixed delay. It returns a unique interval ID which can later be used by the clearInterval() method, which stops further repeated execution of the function.",
                     "setInterval() is similar to setTimeout, with a difference. Instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds)."
                 ],
-                "description" : ,
+                "description" : "A function that repeatedly executes a specified function at fixed time intervals.",
                 "url" : "https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/",
                 "questions" : [
                     {
@@ -932,7 +932,7 @@
                 "theories_list" : [
                     "XMLHttpRequest (XHR) is a built-in browser object that can be used to interact with server. XHR allows you to update data without having to reload a web page. Despite the word XML in its name, XHR not only used to retrieve data with XML format, we can use it with any type of data, like JSON, file(s), and much more."
                 ],
-                "description" : ,
+                "description" : "An older JavaScript API for making HTTP requests to interact with servers.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest",
                 "questions" : [
                     {
@@ -949,7 +949,7 @@
                 "theories_list" : [
                     "The fetch() method in JavaScript is used to request to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON or XML. This method returns a promise."
                 ],
-                "description" : ,
+                "description" : "A modern JavaScript API for making network requests, returning promises for easier asynchronous handling.",
                 "url" : "https://javascript.info/fetch",
                 "questions" : [
                     {
@@ -967,14 +967,14 @@
         "level" : "INTERMEDIATE",
         "title" : "Classes",
         "description_short" : "This lesson introduces classes in JavaScript, including class declarations, constructors, inheritance, and methods, providing a foundation for object-oriented programming.",
-        "description_long" : "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics.",
+        "description_long" : "Classes in JavaScript provide a blueprint for creating objects with predefined properties and methods. Using the 'class' keyword, developers can define constructor functions for initializing new objects and include methods to define object behaviors.",
         "lessons" : [
             {
-                "title" : ,
+                "title" : "",
                 "theories_list" : [
-
+                    "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics."
                 ],
-                "description" : ,
+                "description" : "Templates for creating objects with predefined properties and methods, using the 'class' keyword.",
                 "url" : "https://javascript.info/classes",
                 "questions" : [
                     {
@@ -998,7 +998,17 @@
                     "CommonJS:\n\nCommonJS modules are the original way to package JavaScript code for Node.js. Node.js also supports the ESModules standard used by browsers and other JavaScript runtimes, but CJS is still widely used in backend Node.js applications. Sometimes these modules will be written with a .cjs extension.",
                     "ESModules:\n\nESModules is a standard that was introduced with ES6 (2015). The idea was to standardize how JS modules work and implement these features in browsers. This standard is widely used with frontend frameworks such as react and can also be used in the backend with Node.js. Sometimes these modules will be written with a .mjs extension."
                 ],
-                "description" : "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6."
+                "description" : "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6.",
+                "url" : "https://javascript.info/modules-intro",
+                "questions" : [
+                    {
+                        "questionType": ,
+                        "hint": ,
+                        "questionDescription": ,
+                        "options": [],
+                        "correctAnswers": []
+            }
+        ]
             }
         ]
     },
@@ -1017,7 +1027,7 @@
                     "“Same zero zero”\n\nSameValueZero equality determines whether two values are functionally identical in all contexts with +0 and -0 are also considered equal.",
                     "“Same value”\n\nSameValue equality determines whether two values are functionally identical in all contexts."
                 ],
-                "description" : ,
+                "description" : "Methods used by JavaScript to determine if two values are equal, including strict equality, loose equality, and SameValue algorithms.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness",
                 "questions" : [
                     {
@@ -1042,7 +1052,7 @@
                 "theories_list" : [
                     "The Event Loop is one of the most important aspects to understand about Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the “killer feature” of Node.js, which made it this successful."
                 ],
-                "description" : ,
+                "description" : "A mechanism that allows JavaScript to perform non-blocking operations by managing the execution of multiple tasks, callbacks, and handling asynchronous events.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing",
                 "questions" : [
                     {
@@ -1067,7 +1077,7 @@
                 "theories_list" : [
 
                 ],
-                "description" : ,
+                "description" : "Iterators provide a standard way to produce a sequence of values, while generators, defined with 'function*', allow functions to yield multiple values over time, enabling more control over iteration.",
                 "url" : "https://www.codeguage.com/courses/advanced-js/iteration-introduction",
                 "questions" : [
                     {
@@ -1092,7 +1102,7 @@
                     "Regardless of the programming language, the memory life cycle is pretty much always the same:\n\n- Allocate the memory you need\n- Use the allocated memory (read, write)\n- Release the allocated memory when it is not needed anymore",
                     "The second part is explicit in all languages. The first and last parts are explicit in low-level languages but are mostly implicit in high-level languages like JavaScript."
                 ],
-                "description" : ,
+                "description" : "The process of allocating, using, and releasing memory in an application to ensure efficient use of resources.",
                 "url" : "https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c",
                 "questions" : [
                     {
@@ -1108,7 +1118,7 @@
                 "theories_list" : [
                     "Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions… All that takes memory. The main concept of memory management in JavaScript is reachability."
                 ],
-                "description" : ,
+                "description" : "An automatic process in JavaScript that reclaims memory occupied by objects no longer in use, preventing memory leaks and optimizing performance.",
                 "url" : "https://javascript.info/garbage-collection",
                 "questions" : [
                     {
