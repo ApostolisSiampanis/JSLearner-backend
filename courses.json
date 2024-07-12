@@ -3,7 +3,7 @@
         "level" : "BEGINNER",
         "title" : "Introduction",
         "description_short" : "Introduction to JavaScript",
-        "description_long" : "This section introduces JavaScript, its history, and its applications.",
+        "description_long" : "This section introduces JavaScript, its history, and how to.",
         "lessons" : [
             {
                 "title" : "What is JavaScript?",
