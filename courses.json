@@ -48,7 +48,7 @@
                     "“const” keyword\n\nConstants are block-scoped, much like variables declared using the let keyword. The value of a constant can’t be changed through reassignment (i.e. by using the assignment operator), and it can’t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed."
                 ],
                 "description" : "To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the var, let, or const keywords.",
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/js/variables",
                 "questions" : [
                     {
                         "questionType": ,
@@ -69,7 +69,7 @@
                     "4. Names can't be reserved keywords. Hence, var is invalid."
                 ],
                 "description" : "A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables.",
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/js/variables#Tips_for_naming_variables",
                 "questions" : [
                     {
                         "questionType": ,
@@ -88,7 +88,7 @@
                     "Global Scope:\n\nVariables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var, let and const are quite similar when declared outside a block."
                 ],
                 "description" : "In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.",
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_scope.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -114,7 +114,7 @@
                     "Built-in objects, or “global objects”, are those built into the language specification itself. There are numerous built-in objects with the JavaScript language, all of which are accessible at the global scope. Some examples are:\n\n- Number\n- Math\n- Date\n- String\n- Error\n- Function\n- Boolean"
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_object_definition.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -131,7 +131,7 @@
                     "You can use the typeOf operator to find the data type of a JavaScript variable. It returns a string indicating the type of provided operand’s value."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
                 "questions" : [
                     {
                         "questionType": ,
@@ -150,7 +150,7 @@
                     "There are 7 primitive data types:\n\n- string\n- number\n- bigint\n- boolean\n- undefined\n- symbol\n- null\n\nMost of the time, a primitive value is represented directly at the lowest level of the language implementation."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Primitive",
                 "questions" : [
                     {
                         "questionType": ,
@@ -176,7 +176,7 @@
                     "Arrays are objects that store a collection of items and can be assigned to a variable. They have their methods that can perform operations on the array."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.geeksforgeeks.org/javascript-indexed-collections/",
                 "questions" : [
                     {
                         "questionType": ,
@@ -221,7 +221,7 @@
                     "Object.is() is also not equivalent to the === operator. The only difference between Object.is() and === is in their treatment of signed zeros and NaN values. The === operator (and the == operator) treats the number values -0 and +0 as equal but treats NaN as not equal to each other."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is",
                 "questions" : [
                     {
                         "questionType": ,
@@ -246,7 +246,7 @@
                     "The for loop is a standard control-flow construct in many programming languages, including JavaScript. It’s commonly used to iterate over given sequences or iterate a known number of times and execute a piece of code for each iteration."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/js/loops-for-loop",
                 "questions" : [
                     {
                         "questionType": ,
@@ -263,7 +263,7 @@
                     "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/jsref/jsref_dowhile.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -280,7 +280,7 @@
                     "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/js/loops-while-loop",
                 "questions" : [
                     {
                         "questionType": ,
@@ -298,7 +298,7 @@
                     "continue statement, with or without a label reference, can only be used to skip one loop iteration."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_break.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -315,7 +315,7 @@
                     "JavaScript label statements are used to prefix a label to an identifier. It can be used with break and continue statement to control the flow more precisely.\nA label is simply an identifier followed by a colon(:) that is applied to a block of code."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.tutorialspoint.com/What-are-label-statements-in-JavaScript",
                 "questions" : [
                     {
                         "questionType": ,
@@ -341,7 +341,7 @@
                     "Switch:\n\nThe switch statement evaluates an expression, matching the expression’s value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression’s value."
                 ],
                 "description" : "When you write code, you often want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript, we have three conditional statements: if, if...else, and switch.",
-                "url" : ,
+                "url" : "https://javascript.info/ifelse",
                 "questions" : [
                     {
                         "questionType": ,
@@ -361,7 +361,7 @@
                     "Types of Errors:\n\nBesides error constructors, Javascript also has other core Error constructors.\n\nFor example:\n\n- AggregateError\n- EvalError\n- InternalError\n- RangeError\n- ReferenceErrorn\n- SyntaxError"
                 ],
                 "description" : "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object.",
-                "url" : ,
+                "url" : "https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript/",
                 "questions" : [
                     {
                         "questionType": ,
@@ -386,7 +386,7 @@
                     "An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal (=), which assigns the value of its right operand to its left operand. That is, x = f() is an assignment expression that assigns the value of f() to x."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/operators#assignment",
                 "questions" : [
                     {
                         "questionType": ,
@@ -403,7 +403,7 @@
                     "Comparison operators are the operators that compare values and return true or false. The operators include: >, <, >=, <=, ==, ===, != and !==."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_comparisons.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -421,7 +421,7 @@
                     "Arithmetic operators in JavaScript are as follows:\n\n- Addition (+)\n- Subtraction (-)\n- Multiplication (*)\n- Exponentiation (**)\n- Division (/)\n- Modulus i.e. Remainder (%)\n- Increment (++)\n- Decrement (--)"
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/operators#maths",
                 "questions" : [
                     {
                         "questionType": ,
@@ -438,7 +438,7 @@
                     "There are four logical operators in JavaScript:\n\n- Logical AND (&&)\n- Logical OR (||)\n- Logical NOT (!)\n- Logical nullish assignment (??)"
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators",
                 "questions" : [
                     {
                         "questionType": ,
@@ -455,7 +455,7 @@
                     "In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.\nThe shorthand assignment operator += can also be used to concatenate strings."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/operators#string-concatenation-with-binary",
                 "questions" : [
                     {
                         "questionType": ,
@@ -472,7 +472,7 @@
                     "Conditional operator also known as Ternary operator is the only JS operator that takes three operands.\nThe operator can have one of two values based on a condition.\nSyntax: condition ? val_for_true : val_for_false"
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_comparisons.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -489,7 +489,7 @@
                     "The comma operator (,) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression’s final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a for loop."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator",
                 "questions" : [
                     {
                         "questionType": ,
@@ -506,7 +506,7 @@
                     "JavaScript Unary Operators are the special operators that consider a single operand and perform all the types of operations on that single operand. These operators include unary plus, unary minus, prefix increments, postfix increments, prefix decrements, and postfix decrements."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.educba.com/unary-operators-in-javascript/",
                 "questions" : [
                     {
                         "questionType": ,
@@ -533,7 +533,7 @@
                     "Rest Params:\n\nThe rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent variadic functions in JavaScript."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_parameters",
                 "questions" : [
                     {
                         "questionType": ,
@@ -550,7 +550,7 @@
                     "Arrow Function is a new way of creating functions with the “=>” operator with a shorter syntax."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -569,7 +569,7 @@
                     "Since JavaScript methods are actions that can be performed on objects, we first need to have objects to start with. There are several objects built into JavaScript which we can use."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm",
                 "questions" : [
                     {
                         "questionType": ,
@@ -595,7 +595,7 @@
                     "Bitwise operators in JavaScript are as follows:\n\n- Bitwise AND (&)\n- Bitwise OR (|)\n- Bitwise XOR (^)\n- Bitwise NOT (~)\n- Left shift (<<)\n- Sign-propagating right shift (>>)\n- Zero-fill right shift (>>>)"
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/operators#bitwise-operators",
                 "questions" : [
                     {
                         "questionType": ,
@@ -612,7 +612,7 @@
                     "Most operators that can be used with the Number data type will also work with BigInt values (e.g. arithmetic, comparison, etc.). However, the unsigned right shift >>> operator is an exception and is not supported. Similarly, some operators may have slight differences in behaviour (for example, division with BigInt will round towards zero)."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#bigint_operators",
                 "questions" : [
                     {
                         "questionType": ,
@@ -629,7 +629,7 @@
                     "Relational operators are also known as comparison operators. They are used to find the relationship between two values or compare the relationship between them; on the comparison, they yield the result true or false."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators",
                 "questions" : [
                     {
                         "questionType": ,
@@ -654,7 +654,7 @@
                     "The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function, available within all non-arrow functions. You can refer to a function’s arguments inside that function by using its arguments object. It has entries for each argument the function was called with, with the first entry’s index at 0. But, in modern code, rest parameters should be preferred."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments",
                 "questions" : [
                     {
                         "questionType": ,
@@ -676,7 +676,7 @@
                     "Closures:\n\nFunction closures are one of the most powerful, yet most misunderstood, concepts of JavaScript that are actually really simple to understand. A closure refers to a function along with its lexical environment. It is essentially what allows us to return a function A, from another function B, that remembers the local variables defined in B, even after B exits. The idea of closures is employed in nearly every other JavaScript program, hence, it’s paramount for a JavaScript developer to know it really well."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Scope",
                 "questions" : [
                     {
                         "questionType": ,
@@ -702,7 +702,7 @@
                     "Strict mode makes several changes to normal JavaScript semantics:\n\n- Eliminates some JavaScript silent errors by changing them to throw errors.\n- Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes run faster than identical code that’s not strict mode.\n- Prohibits some syntax likely to be defined in future versions of ECMAScript."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/strict-mode",
                 "questions" : [
                     {
                         "questionType": ,
@@ -727,7 +727,7 @@
                     "Function borrowing allows us to use the methods of one object on a different object without having to make a copy of that method and maintain it in two separate places. It is accomplished through the use of .call(), .apply(), or .bind(), all of which exist to explicitly set this on the method we are borrowing."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4",
                 "questions" : [
                     {
                         "questionType": ,
@@ -744,7 +744,7 @@
                     "Methods are properties of an object which are functions. The value of this inside a method is equal to the calling object. In simple words, this value is the object “before dot”, the one used to call the method."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/object-methods#this-in-methods",
                 "questions" : [
                     {
                         "questionType": ,
@@ -761,7 +761,7 @@
                     "The keyword this when used in a function refers to the global object.\n\nNote: in a browser window the global object is the window object."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -778,7 +778,7 @@
                     "The keyword this when used alone refers to the global object.\n\nNote: in a browser window the global object is the window object."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -795,7 +795,7 @@
                     "The keyword this when used in an event handler refers to the element that received the event."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_this.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -812,7 +812,7 @@
                     "The keyword this when used in an arrow function refers to the parent object."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
                 "questions" : [
                     {
                         "questionType": ,
@@ -829,7 +829,7 @@
                     "Explicit binding is when you use the call or apply methods to explicitly set the value of this in a function. Explicit Binding can be applied using call(), apply(), and bind()."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://medium.com/@msinha2801/explicit-binding-rule-for-this-keyword-in-js-712405b0a11",
                 "questions" : [
                     {
                         "questionType": ,
@@ -855,7 +855,7 @@
                     "Callback hell\n\nThe callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many }) at the end."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/callbacks",
                 "questions" : [
                     {
                         "questionType": ,
@@ -873,7 +873,7 @@
                     "Async/Await\n\nasync/await is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/advanced-js/promises-introduction",
                 "questions" : [
                     {
                         "questionType": ,
@@ -890,7 +890,7 @@
                     "The setTimeout runs a function after the specified period expires. Times are declared in milliseconds."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout",
                 "questions" : [
                     {
                         "questionType": ,
@@ -908,7 +908,7 @@
                     "setInterval() is similar to setTimeout, with a difference. Instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds)."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/",
                 "questions" : [
                     {
                         "questionType": ,
@@ -933,7 +933,7 @@
                     "XMLHttpRequest (XHR) is a built-in browser object that can be used to interact with server. XHR allows you to update data without having to reload a web page. Despite the word XML in its name, XHR not only used to retrieve data with XML format, we can use it with any type of data, like JSON, file(s), and much more."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest",
                 "questions" : [
                     {
                         "questionType": ,
@@ -950,7 +950,7 @@
                     "The fetch() method in JavaScript is used to request to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON or XML. This method returns a promise."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/fetch",
                 "questions" : [
                     {
                         "questionType": ,
@@ -975,7 +975,7 @@
 
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/classes",
                 "questions" : [
                     {
                         "questionType": ,
@@ -1018,7 +1018,7 @@
                     "“Same value”\n\nSameValue equality determines whether two values are functionally identical in all contexts."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness",
                 "questions" : [
                     {
                         "questionType": ,
@@ -1043,7 +1043,7 @@
                     "The Event Loop is one of the most important aspects to understand about Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the “killer feature” of Node.js, which made it this successful."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing",
                 "questions" : [
                     {
                         "questionType": ,
@@ -1068,7 +1068,7 @@
 
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://www.codeguage.com/courses/advanced-js/iteration-introduction",
                 "questions" : [
                     {
                         "questionType": ,
@@ -1093,7 +1093,7 @@
                     "The second part is explicit in all languages. The first and last parts are explicit in low-level languages but are mostly implicit in high-level languages like JavaScript."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c",
                 "questions" : [
                     {
                         "questionType": ,
@@ -1109,7 +1109,7 @@
                     "Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions… All that takes memory. The main concept of memory management in JavaScript is reachability."
                 ],
                 "description" : ,
-                "url" : ,
+                "url" : "https://javascript.info/garbage-collection",
                 "questions" : [
                     {
                         "questionType": ,
