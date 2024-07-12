@@ -970,7 +970,7 @@
         "description_long" : "Classes in JavaScript provide a blueprint for creating objects with predefined properties and methods. Using the 'class' keyword, developers can define constructor functions for initializing new objects and include methods to define object behaviors.",
         "lessons" : [
             {
-                "title" : "",
+                "title" : "Classes",
                 "theories_list" : [
                     "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics."
                 ],
@@ -1073,7 +1073,7 @@
         "description_long" : "Iterators and generators, introduced into JavaScript with ECMAScript 6, represent an extremely useful concept related to iteration in the language. Iterators are objects, abiding by the iterator protocol, that allows us to easily iterate over a given sequence in various ways, such as using the for...of loop. Generators, on the other hand, allow us to use functions and the yield keyword to easily define iterable sequences that are iterators as well.",
         "lessons" : [
             {
-                "title" : ,
+                "title" : "JavaScript Iterators and Generators",
                 "theories_list" : [
 
                 ],
