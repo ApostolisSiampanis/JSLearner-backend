@@ -70,18 +70,18 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'MULTIPLE_CHOICE',
-                        'hint': 'JavaScript is primarily used for web development.',
-                        'question_description': 'What is JavaScript primarily used for?',
-                        'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
-                        'correct_answers': ['Web development']
-                    },
-                    {
                         'question_type': 'TRUE_FALSE',
                         'hint': 'JavaScript is a scripting language.',
                         'question_description': 'JavaScript is the same as Java.',
                         'options': [],
                         'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'MULTIPLE_CHOICE',
+                        'hint': 'JavaScript is primarily used for web development.',
+                        'question_description': 'What is JavaScript primarily used for?',
+                        'options': ['Web development', 'Data Science', 'Game development', 'Machine Learning'],
+                        'correct_answers': ['Web development']
                     },
                     {
                         'question_type': 'FILL_IN_THE_BLANKS',
@@ -328,18 +328,18 @@ courses = [
                 'url': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide',
                 'questions': [
                     {
-                        'question_type': 'MULTIPLE_CHOICE',
-                        'hint': 'Consider the order of execution in asynchronous code.',
-                        'question_description': 'Which of the following is used to handle asynchronous operations in JavaScript?',
-                        'options': ['Callbacks', 'Promises', 'Async/await', 'All of the above'],
-                        'correct_answers': ['All of the above']
-                    },
-                    {
                         'question_type': 'TRUE_FALSE',
                         'hint': "Think about the nature of JavaScript's execution model.",
                         'question_description': 'JavaScript is a multi-threaded language.',
                         'options': [],
                         'correct_answers': ['false']
+                    },
+                    {
+                        'question_type': 'MULTIPLE_CHOICE',
+                        'hint': 'Consider the order of execution in asynchronous code.',
+                        'question_description': 'Which of the following is used to handle asynchronous operations in JavaScript?',
+                        'options': ['Callbacks', 'Promises', 'Async/await', 'All of the above'],
+                        'correct_answers': ['All of the above']
                     },
                     {
                         'question_type': 'FILL_IN_THE_BLANKS',
