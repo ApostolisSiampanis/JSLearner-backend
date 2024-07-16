@@ -49,13 +49,41 @@
                 ],
                 "description" : "To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the var, let, or const keywords.",
                 "url" : "https://www.codeguage.com/courses/js/variables",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "The var keyword allows for block-scoping of variables.",
+                        "question_description": "The var keyword declares variables that are block-scoped.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about which keyword allows you to declare variables that cannot be reassigned.",
+                        "question_description": "Which keyword declares a variable whose value cannot be changed once assigned?",
+                        "options": ["var", "let", "const", "function"],
+                        "correct_answers": ["const"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the scope of variables declared with the let keyword.",
+                        "question_description": "The ____ keyword is used to declare block-scoped variables.",
+                        "options": ["var", "let", "const", "function"],
+                        "correct_answers": ["let"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Constants have certain restrictions compared to variables declared with var or let.",
+                        "question_description": "Which of the following statements is true about constants declared with the const keyword?",
+                        "options": ["They can be reassigned to a new value.", "They cannot be redeclared in the same scope.", "They can be redeclared.", "They can be used to declare variables with function scope."],
+                        "correct_answers": ["They cannot be redeclared in the same scope."]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how you can change the properties of an object declared with const.",
+                        "question_description": "While the value of a constant declared with const cannot be changed, its ____ can be modified if it is an object or array.",
+                        "options": ["type", "name", "properties", "scope"],
+                        "correct_answers": ["properties"]
                     }
                 ]
             },
