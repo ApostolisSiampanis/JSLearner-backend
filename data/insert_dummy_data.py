@@ -87,7 +87,7 @@ courses = [
                         'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider where JavaScript is commonly run.',
                         'question_description': 'JavaScript can run in the browser and on the ____.',
-                        'options': [],
+                        'options': ['client', 'server', 'both', 'neither'],
                         'correct_answers': ['server']
                     },
                     {
@@ -101,7 +101,7 @@ courses = [
                         'question_type': 'FILL_IN_THE_BLANKS',
                         'hint': 'Consider how you embed JavaScript in HTML.',
                         'question_description': 'The ____ tag is used to embed JavaScript code in an HTML file.',
-                        'options': [],
+                        'options': ['<script>', '<style>', '<link>', '<head>'],
                         'correct_answers': ['<script>']
                     },
                 ]
