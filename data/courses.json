@@ -840,7 +840,7 @@
                     "“throw” statement\n\nThe throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won’t be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.",
                     "“Try/catch/finally”\n\nThese are ways of handling errors in your JavaScript code. Inside the try code block we have the code to run, inside the catch block we handle the errors, and inside the finally block we have code that runs after the execution of the previous code blocks, regardless of the result.",
                     "Utilizing Error Objects\n\nWhen a runtime error occurs, a new Error object is created and thrown. With this Error object, we can determine the type of the Error and handle it according to its type.",
-                    "Types of Errors:\n\nBesides error constructors, Javascript also has other core Error constructors.\n\nFor example:\n\n- AggregateError\n- EvalError\n- InternalError\n- RangeError\n- ReferenceErrorn\n- SyntaxError"
+                    "Types of Errors:\n\nBesides error constructors, Javascript also has other core Error constructors.\n\nFor example:\n\n- AggregateError\n- EvalError\n- InternalError\n- RangeError\n- ReferenceError\n- SyntaxError"
                 ],
                 "description" : "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object.",
                 "url" : "https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript/",
@@ -879,9 +879,9 @@
                             "SyntaxError",
                             "RangeError",
                             "ReferenceError",
-                            "TypeErrorn"
+                            "TypeError"
                         ],
-                        "correct_answers": ["TypeErrorn"]
+                        "correct_answers": ["TypeError"]
                     },
                     {
                         "question_type": "FILL_IN_THE_BLANKS",
