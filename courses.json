@@ -1541,13 +1541,56 @@
                 ],
                 "description" : "Manipulating binary representations of numbers.",
                 "url" : "https://javascript.info/operators#bitwise-operators",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This operator returns a bit set to 1 if and only if both of the corresponding bits of its operands are also 1.",
+                        "question_description": "Which bitwise operator performs a bitwise AND operation?",
+                        "options": [
+                            "&",
+                            "|",
+                            "^",
+                            "~"
+                        ],
+                        "correct_answers": ["&"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This operator returns a bit set to 1 if at least one of the corresponding bits of its operands is 1.",
+                        "question_description": "Which bitwise operator performs a bitwise OR operation?",
+                        "options": [
+                            "&",
+                            "|",
+                            "^",
+                            "~"
+                        ],
+                        "correct_answers": ["|"]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "The NOT operator inverts each bit of its operand.",
+                        "question_description": "The bitwise NOT operator (~) inverts all the bits of its operand.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This operator shifts the first operand the specified number of bits to the left, with zeroes shifted in from the right.",
+                        "question_description": "Which bitwise operator performs a left shift operation?",
+                        "options": [
+                            "<<",
+                            ">>",
+                            ">>>",
+                            "^^"
+                        ],
+                        "correct_answers": ["<<"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "This operator shifts bits to the right while filling with zeroes from the left.",
+                        "question_description": "The ____ operator performs a zero-fill right shift.",
+                        "options": ["<<", ">>", ">>>", "^^"],
+                        "correct_answers": [">>>"]
                     }
                 ]
             },
@@ -1558,13 +1601,56 @@
                 ],
                 "description" : "Working with very large integers.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#bigint_operators",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This arithmetic operation rounds towards zero when used with BigInt.",
+                        "question_description": "How does division behave when used with BigInt values?",
+                        "options": [
+                            "It rounds towards zero",
+                            "It rounds towards infinity",
+                            "It throws an error",
+                            "It rounds towards negative infinity"
+                        ],
+                        "correct_answers": ["It rounds towards zero"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This bitwise operator is not supported for BigInt.",
+                        "question_description": "Which of the following operators is not supported for BigInt values?",
+                        "options": [
+                            "&",
+                            "|",
+                            "^",
+                            ">>>"
+                        ],
+                        "correct_answers": [">>>"]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "BigInt values can be compared using standard comparison operators.",
+                        "question_description": "Standard comparison operators (e.g., <, >, ==) can be used with BigInt values.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "BigInt is suitable for operations involving very large numbers.",
+                        "question_description": "What is one primary use case for BigInt in JavaScript?",
+                        "options": [
+                            "Handling floating-point arithmetic",
+                            "Working with very large integers",
+                            "Performing high-precision decimal calculations",
+                            "Handling small integers efficiently"
+                        ],
+                        "correct_answers": ["Working with very large integers"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "BigInt values have their own set of arithmetic operations.",
+                        "question_description": "Most operators used with the ______ data type will also work with BigInt values.",
+                        "options": ["Number", "String", "Boolean", "Symbol"],
+                        "correct_answers": ["Number"]
                     }
                 ]
             },
@@ -1575,13 +1661,56 @@
                 ],
                 "description" : "Operators used to compare the relationship between two values, such as '<', '<=','>', and '>='.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This operator checks if one value is less than or equal to another.",
+                        "question_description": "Which operator would you use to check if a value is less than or equal to another value?",
+                        "options": [
+                            "<",
+                            "<=",
+                            ">",
+                            ">="
+                        ],
+                        "correct_answers": ["<="]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Relational operators can only return boolean values.",
+                        "question_description": "Relational operators in JavaScript can return values other than true or false.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "The '>' operator compares if one value is greater than another.",
+                        "question_description": "The relational operator ______ checks if a value is greater than another value.",
+                        "options": [">", "<", "<=", ">="],
+                        "correct_answers": [">"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "This operator checks if a value is not greater than or equal to another value.",
+                        "question_description": "Which relational operator would you use to check if a value is less than another value?",
+                        "options": [
+                            "<",
+                            "<=",
+                            ">",
+                            ">="
+                        ],
+                        "correct_answers": ["<"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "The result of this comparison can be true or false based on the values compared.",
+                        "question_description": "What is the result type of relational operators in JavaScript?",
+                        "options": [
+                            "Number",
+                            "String",
+                            "Boolean",
+                            "Object"
+                        ],
+                        "correct_answers": ["Boolean"]
                     }
                 ]
             }
@@ -1600,13 +1729,56 @@
                 ],
                 "description" : "An array-like object accessible within functions that contains the values of the arguments passed to the function.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This is used to access arguments within a function.",
+                        "questionDescription": "What is the name of the object that allows access to function arguments in JavaScript?",
+                        "options": [
+                            "params",
+                            "arguments",
+                            "args",
+                            "functionArguments"
+                        ],
+                        "correctAnswers": ["arguments"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Arrow functions do not have access to this object.",
+                        "questionDescription": "The `arguments` object is available inside arrow functions in JavaScript.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "This object is not an actual array but has a similar structure.",
+                        "questionDescription": "The `arguments` object is an ________-like object that provides access to function parameters.",
+                        "options": ["Array", "String", "Object", "Function"],
+                        "correctAnswers": ["Array"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Modern JavaScript prefers this syntax for handling a variable number of arguments.",
+                        "questionDescription": "What is the modern alternative to using the `arguments` object for handling a variable number of parameters in a function?",
+                        "options": [
+                            "default parameters",
+                            "spread operator",
+                            "rest parameters",
+                            "object destructuring"
+                        ],
+                        "correctAnswers": ["rest parameters"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "The index starts from 0 for this object.",
+                        "questionDescription": "How is the `arguments` object indexed?",
+                        "options": [
+                            "Starting from 1",
+                            "Starting from 0",
+                            "Starting from -1",
+                            "Starting from 2"
+                        ],
+                        "correctAnswers": ["Starting from 0"]
                     }
                 ]
             },
@@ -1622,13 +1794,56 @@
                 ],
                 "description" : "The context in which variables are accessible and the order of function calls leading to the current execution point.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Scope",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about where variables can be accessed from within different parts of your code.",
+                        "questionDescription": "What is the scope of a variable declared outside any function in JavaScript?",
+                        "options": [
+                            "Block scope",
+                            "Function scope",
+                            "Global scope",
+                            "Module scope"
+                        ],
+                        "correctAnswers": ["Global scope"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Closures involve a function and its lexical environment.",
+                        "questionDescription": "A closure in JavaScript is a function that retains access to its lexical environment, even after the function has finished executing.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Recursion involves a function calling itself.",
+                        "questionDescription": "In JavaScript, a function that calls itself is known as a ________ function.",
+                        "options": ["recursive", "closure", "lexical", "anonymous"],
+                        "correctAnswers": ["recursive"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about which environments are created with function declarations.",
+                        "questionDescription": "What type of scope is created by a function in JavaScript?",
+                        "options": [
+                            "Global scope",
+                            "Block scope",
+                            "Function scope",
+                            "Module scope"
+                        ],
+                        "correctAnswers": ["Function scope"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider what happens when a function is executed and what it does with its local variables.",
+                        "questionDescription": "What does a closure in JavaScript allow a function to do?",
+                        "options": [
+                            "Access variables from the global scope",
+                            "Access its own local variables after it has finished executing",
+                            "Access variables from its parent function's scope",
+                            "Access only variables from its immediate block"
+                        ],
+                        "correctAnswers": ["Access its own local variables after it has finished executing", "Access variables from its parent function's scope"]
                     }
                 ]
             }
@@ -1648,13 +1863,51 @@
                 ],
                 "description" : "A way to opt in to a restricted variant of JavaScript by using 'use strict' to enforce stricter parsing and error handling.",
                 "url" : "https://javascript.info/strict-mode",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Strict mode affects how errors are handled and what syntax is allowed.",
+                        "questionDescription": "Strict mode in JavaScript can help improve performance by optimizing code execution.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about how strict mode changes JavaScript’s behavior.",
+                        "questionDescription": "Which of the following is a feature of JavaScript strict mode?",
+                        "options": [
+                            "Eliminates syntax errors and silent errors",
+                            "Allows the use of undeclared variables",
+                            "Allows the use of reserved keywords as variable names",
+                            "Automatically converts strings to numbers"
+                        ],
+                        "correctAnswers": ["Eliminates syntax errors and silent errors"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Strict mode must be enabled at the beginning of a script or function.",
+                        "questionDescription": "To enable strict mode in JavaScript, you must include the statement ‘______’ at the beginning of your script or function.",
+                        "options": ["'use strict'", "'strict mode'", "'enforce strict'", "'enable strict'"],
+                        "correctAnswers": ["'use strict'"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider what strict mode disallows that regular mode permits.",
+                        "questionDescription": "Which of the following will cause an error in strict mode but not in non-strict mode?",
+                        "options": [
+                            "Using the ‘eval’ function",
+                            "Assigning to an undeclared variable",
+                            "Using ‘console.log’",
+                            "Defining a function within another function"
+                        ],
+                        "correctAnswers": ["Assigning to an undeclared variable"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Strict mode changes the handling of certain syntaxes.",
+                        "questionDescription": "Strict mode allows the use of future reserved keywords in JavaScript.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             }
@@ -1673,13 +1926,51 @@
                 ],
                 "description" : "Using a method from one object on a different object by setting the 'this' context to the borrowing object.",
                 "url" : "https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the methods available for changing the 'this' context.",
+                        "questionDescription": "Which method(s) allow you to borrow a function from one object to another?",
+                        "options": [
+                            ".call()",
+                            ".apply()",
+                            ".bind()",
+                            "All of the above"
+                        ],
+                        "correctAnswers": ["All of the above"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how function borrowing affects the 'this' context.",
+                        "questionDescription": "Function borrowing requires copying the method to the new object.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Fill in the method used to borrow a function and change the 'this' context.",
+                        "questionDescription": "To use a method of one object on another object, you can use the __________ method to explicitly set the 'this' context.",
+                        "options": ["call", "apply", "bind", "both 'call' and 'apply'"],
+                        "correctAnswers": ["both 'call' and 'apply'"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Choose the correct method based on its description.",
+                        "questionDescription": "Which of the following is true about the .bind() method?",
+                        "options": [
+                            ".bind() immediately invokes the function with the given context.",
+                            ".bind() returns a new function that, when called, has its 'this' keyword set to the provided value.",
+                            ".bind() changes the 'this' context only once and cannot be used to create reusable functions.",
+                            ".bind() is used to apply an array of arguments to a function."
+                        ],
+                        "correctAnswers": [".bind() returns a new function that, when called, has its 'this' keyword set to the provided value."]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about what .apply() does compared to .call().",
+                        "questionDescription": ".apply() can be used to borrow methods and allows you to pass arguments as an array.",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1690,13 +1981,51 @@
                 ],
                 "description" : "Refers to the object that is calling the method.",
                 "url" : "https://javascript.info/object-methods#this-in-methods",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about which object 'this' refers to when calling a method.",
+                        "questionDescription": "In the context of an object method, what does 'this' refer to?",
+                        "options": [
+                            "The global object",
+                            "The function where 'this' is defined",
+                            "The object that owns the method",
+                            "The method itself"
+                        ],
+                        "correctAnswers": ["The object that owns the method"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the behavior of 'this' when calling methods.",
+                        "questionDescription": "'this' in a method always refers to the global object.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Fill in the blank with the object that 'this' refers to when inside a method.",
+                        "questionDescription": "When a method is called, 'this' refers to the object __________.",
+                        "options": ["defining the method", "calling the method", "containing the method", "executing the method"],
+                        "correctAnswers": ["calling the method"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about what happens to 'this' in nested methods.",
+                        "questionDescription": "What happens to the value of 'this' in a nested method call within the same object?",
+                        "options": [
+                            "'this' value remains the same as in the outer method",
+                            "'this' refers to the inner method",
+                            "'this' changes to the global object",
+                            "'this' becomes undefined"
+                        ],
+                        "correctAnswers": ["'this' value remains the same as in the outer method"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Reflect on the behavior of 'this' in the case of method borrowing.",
+                        "questionDescription": "'this' in a borrowed method can be set to a different object using .call() or .apply().",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1707,13 +2036,51 @@
                 ],
                 "description" : "Refers to the global object (or 'undefined' in strict mode) when used in a regular function.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider what 'this' refers to in a regular function versus a method.",
+                        "questionDescription": "In a regular function, what does 'this' refer to?",
+                        "options": [
+                            "The object that calls the function",
+                            "The function itself",
+                            "The global object",
+                            "undefined"
+                        ],
+                        "correctAnswers": ["The global object"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the behavior of 'this' in different modes.",
+                        "questionDescription": "'In strict mode, 'this' in a regular function refers to the global object.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Reflect on what 'this' points to when no object context is present.",
+                        "questionDescription": "When a function is called without an object context, 'this' refers to __________.",
+                        "options": ["the window object", "undefined", "the function itself", "null"],
+                        "correctAnswers": ["undefined"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how 'this' behaves in regular functions versus methods.",
+                        "questionDescription": "Which of the following statements about 'this' in a regular function is true?",
+                        "options": [
+                            "'this' always refers to the function itself",
+                            "'this' refers to the global object in non-strict mode",
+                            "'this' refers to the calling object",
+                            "'this' is undefined in both strict and non-strict modes"
+                        ],
+                        "correctAnswers": ["'this' refers to the global object in non-strict mode"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the default behavior of 'this' in non-strict mode functions.",
+                        "questionDescription": "'In a browser environment, 'this' in a regular function without strict mode refers to the window object.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1724,13 +2091,51 @@
                 ],
                 "description" : "Refers to the global object in non-strict mode and 'undefined' in strict mode.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider what 'this' will refer to in different JavaScript modes.",
+                        "questionDescription": "In non-strict mode, what does 'this' refer to when used alone?",
+                        "options": [
+                            "The function itself",
+                            "The global object",
+                            "undefined",
+                            "null"
+                        ],
+                        "correctAnswers": ["The global object"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how strict mode affects 'this'.",
+                        "questionDescription": "'In strict mode, 'this' when used alone refers to the global object.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Reflect on what 'this' refers to in strict versus non-strict mode.",
+                        "questionDescription": "When 'this' is used alone in strict mode, it refers to __________.",
+                        "options": ["the window object", "null", "undefined", "the global object"],
+                        "correctAnswers": ["undefined"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the impact of strict mode on the value of 'this'.",
+                        "questionDescription": "Which of the following statements about 'this' used alone in non-strict mode is true?",
+                        "options": [
+                            "'this' refers to the function that called it",
+                            "'this' refers to the global object",
+                            "'this' is always undefined",
+                            "'this' refers to null"
+                        ],
+                        "correctAnswers": ["'this' refers to the global object"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about what 'this' refers to in strict mode.",
+                        "questionDescription": "'In a browser environment, 'this' used alone in strict mode is undefined.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1741,13 +2146,51 @@
                 ],
                 "description" : "Refers to the element that received the event.",
                 "url" : "https://www.w3schools.com/js/js_this.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about what 'this' represents in the context of an event handler.",
+                        "questionDescription": "In an event handler, what does 'this' refer to?",
+                        "options": [
+                            "The global object",
+                            "The function itself",
+                            "The element that triggered the event",
+                            "The event object"
+                        ],
+                        "correctAnswers": ["The element that triggered the event"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider how 'this' changes based on where it is used.",
+                        "questionDescription": "'In an event handler, 'this' always refers to the element that received the event.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Reflect on the role of 'this' within event handler functions.",
+                        "questionDescription": "In an event handler function, 'this' refers to the __________.",
+                        "options": ["global object", "function", "element that triggered the event", "event object"],
+                        "correctAnswers": ["element that triggered the event"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the difference between 'this' in event handlers and 'this' in regular functions.",
+                        "questionDescription": "Which statement about 'this' in event handlers is correct?",
+                        "options": [
+                            "'this' in an event handler refers to the global object.",
+                            "'this' in an event handler refers to the function that is handling the event.",
+                            "'this' in an event handler refers to the element that received the event.",
+                            "'this' in an event handler refers to the event object."
+                        ],
+                        "correctAnswers": ["'this' in an event handler refers to the element that received the event."]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Reflect on how the value of 'this' changes with the context of an event handler.",
+                        "questionDescription": "'In a click event handler, 'this' will refer to the button or element that was clicked.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1758,13 +2201,51 @@
                 ],
                 "description" : "Lexically binds 'this' from the surrounding scope, not creating its own 'this' context.",
                 "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how `this` behaves differently in arrow functions compared to regular functions.",
+                        "questionDescription": "In an arrow function, what does the keyword `this` refer to?",
+                        "options": [
+                            "The arrow function itself",
+                            "The global object",
+                            "The parent object or surrounding context",
+                            "The event object"
+                        ],
+                        "correctAnswers": ["The parent object or surrounding context"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how arrow functions treat `this` differently compared to traditional functions.",
+                        "questionDescription": "'Arrow functions have their own `this` context, independent of the surrounding scope.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember that arrow functions do not create their own `this` context.",
+                        "questionDescription": "In an arrow function, 'this' refers to the __________.",
+                        "options": ["global object", "function itself", "parent object or surrounding context", "event object"],
+                        "correctAnswers": ["parent object or surrounding context"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how `this` behaves inside different types of functions.",
+                        "questionDescription": "Which statement about `this` in arrow functions is correct?",
+                        "options": [
+                            "'this' in an arrow function is determined by the object that calls the function.",
+                            "'this' in an arrow function is inherited from the surrounding lexical scope.",
+                            "'this' in an arrow function refers to the global object.",
+                            "'this' in an arrow function is always `undefined`."
+                        ],
+                        "correctAnswers": ["'this' in an arrow function is inherited from the surrounding lexical scope."]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider how `this` is treated in various function contexts.",
+                        "questionDescription": "'In an arrow function, `this` is bound to the scope in which the arrow function is defined.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1775,13 +2256,51 @@
                 ],
                 "description" : "Using 'call()', 'apply()', or 'bind()' to explicitly set the value of this.",
                 "url" : "https://medium.com/@msinha2801/explicit-binding-rule-for-this-keyword-in-js-712405b0a11",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how 'call' and 'apply' methods set the value of 'this'.",
+                        "questionDescription": "Which methods are used for explicit binding in JavaScript?",
+                        "options": [
+                            "call()",
+                            "apply()",
+                            "bind()",
+                            "All of the above"
+                        ],
+                        "correctAnswers": ["All of the above"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how 'this' is set in functions using 'call' or 'apply'.",
+                        "questionDescription": "'Using call() or apply() methods allows you to explicitly set the value of this in a function.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember the three methods used for explicit binding.",
+                        "questionDescription": "Explicit binding can be applied using __________, __________, and __________ methods.",
+                        "options": ["call()", "apply()", "bind()"],
+                        "correctAnswers": ["call()", "apply()", "bind()"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how 'bind' differs from 'call' and 'apply'.",
+                        "questionDescription": "What is a key difference between bind() and call()/apply() methods?",
+                        "options": [
+                            "bind() immediately calls the function, while call()/apply() create a new function",
+                            "call() and apply() immediately call the function, while bind() creates a new function",
+                            "bind() sets 'this' to null, while call()/apply() set 'this' explicitly",
+                            "There is no difference"
+                        ],
+                        "correctAnswers": ["call() and apply() immediately call the function, while bind() creates a new function"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the timing of function execution when using 'bind'.",
+                        "questionDescription": "'The bind() method creates a new function with 'this' bound to a specified value, but does not call the function immediately.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             }
@@ -1801,13 +2320,51 @@
                 ],
                 "description" : "Functions passed as arguments to be executed after the completion of an asynchronous operation.",
                 "url" : "https://javascript.info/callbacks",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the purpose of passing a function as an argument.",
+                        "questionDescription": "What is a callback function?",
+                        "options": [
+                            "A function that is called at the end of a script",
+                            "A function passed into another function as an argument",
+                            "A function that runs automatically when a page loads",
+                            "A function used to handle errors"
+                        ],
+                        "correctAnswers": ["A function passed into another function as an argument"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the structure and readability of nested callbacks.",
+                        "questionDescription": "'Callback hell refers to the difficulty in reading and maintaining code with many nested callback functions.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember the key concept of callbacks in asynchronous operations.",
+                        "questionDescription": "A __________ function is passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.",
+                        "options": ["callback"],
+                        "correctAnswers": ["callback"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the visual structure of nested callbacks.",
+                        "questionDescription": "What is 'callback hell'?",
+                        "options": [
+                            "An error that occurs when a callback function is not defined",
+                            "A code structure where multiple nested callbacks create a pyramid shape",
+                            "A situation where callbacks are not executed in order",
+                            "A method to handle errors in asynchronous functions"
+                        ],
+                        "correctAnswers": ["A code structure where multiple nested callbacks create a pyramid shape"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the sequence of execution in asynchronous operations.",
+                        "questionDescription": "'Callback functions are used to ensure that a certain code runs after the completion of an asynchronous operation.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1819,13 +2376,51 @@
                 ],
                 "description" : "Objects representing the eventual completion or failure of an asynchronous operation, allowing for chained then and catch methods.",
                 "url" : "https://www.codeguage.com/courses/advanced-js/promises-introduction",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how promises improve asynchronous code handling.",
+                        "questionDescription": "What are promises used for in JavaScript?",
+                        "options": [
+                            "To handle synchronous operations",
+                            "To manage asynchronous operations more effectively",
+                            "To simplify loops",
+                            "To perform mathematical calculations"
+                        ],
+                        "correctAnswers": ["To manage asynchronous operations more effectively"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the nature of promises in handling success and failure.",
+                        "questionDescription": "'A promise can be either fulfilled, rejected, or pending.'",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember the keywords used with promises for better syntax.",
+                        "questionDescription": "The __________ keyword is used to declare a function that returns a promise, and the __________ keyword is used to wait for the promise.",
+                        "options": ["async, await"],
+                        "correctAnswers": ["async, await"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about the primary benefit of using promises over callbacks.",
+                        "questionDescription": "Which of the following is a primary benefit of using promises?",
+                        "options": [
+                            "They can only handle one asynchronous operation at a time",
+                            "They make asynchronous code easier to read and maintain",
+                            "They eliminate the need for any error handling",
+                            "They make JavaScript code run faster"
+                        ],
+                        "correctAnswers": ["They make asynchronous code easier to read and maintain"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the interaction between promises and the async/await syntax.",
+                        "questionDescription": "'The async/await syntax is a way to work with promises more comfortably.'",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             },
@@ -1836,13 +2431,51 @@
                 ],
                 "description" : "A function that executes a specified function after a set delay.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the unit of time used in setTimeout.",
+                        "questionDescription": "In which unit of time is the delay specified in the setTimeout function?",
+                        "options": [
+                            "Seconds",
+                            "Milliseconds",
+                            "Minutes",
+                            "Hours"
+                        ],
+                        "correctAnswers": ["Milliseconds"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the execution behavior of setTimeout.",
+                        "questionDescription": "'setTimeout' immediately executes the function it is called with.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember the arguments that setTimeout takes.",
+                        "questionDescription": "The __________ function in JavaScript runs a specified function after a set delay.",
+                        "options": ["setTimeout"],
+                        "correctAnswers": ["setTimeout"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how setTimeout is used in practice.",
+                        "questionDescription": "Which of the following correctly uses setTimeout to log 'Hello, world!' after 2 seconds?",
+                        "options": [
+                            "setTimeout('Hello, world!', 2000);",
+                            "setTimeout(() => console.log('Hello, world!'), 2000);",
+                            "setTimeout(console.log, 2000, 'Hello, world!');",
+                            "setTimeout('console.log(Hello, world!)', 2000);"
+                        ],
+                        "correctAnswers": ["setTimeout(() => console.log('Hello, world!'), 2000);"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about whether setTimeout blocks code execution.",
+                        "questionDescription": "'setTimeout' blocks further code execution until the timeout is complete.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             },
@@ -1854,13 +2487,51 @@
                 ],
                 "description" : "A function that repeatedly executes a specified function at fixed time intervals.",
                 "url" : "https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the unit of time used in setInterval.",
+                        "questionDescription": "In which unit of time is the interval specified in the setInterval function?",
+                        "options": [
+                            "Seconds",
+                            "Milliseconds",
+                            "Minutes",
+                            "Hours"
+                        ],
+                        "correctAnswers": ["Milliseconds"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how setInterval executes the function.",
+                        "questionDescription": "'setInterval' will run a callback function only once.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Remember the function used to clear an interval.",
+                        "questionDescription": "The __________ method stops further repeated execution of the function set by setInterval.",
+                        "options": ["clearInterval"],
+                        "correctAnswers": ["clearInterval"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider how setInterval is used in practice.",
+                        "questionDescription": "Which of the following correctly uses setInterval to log 'Hello, world!' every 2 seconds?",
+                        "options": [
+                            "setInterval('Hello, world!', 2000);",
+                            "setInterval(() => console.log('Hello, world!'), 2000);",
+                            "setInterval(console.log, 2000, 'Hello, world!');",
+                            "setInterval('console.log(Hello, world!)', 2000);"
+                        ],
+                        "correctAnswers": ["setInterval(() => console.log('Hello, world!'), 2000);"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about how setInterval and setTimeout differ.",
+                        "questionDescription": "'setInterval' is used to execute a function once after a specified delay.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             }
@@ -1879,13 +2550,51 @@
                 ],
                 "description" : "An older JavaScript API for making HTTP requests to interact with servers.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the flexibility of data formats supported by XHR.",
+                        "questionDescription": "Which of the following data formats can be retrieved using XMLHttpRequest?",
+                        "options": [
+                            "XML",
+                            "JSON",
+                            "Text",
+                            "All of the above"
+                        ],
+                        "correctAnswers": ["All of the above"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the primary feature of XHR related to page reloads.",
+                        "questionDescription": "XMLHttpRequest allows data to be updated without reloading the web page.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the types of methods used in HTTP requests.",
+                        "questionDescription": "The two common HTTP methods used with XMLHttpRequest are __________ and __________.",
+                        "options": ["GET", "POST"],
+                        "correctAnswers": ["GET", "POST"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about the lifecycle of an XHR request.",
+                        "questionDescription": "Which event handler is used to detect changes in the readyState of an XMLHttpRequest?",
+                        "options": [
+                            "onload",
+                            "onerror",
+                            "onreadystatechange",
+                            "ontimeout"
+                        ],
+                        "correctAnswers": ["onreadystatechange"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the relation between XHR and the XML format indicated in its name.",
+                        "questionDescription": "XMLHttpRequest is used exclusively to retrieve XML data.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             },
@@ -1896,13 +2605,51 @@
                 ],
                 "description" : "A modern JavaScript API for making network requests, returning promises for easier asynchronous handling.",
                 "url" : "https://javascript.info/fetch",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about the type of object returned by fetch().",
+                        "questionDescription": "What does the fetch() method return?",
+                        "options": [
+                            "A callback",
+                            "A promise",
+                            "An array",
+                            "A function"
+                        ],
+                        "correctAnswers": ["A promise"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the nature of fetch() in handling API responses.",
+                        "questionDescription": "The fetch() method can be used to request data in JSON format.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the common types of data formats used with fetch().",
+                        "questionDescription": "The fetch() method can request data in formats such as __________ and __________.",
+                        "options": ["JSON", "XML"],
+                        "correctAnswers": ["JSON", "XML"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about the steps to handle the response from a fetch request.",
+                        "questionDescription": "Which method is commonly used to parse the response from a fetch request as JSON?",
+                        "options": [
+                            "response.text()",
+                            "response.json()",
+                            "response.parse()",
+                            "response.data()"
+                        ],
+                        "correctAnswers": ["response.json()"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider how promises handle success and failure.",
+                        "questionDescription": "The fetch() method returns a promise that can be handled using then() and catch() methods.",
+                        "options": [],
+                        "correctAnswers": ["true"]
                     }
                 ]
             }
@@ -1921,13 +2668,53 @@
                 ],
                 "description" : "Templates for creating objects with predefined properties and methods, using the 'class' keyword.",
                 "url" : "https://javascript.info/classes",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the keyword used to define a class in JavaScript.",
+                        "questionDescription": "What keyword is used to define a class in JavaScript?",
+                        "options": [
+                            "function",
+                            "class",
+                            "object",
+                            "prototype"
+                        ],
+                        "correctAnswers": ["class"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the relationship between classes and prototypes in JavaScript.",
+                        "questionDescription": "Classes in JavaScript are built on prototypes.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider what classes encapsulate.",
+                        "questionDescription": "Classes encapsulate __________ with code to work on that __________.",
+                        "options": ["data", "data"],
+                        "correctAnswers": ["data", "data"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about how to create an instance of a class.",
+                        "questionDescription": "Which keyword is used to create an instance of a class?",
+                        "options": [
+                            "create",
+                            "new",
+                            "instance",
+                            "build"
+                        ],
+                        "correctAnswers": ["new"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the syntax and semantics of ES6 classes compared to ES5.",
+                        "questionDescription": "ES6 classes have the same syntax and semantics as ES5 class-like semantics.",
+                        "options": [],
+                        "correctAnswers": ["false"]
+                    }
+                ]
             }
         ]
     },
@@ -1945,15 +2732,53 @@
                 ],
                 "description" : "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6.",
                 "url" : "https://javascript.info/modules-intro",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Consider the module system used primarily in Node.js.",
+                        "questionDescription": "Which module system is the original way to package JavaScript code for Node.js?",
+                        "options": [
+                            "CommonJS",
+                            "ESModules",
+                            "AMD",
+                            "UMD"
+                        ],
+                        "correctAnswers": ["CommonJS"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the extension used for CommonJS modules.",
+                        "questionDescription": "CommonJS modules are sometimes written with a .cjs extension.",
                         "options": [],
-                        "correctAnswers": []
-            }
-        ]
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the standard introduced with ES6 for modules.",
+                        "questionDescription": "__________ is a standard introduced with ES6 to standardize how JS modules work.",
+                        "options": ["ESModules"],
+                        "correctAnswers": ["ESModules"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Think about the module system widely used with frontend frameworks like React.",
+                        "questionDescription": "Which module system is widely used with frontend frameworks such as React?",
+                        "options": [
+                            "CommonJS",
+                            "ESModules",
+                            "AMD",
+                            "UMD"
+                        ],
+                        "correctAnswers": ["ESModules"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Think about the extension used for ESModules.",
+                        "questionDescription": "ESModules are sometimes written with a .mjs extension.",
+                        "options": [],
+                        "correctAnswers": ["true"]
+                    }
+                ]
             }
         ]
     },
