@@ -2799,13 +2799,51 @@
                 ],
                 "description" : "Methods used by JavaScript to determine if two values are equal, including strict equality, loose equality, and SameValue algorithms.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This type of equality conversion converts operands to a common type before comparison.",
+                        "questionDescription": "Which equality algorithm performs type conversion before comparing two values?",
+                        "options": [
+                            "isLooselyEqual",
+                            "isStrictlyEqual",
+                            "Same zero zero",
+                            "Same value"
+                        ],
+                        "correctAnswers": ["isLooselyEqual"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Consider the strictness of this equality check.",
+                        "questionDescription": "The isStrictlyEqual algorithm considers operands of different types to be different.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "This equality check considers +0 and -0 to be equal.",
+                        "questionDescription": "__________ equality determines whether two values are functionally identical in all contexts, with +0 and -0 considered equal.",
+                        "options": ["Same zero zero"],
+                        "correctAnswers": ["Same zero zero"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This algorithm does not involve type conversion and compares values directly.",
+                        "questionDescription": "Which equality algorithm determines if two values are functionally identical in all contexts without type conversion?",
+                        "options": [
+                            "isLooselyEqual",
+                            "isStrictlyEqual",
+                            "Same zero zero",
+                            "Same value"
+                        ],
+                        "correctAnswers": ["Same value"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "This equality algorithm performs comparison with consideration for different types.",
+                        "questionDescription": "SameValueZero equality considers +0 and -0 to be different.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             }
@@ -2824,13 +2862,51 @@
                 ],
                 "description" : "A mechanism that allows JavaScript to perform non-blocking operations by managing the execution of multiple tasks, callbacks, and handling asynchronous events.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This mechanism helps manage tasks and callbacks in JavaScript without blocking execution.",
+                        "questionDescription": "What is the primary function of the Event Loop in JavaScript?",
+                        "options": [
+                            "Managing synchronous operations",
+                            "Handling non-blocking I/O operations",
+                            "Executing code in parallel threads",
+                            "Compiling JavaScript code to machine code"
+                        ],
+                        "correctAnswers": ["Handling non-blocking I/O operations"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "The Event Loop allows for blocking I/O operations in JavaScript.",
+                        "questionDescription": "The Event Loop in JavaScript allows for blocking I/O operations.",
                         "options": [],
-                        "correctAnswers": []
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "This term describes the queue where tasks are managed for execution in JavaScript.",
+                        "questionDescription": "The Event Loop manages a queue of tasks called the ___________.",
+                        "options": ["task queue"],
+                        "correctAnswers": ["task queue"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This part of JavaScript's architecture helps handle asynchronous events.",
+                        "questionDescription": "Which of the following best describes the Event Loop's role in JavaScript?",
+                        "options": [
+                            "Compiling code",
+                            "Managing task execution",
+                            "Handling CPU-intensive calculations",
+                            "Performing garbage collection"
+                        ],
+                        "correctAnswers": ["Managing task execution"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "JavaScript executes tasks from the Event Queue one at a time.",
+                        "questionDescription": "The Event Loop processes tasks from the event queue simultaneously.",
+                        "options": [],
+                        "correctAnswers": ["false"]
                     }
                 ]
             }
@@ -2849,14 +2925,53 @@
                 ],
                 "description" : "Iterators provide a standard way to produce a sequence of values, while generators, defined with 'function*', allow functions to yield multiple values over time, enabling more control over iteration.",
                 "url" : "https://www.codeguage.com/courses/advanced-js/iteration-introduction",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This type of function can yield multiple values over time and allows more control over iteration.",
+                        "questionDescription": "Which of the following describes a generator function?",
+                        "options": [
+                            "A function that returns a single value",
+                            "A function that can only be called once",
+                            "A function defined with `function*` that can yield multiple values",
+                            "A function that performs asynchronous operations"
+                        ],
+                        "correctAnswers": ["A function defined with `function*` that can yield multiple values"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Generators can pause and resume execution.",
+                        "questionDescription": "Generators in JavaScript can pause execution and resume later.",
                         "options": [],
-                        "correctAnswers": []
-                }
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "This object is used to conform to the iterator protocol in JavaScript.",
+                        "questionDescription": "An object that conforms to the iterator protocol must have a `next` method that returns an object with `value` and `______` properties.",
+                        "options": ["done"],
+                        "correctAnswers": ["done"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "To iterate over a sequence of values using a generator, you use this loop.",
+                        "questionDescription": "Which loop can be used to iterate over a sequence of values produced by an iterator?",
+                        "options": [
+                            "forEach",
+                            "for...of",
+                            "for...in",
+                            "while"
+                        ],
+                        "correctAnswers": ["for...of"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Generators can only be used with synchronous code.",
+                        "questionDescription": "Generators in JavaScript can only be used with synchronous code.",
+                        "options": [],
+                        "correctAnswers": ["false"]
+                    }
+                ]
             }
         ]
     },
@@ -2874,14 +2989,53 @@
                 ],
                 "description" : "The process of allocating, using, and releasing memory in an application to ensure efficient use of resources.",
                 "url" : "https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "The step where you no longer need the memory you allocated is called this.",
+                        "questionDescription": "Which step in the memory lifecycle involves deallocating memory that is no longer needed?",
+                        "options": [
+                            "Allocate",
+                            "Use",
+                            "Release",
+                            "Initialize"
+                        ],
+                        "correctAnswers": ["Release"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Memory management is automatic in high-level languages like JavaScript.",
+                        "questionDescription": "Memory management in high-level languages like JavaScript is typically handled automatically by garbage collection.",
                         "options": [],
-                        "correctAnswers": []
-                }
+                        "correctAnswers": ["true"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "The process of __________ involves deallocating memory that is no longer needed.",
+                        "questionDescription": "The process of __________ involves deallocating memory that is no longer needed.",
+                        "options": ["Release"],
+                        "correctAnswers": ["Release"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "Memory management tasks in low-level languages are typically this type.",
+                        "questionDescription": "In low-level languages, memory management tasks like allocation and release are typically _____.",
+                        "options": [
+                            "Implicit",
+                            "Automatic",
+                            "Manual",
+                            "Automatic and Implicit"
+                        ],
+                        "correctAnswers": ["Manual"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Automatic garbage collection is not a feature of high-level languages.",
+                        "questionDescription": "Automatic garbage collection is not a feature of high-level languages like JavaScript.",
+                        "options": [],
+                        "correctAnswers": ["false"]
+                    }
+                ]
             },
             {
                 "title" : "Garbage Collection",
@@ -2890,14 +3044,53 @@
                 ],
                 "description" : "An automatic process in JavaScript that reclaims memory occupied by objects no longer in use, preventing memory leaks and optimizing performance.",
                 "url" : "https://javascript.info/garbage-collection",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This is a key concept used to determine which objects are eligible for garbage collection.",
+                        "questionDescription": "What is the primary concept used to determine which objects are eligible for garbage collection in JavaScript?",
+                        "options": [
+                            "Scope",
+                            "Reachability",
+                            "Visibility",
+                            "Accessibility"
+                        ],
+                        "correctAnswers": ["Reachability"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Garbage collection requires manual intervention in JavaScript.",
+                        "questionDescription": "Garbage collection in JavaScript requires manual intervention to reclaim memory.",
                         "options": [],
-                        "correctAnswers": []
-                }
+                        "correctAnswers": ["false"]
+                    },
+                    {
+                        "questionType": "FILL_IN_THE_BLANKS",
+                        "hint": "The process that reclaims memory occupied by objects no longer in use is known as __________.",
+                        "questionDescription": "The process that reclaims memory occupied by objects no longer in use is known as __________.",
+                        "options": ["Garbage Collection"],
+                        "correctAnswers": ["Garbage Collection"]
+                    },
+                    {
+                        "questionType": "MULTIPLE_CHOICE",
+                        "hint": "This type of memory management is performed automatically in JavaScript.",
+                        "questionDescription": "In JavaScript, memory management, including the reclamation of unused memory, is performed through __________.",
+                        "options": [
+                            "Manual Allocation",
+                            "Explicit Deallocation",
+                            "Garbage Collection",
+                            "Reference Counting"
+                        ],
+                        "correctAnswers": ["Garbage Collection"]
+                    },
+                    {
+                        "questionType": "TRUE_FALSE",
+                        "hint": "Garbage collection in JavaScript helps prevent memory leaks.",
+                        "questionDescription": "Garbage collection in JavaScript helps prevent memory leaks and optimize performance.",
+                        "options": [],
+                        "correctAnswers": ["true"]
+                    }
+                ]
             }
         ]
     }
