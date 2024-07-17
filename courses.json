@@ -98,13 +98,41 @@
                 ],
                 "description" : "A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables.",
                 "url" : "https://www.codeguage.com/courses/js/variables#Tips_for_naming_variables",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Variable names can only include certain characters.",
+                        "question_description": "Variable names in JavaScript can contain hyphens (-).",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the special characters allowed in variable names.",
+                        "question_description": "Which of the following characters are allowed in JavaScript variable names?",
+                        "options": ["#", "-", "_", "%"],
+                        "correct_answers": ["_"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the rules about the starting character of variable names.",
+                        "question_description": "Variable names in JavaScript cannot start with a ___.",
+                        "options": ["letter", "digit", "underscore", "dollar sign"],
+                        "correct_answers": ["digit"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Spaces in variable names are not allowed.",
+                        "question_description": "Which of the following variable names is invalid in JavaScript?",
+                        "options": ["firstName", "first_name", "first-name", "first$name"],
+                        "correct_answers": ["first-name"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Some words are reserved for specific use in JavaScript.",
+                        "question_description": "Variable names in JavaScript cannot be ____ keywords.",
+                        "options": ["alphanumeric", "reserved", "common", "long"],
+                        "correct_answers": ["reserved"]
                     }
                 ]
             },
@@ -117,13 +145,41 @@
                 ],
                 "description" : "In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.",
                 "url" : "https://www.w3schools.com/js/js_scope.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the scope of variables declared with let and const.",
+                        "question_description": "Variables declared with the let and const keywords have block scope.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about where a variable can be accessed if it is declared within a function.",
+                        "question_description": "What type of scope does a variable have if it is declared inside a function?",
+                        "options": ["Global Scope", "Function Scope", "Block Scope", "Module Scope"],
+                        "correct_answers": ["Function Scope"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the visibility of variables declared outside any function.",
+                        "question_description": "Variables declared outside any function have ____ scope.",
+                        "options": ["block", "function", "local", "global"],
+                        "correct_answers": ["global"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "The var keyword does not restrict the scope of variables to blocks.",
+                        "question_description": "Which keyword allows a variable to be accessed outside of a block even if declared within a block?",
+                        "options": ["var", "let", "const", "function"],
+                        "correct_answers": ["var"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Think about the difference in scope for variables declared with var inside a block.",
+                        "question_description": "Variables declared with the var keyword do not have ____ scope.",
+                        "options": ["function", "block", "global", "local"],
+                        "correct_answers": ["block"]
                     }
                 ]
             }
@@ -143,13 +199,41 @@
                 ],
                 "description" : "A collection of key-value pairs used to store complex data structures.",
                 "url" : "https://www.w3schools.com/js/js_object_definition.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the structure of JavaScript objects.",
+                        "question_description": "JavaScript objects can only have properties that are strings.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about what a JavaScript object can contain.",
+                        "question_description": "What are JavaScript objects used for?",
+                        "options": ["Storing key-value pairs", "Performing mathematical operations", "Styling HTML elements", "Handling network requests"],
+                        "correct_answers": ["Storing key-value pairs"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the type of data structures built into the language.",
+                        "question_description": "The ____ object is an example of a built-in JavaScript object used for mathematical operations.",
+                        "options": ["Math", "Date", "String", "Function"],
+                        "correct_answers": ["Math"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the different types of built-in objects in JavaScript.",
+                        "question_description": "Which of the following is not a built-in JavaScript object?",
+                        "options": ["Number", "Date", "Car", "Error"],
+                        "correct_answers": ["Car"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the purpose of objects in JavaScript.",
+                        "question_description": "JavaScript objects are used to store complex data structures in the form of key-value ____.",
+                        "options": ["pairs", "arrays", "lists", "functions"],
+                        "correct_answers": ["pairs"]
                     }
                 ]
             },
@@ -160,13 +244,41 @@
                 ],
                 "description" : "An operator used to determine the type of a variable or value.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider what the typeof operator returns.",
+                        "question_description": "The typeof operator returns the type of a variable as a string.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the types of values the typeof operator can return.",
+                        "question_description": "What will the expression typeof 'hello' return?",
+                        "options": ["string", "object", "undefined", "boolean"],
+                        "correct_answers": ["string"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how the typeof operator works with variables of different types.",
+                        "question_description": "The typeof operator applied to the number 42 will return ____.",
+                        "options": ["'number'", "'string'", "'object'", "'boolean'"],
+                        "correct_answers": ["'number'"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider the special cases handled by the typeof operator.",
+                        "question_description": "What will the expression typeof null return?",
+                        "options": ["null", "undefined", "object", "string"],
+                        "correct_answers": ["object"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Think about how the typeof operator evaluates undefined variables.",
+                        "question_description": "The typeof operator applied to an undeclared variable will return ____.",
+                        "options": ["'undefined'", "'null'", "'object'", "'error'"],
+                        "correct_answers": ["'undefined'"]
                     }
                 ]
             },
@@ -179,13 +291,41 @@
                 ],
                 "description" : "Overview of number, string, boolean, null, undefined, symbol, and bigint." ,
                 "url" : "https://developer.mozilla.org/en-US/docs/Glossary/Primitive",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the characteristics of primitive types in JavaScript.",
+                        "question_description": "Primitive types in JavaScript can contain multiple values.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the number of primitive data types in JavaScript.",
+                        "question_description": "How many primitive data types are there in JavaScript?",
+                        "options": ["5", "6", "7", "8"],
+                        "correct_answers": ["7"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the types that are considered primitive in JavaScript.",
+                        "question_description": "The ____ data type is used to represent true or false values.",
+                        "options": ["number", "boolean", "string", "symbol"],
+                        "correct_answers": ["boolean"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Some types might seem primitive but aren't.",
+                        "question_description": "Which of the following is not a primitive data type in JavaScript?",
+                        "options": ["string", "object", "number", "symbol"],
+                        "correct_answers": ["object"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how JavaScript handles primitive values and their methods.",
+                        "question_description": "JavaScript can implicitly convert primitives to objects with ____ objects when necessary.",
+                        "options": ["wrapper", "reference", "primitive", "boolean"],
+                        "correct_answers": ["wrapper"]
                     }
                 ]
             }
@@ -205,13 +345,41 @@
                 ],
                 "description" : "Arrays that store multiple values in an ordered list, accessible by index.",
                 "url" : "https://www.geeksforgeeks.org/javascript-indexed-collections/",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider how values are accessed in arrays.",
+                        "question_description": "Arrays in JavaScript are indexed collections.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the characteristics of arrays in JavaScript.",
+                        "question_description": "Which of the following best describes an array in JavaScript?",
+                        "options": ["A collection of key-value pairs", "A collection of numeric indices", "An ordered set of values with numeric indices", "A set of unordered values"],
+                        "correct_answers": ["An ordered set of values with numeric indices"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the structure and usage of arrays.",
+                        "question_description": "An array in JavaScript can store multiple values in an ____ list.",
+                        "options": ["unordered", "random", "indexed", "encrypted"],
+                        "correct_answers": ["indexed"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Arrays are a type of object in JavaScript.",
+                        "question_description": "Which of the following operations can be performed on a JavaScript array using array methods?",
+                        "options": ["Adding or removing items", "Performing mathematical operations", "Styling HTML elements", "Handling network requests"],
+                        "correct_answers": ["Adding or removing items"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider what arrays can store.",
+                        "question_description": "In JavaScript, an array is an object that stores a collection of ____.",
+                        "options": ["methods", "items", "functions", "styles"],
+                        "correct_answers": ["items"]
                     }
                 ]
             },
@@ -223,13 +391,41 @@
                 ],
                 "description" : "Using objects and JSON to organize and store data in a hierarchical structure.",
                 "url" : "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the purpose of structured data for search engines.",
+                        "question_description": "Structured data helps search engines understand the content of a web page.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the format used to represent structured data in web applications.",
+                        "question_description": "What is the standard text-based format for representing structured data based on JavaScript object syntax?",
+                        "options": ["XML", "CSV", "JSON", "YAML"],
+                        "correct_answers": ["JSON"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the acronym commonly used for JavaScript Object Notation.",
+                        "question_description": "JSON stands for JavaScript ____ Notation.",
+                        "options": ["Object", "Online", "Open", "Ordered"],
+                        "correct_answers": ["Object"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the uses of JSON in web applications.",
+                        "question_description": "Which of the following is a common use of JSON?",
+                        "options": ["Styling web pages", "Transmitting data between a server and a client", "Storing binary data", "Running server-side scripts"],
+                        "correct_answers": ["Transmitting data between a server and a client"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how structured data is implemented on web pages.",
+                        "question_description": "Structured data is coded using in-page ____ on the page that the information applies to.",
+                        "options": ["markup", "script", "comments", "styles"],
+                        "correct_answers": ["markup"]
                     }
                 ]
             }
@@ -252,11 +448,39 @@
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is",
                 "questions" : [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider how the == operator handles type conversion.",
+                        "question_description": "The == operator in JavaScript compares both value and type without any type conversion.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the differences between the == and === operators.",
+                        "question_description": "Which operator compares both the values and the data types of the operands?",
+                        "options": ["==", "===", "Object.is()", "="],
+                        "correct_answers": ["==="]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the method used to determine if two values are the same without coercion.",
+                        "question_description": "The method ____ is used to determine if two values are the same without type coercion.",
+                        "options": ["Object.equals()", "Object.compare()", "Object.is()", "Object.match()"],
+                        "correct_answers": ["Object.is()"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about how different comparison methods treat NaN values.",
+                        "question_description": "Which method or operator treats NaN values as equal to each other?",
+                        "options": ["==", "===", "Object.is()", "All of the above"],
+                        "correct_answers": ["Object.is()"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the comparison of signed zeros in JavaScript.",
+                        "question_description": "The === operator treats the number values -0 and +0 as ____.",
+                        "options": ["equal", "different", "undefined", "null"],
+                        "correct_answers": ["equal"]
                     }
                 ]
             }
@@ -275,13 +499,51 @@
                 ],
                 "description" : "Iterating with a counter.",
                 "url" : "https://www.codeguage.com/courses/js/loops-for-loop",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the structure of a for loop in JavaScript.",
+                        "question_description": "The for loop is used to iterate over sequences or perform repeated execution a known number of times.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the components of a for loop in JavaScript.",
+                        "question_description": "Which of the following is a correct syntax for a for loop in JavaScript?",
+                        "options": [
+                            "for (initialization; condition; increment/decrement) { // code to be executed }",
+                            "for (condition; initialization; increment/decrement) { // code to be executed }",
+                            "for (initialization, condition, increment/decrement) { // code to be executed }",
+                            "for (initialization condition increment/decrement) { // code to be executed }"
+                        ],
+                        "correct_answers": ["for (initialization; condition; increment/decrement) { // code to be executed }"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the role of the counter in a for loop.",
+                        "question_description": "In a for loop, the ____ is used to determine how many times the loop will execute.",
+                        "options": ["counter", "condition", "initialization", "body"],
+                        "correct_answers": ["condition"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about when a for loop terminates.",
+                        "question_description": "When does a for loop stop executing?",
+                        "options": [
+                            "When the initialization is false",
+                            "When the condition is false",
+                            "When the increment is false",
+                            "When the body is false"
+                        ],
+                        "correct_answers": ["When the condition is false"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the purpose of each part of a for loop.",
+                        "question_description": "The ____ part of a for loop is executed once before the loop starts.",
+                        "options": ["initialization", "condition", "increment/decrement", "body"],
+                        "correct_answers": ["initialization"]
                     }
                 ]
             },
@@ -292,13 +554,51 @@
                 ],
                 "description" : "Iterating at least once before checking the condition.",
                 "url" : "https://www.w3schools.com/jsref/jsref_dowhile.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider when the condition is evaluated in a do...while loop.",
+                        "question_description": "In a do...while loop, the condition is evaluated before executing the statement.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the key characteristic of a do...while loop.",
+                        "question_description": "Which of the following best describes a do...while loop?",
+                        "options": [
+                            "Executes a statement only if the condition is true",
+                            "Executes a statement at least once before checking the condition",
+                            "Executes a statement if the condition is true at the beginning",
+                            "Executes a statement only once"
+                        ],
+                        "correct_answers": ["Executes a statement at least once before checking the condition"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the structure of a do...while loop.",
+                        "question_description": "In a do...while loop, the condition is evaluated ____ the statement is executed.",
+                        "options": ["before", "after", "during", "never"],
+                        "correct_answers": ["after"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the syntax of a do...while loop.",
+                        "question_description": "Which of the following is the correct syntax for a do...while loop in JavaScript?",
+                        "options": [
+                            "do { // code to be executed } until (condition);",
+                            "while (condition) { // code to be executed } do;",
+                            "do { // code to be executed } while (condition);",
+                            "while (condition) { do // code to be executed }"
+                        ],
+                        "correct_answers": ["do { // code to be executed } while (condition);"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the looping behavior of a do...while loop.",
+                        "question_description": "A do...while loop will always execute its statement at least ____.",
+                        "options": ["once", "twice", "three times", "four times"],
+                        "correct_answers": ["once"]
                     }
                 ]
             },
@@ -309,13 +609,51 @@
                 ],
                 "description" : "Iterating based on a condition.",
                 "url" : "https://www.codeguage.com/courses/js/loops-while-loop",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider when the condition is evaluated in a while loop.",
+                        "question_description": "In a while loop, the condition is evaluated before executing the statement.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the key characteristic of a while loop.",
+                        "question_description": "Which of the following best describes a while loop?",
+                        "options": [
+                            "Executes a statement only if the condition is false",
+                            "Executes a statement at least once before checking the condition",
+                            "Executes a statement as long as the condition evaluates to true",
+                            "Executes a statement a fixed number of times"
+                        ],
+                        "correct_answers": ["Executes a statement as long as the condition evaluates to true"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the structure of a while loop.",
+                        "question_description": "In a while loop, the condition is evaluated ____ the statement is executed.",
+                        "options": ["before", "after", "during", "never"],
+                        "correct_answers": ["before"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the syntax of a while loop.",
+                        "question_description": "Which of the following is the correct syntax for a while loop in JavaScript?",
+                        "options": [
+                            "while { (condition) // code to be executed }",
+                            "do { // code to be executed } while (condition);",
+                            "while (condition) { // code to be executed }",
+                            "while (condition); { // code to be executed }"
+                        ],
+                        "correct_answers": ["while (condition) { // code to be executed }"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the looping behavior of a while loop.",
+                        "question_description": "A while loop will continue to execute its statement as long as the condition is ____.",
+                        "options": ["false", "true", "undefined", "null"],
+                        "correct_answers": ["true"]
                     }
                 ]
             },
@@ -327,13 +665,51 @@
                 ],
                 "description" : "Statements used to exit a loop or skip to the next iteration, respectively.",
                 "url" : "https://www.w3schools.com/js/js_break.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the use of the break statement.",
+                        "question_description": "The break statement can be used to exit a loop or a switch block.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the effect of the continue statement within a loop.",
+                        "question_description": "What does the continue statement do when used inside a loop?",
+                        "options": [
+                            "Exits the loop entirely",
+                            "Skips the current iteration and moves to the next iteration",
+                            "Ends the program",
+                            "Restarts the loop from the beginning"
+                        ],
+                        "correct_answers": ["Skips the current iteration and moves to the next iteration"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how the break statement affects loop execution.",
+                        "question_description": "The ____ statement is used to exit a loop or switch block immediately.",
+                        "options": ["continue", "exit", "break", "stop"],
+                        "correct_answers": ["break"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider the usage scenarios for the continue statement.",
+                        "question_description": "In which scenario would you use the continue statement?",
+                        "options": [
+                            "To terminate the loop",
+                            "To skip the current iteration and continue with the next one",
+                            "To exit the current function",
+                            "To jump out of a switch block"
+                        ],
+                        "correct_answers": ["To skip the current iteration and continue with the next one"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the context in which the continue statement can be used.",
+                        "question_description": "The continue statement can only be used within a ____.",
+                        "options": ["function", "loop", "switch block", "object"],
+                        "correct_answers": ["loop"]
                     }
                 ]
             },
@@ -344,13 +720,51 @@
                 ],
                 "description" : "A label that provides a named reference for break and continue statements within nested loops.",
                 "url" : "https://www.tutorialspoint.com/What-are-label-statements-in-JavaScript",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the use of labels with break and continue statements.",
+                        "question_description": "Labels can be used with break and continue statements to control the flow of loops.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about what a label is in JavaScript.",
+                        "question_description": "What is a label in JavaScript?",
+                        "options": [
+                            "A function name",
+                            "A variable name",
+                            "An identifier followed by a colon(:) applied to a block of code",
+                            "A keyword used to declare a variable"
+                        ],
+                        "correct_answers": ["An identifier followed by a colon(:) applied to a block of code"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the purpose of labels in controlling loop flow.",
+                        "question_description": "A label is used to provide a named reference for ____ and ____ statements within nested loops.",
+                        "options": ["break, continue", "if, else", "switch, case", "try, catch"],
+                        "correct_answers": ["break, continue"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the structure of a labeled statement.",
+                        "question_description": "Which of the following is the correct syntax for a labeled statement in JavaScript?",
+                        "options": [
+                            "label { // code block }",
+                            "label: { // code block }",
+                            "label => { // code block }",
+                            "label:: { // code block }"
+                        ],
+                        "correct_answers": ["label: { // code block }"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the application of labels in nested loops.",
+                        "question_description": "Labels are especially useful in controlling the flow of nested ____.",
+                        "options": ["functions", "objects", "loops", "arrays"],
+                        "correct_answers": ["loops"]
                     }
                 ]
             }
@@ -370,13 +784,53 @@
                 ],
                 "description" : "When you write code, you often want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript, we have three conditional statements: if, if...else, and switch.",
                 "url" : "https://javascript.info/ifelse",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider how the if statement works.",
+                        "question_description": "The if statement executes a statement if a specified condition is truthy.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about what happens when no cases match in a switch statement.",
+                        "question_description": "What does the switch statement do if no case matches the expression’s value?",
+                        "options": [
+                            "Throws an error",
+                            "Exits the switch statement",
+                            "Executes the default clause",
+                            "Continues to the next statement after the switch block"
+                        ],
+                        "correct_answers": ["Executes the default clause"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the components of an if...else statement.",
+                        "question_description": "The if statement executes a statement if a specified condition is ____; otherwise, the ____ clause will be executed.",
+                        "options": ["truthy, else", "false, then", "true, else", "falsy, then"],
+                        "correct_answers": ["truthy, else"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the structure of a switch statement.",
+                        "question_description": "Which of the following correctly describes the switch statement?",
+                        "options": [
+                            "Evaluates an expression and executes all case clauses regardless of matching",
+                            "Evaluates an expression, matches the value against case clauses, and executes statements after the first matching case until a break statement is encountered",
+                            "Evaluates an expression and executes only the default clause",
+                            "Evaluates an expression, matches the value against case clauses, and executes only the first matching case clause"
+                        ],
+                        "correct_answers": [
+                            "Evaluates an expression, matches the value against case clauses, and executes statements after the first matching case until a break statement is encountered"
+                        ]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the purpose of the default clause in a switch statement.",
+                        "question_description": "The ____ clause in a switch statement is executed if no case matches the expression's value.",
+                        "options": ["else", "finally", "default", "break"],
+                        "correct_answers": ["default"]
                     }
                 ]
             },
@@ -390,13 +844,51 @@
                 ],
                 "description" : "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object.",
                 "url" : "https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript/",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider what happens after a throw statement is executed.",
+                        "question_description": "The throw statement stops the execution of the current function and passes control to the first catch block in the call stack.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the different blocks used in try/catch/finally.",
+                        "question_description": "Which block in try/catch/finally is executed regardless of the result of the try and catch blocks?",
+                        "options": [
+                            "try",
+                            "catch",
+                            "finally",
+                            "error"
+                        ],
+                        "correct_answers": ["finally"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider where you handle errors in try/catch/finally.",
+                        "question_description": "Inside the ____ block we have the code to run, inside the ____ block we handle the errors.",
+                        "options": ["try, catch", "try, finally", "catch, finally", "finally, catch"],
+                        "correct_answers": ["try, catch"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the various error constructors in JavaScript.",
+                        "question_description": "Which of the following is NOT a core Error constructor in JavaScript?",
+                        "options": [
+                            "SyntaxError",
+                            "RangeError",
+                            "ReferenceError",
+                            "TypeErrorn"
+                        ],
+                        "correct_answers": ["TypeErrorn"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the use of Error objects in exception handling.",
+                        "question_description": "When a runtime error occurs, a new ____ object is created and thrown.",
+                        "options": ["Exception", "Error", "RuntimeError", "Catch"],
+                        "correct_answers": ["Error"]
                     }
                 ]
             }
@@ -415,13 +907,53 @@
                 ],
                 "description" : "Operators that assign values to variables, such as '=', '+=', '-=', '*=', '/='",
                 "url" : "https://javascript.info/operators#assignment",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider what the simple assignment operator does.",
+                        "question_description": "The '=' operator assigns the value of its right operand to its left operand.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the variations of assignment operators in JavaScript.",
+                        "question_description": "Which of the following is NOT an assignment operator in JavaScript?",
+                        "options": [
+                            "=",
+                            "+=",
+                            "-=",
+                            "=="
+                        ],
+                        "correct_answers": ["=="]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the basic form of an assignment operation.",
+                        "question_description": "The simple assignment operator is ____, which assigns the value of its right operand to its left operand.",
+                        "options": ["=", "==", "===", "=>"],
+                        "correct_answers": ["="]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider how combined assignment operators work.",
+                        "question_description": "What does the operator '+=' do?",
+                        "options": [
+                            "Adds the right operand to the left operand and assigns the result to the left operand",
+                            "Subtracts the right operand from the left operand and assigns the result to the left operand",
+                            "Multiplies the right operand with the left operand and assigns the result to the left operand",
+                            "Divides the right operand by the left operand and assigns the result to the left operand"
+                        ],
+                        "correct_answers": [
+                            "Adds the right operand to the left operand and assigns the result to the left operand"
+                        ]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the combination of operators in one statement.",
+                        "question_description": "The expression x += y is equivalent to x = x ____ y.",
+                        "options": ["+", "-", "*", "/"],
+                        "correct_answers": ["+"]
                     }
                 ]
             },
@@ -432,13 +964,51 @@
                 ],
                 "description" : "Operators that compare two values, such as '==', '===', '!=', '!==', '>', '<', '>=', '<='.",
                 "url" : "https://www.w3schools.com/js/js_comparisons.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the outcome of comparison operations.",
+                        "question_description": "Comparison operators in JavaScript return either true or false.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the strict equality operator in JavaScript.",
+                        "question_description": "Which operator checks both value and type for equality?",
+                        "options": [
+                            "==",
+                            "===",
+                            "!=",
+                            ">="
+                        ],
+                        "correct_answers": ["==="]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how the equality operators work.",
+                        "question_description": "The '==' operator compares two values for equality without considering their ____.",
+                        "options": ["type", "length", "size", "order"],
+                        "correct_answers": ["type"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider the operator that checks inequality without type conversion.",
+                        "question_description": "Which of the following operators checks if two values are not equal and also considers their type?",
+                        "options": [
+                            "!=",
+                            "!==",
+                            ">",
+                            "<"
+                        ],
+                        "correct_answers": ["!=="]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the use of comparison operators for greater than or less than checks.",
+                        "question_description": "The operator '>' checks if the left operand is ____ than the right operand.",
+                        "options": ["greater", "less", "equal", "not equal"],
+                        "correct_answers": ["greater"]
                     }
                 ]
             },
@@ -450,13 +1020,51 @@
                 ],
                 "description" : "Operators that perform mathematical operations, such as '+', '-', '*', '/', '%', '++', '--'.",
                 "url" : "https://javascript.info/operators#maths",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the operations performed by arithmetic operators.",
+                        "question_description": "The '+' operator is used for addition in JavaScript.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the operator used for exponentiation.",
+                        "question_description": "Which operator is used for exponentiation in JavaScript?",
+                        "options": [
+                            "+",
+                            "*",
+                            "**",
+                            "%"
+                        ],
+                        "correct_answers": ["**"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the remainder operation.",
+                        "question_description": "The ____ operator is used to find the remainder of a division in JavaScript.",
+                        "options": ["%", "/", "*", "-"],
+                        "correct_answers": ["%"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider the operator used for incrementing a value by one.",
+                        "question_description": "Which operator is used to increment a variable by one in JavaScript?",
+                        "options": [
+                            "+=",
+                            "++",
+                            "--",
+                            "+"
+                        ],
+                        "correct_answers": ["++"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the operations for decrementing a value.",
+                        "question_description": "The operator '--' is used to ____ a variable by one.",
+                        "options": ["increment", "decrement", "multiply", "divide"],
+                        "correct_answers": ["decrement"]
                     }
                 ]
             },
@@ -467,13 +1075,51 @@
                 ],
                 "description" : "Operators that combine boolean values, such as '&&', '||', '!'.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider how logical OR combines values.",
+                        "question_description": "The '||' operator returns true if either operand is true.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the operator that inverts boolean values.",
+                        "question_description": "Which operator is used to invert a boolean value in JavaScript?",
+                        "options": [
+                            "&&",
+                            "||",
+                            "!",
+                            "??"
+                        ],
+                        "correct_answers": ["!"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the logical AND operation.",
+                        "question_description": "The ____ operator returns true only if both operands are true.",
+                        "options": ["&&", "||", "!", "??"],
+                        "correct_answers": ["&&"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the operator used for nullish assignment.",
+                        "question_description": "Which operator is used for nullish assignment in JavaScript?",
+                        "options": [
+                            "&&",
+                            "||",
+                            "!",
+                            "??"
+                        ],
+                        "correct_answers": ["??"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how logical NOT modifies boolean values.",
+                        "question_description": "The operator '!' is used to ____ a boolean value.",
+                        "options": ["combine", "invert", "compare", "assign"],
+                        "correct_answers": ["invert"]
                     }
                 ]
             },
@@ -484,13 +1130,51 @@
                 ],
                 "description" : "Operators that manipulate string values, including concatenation using '+'.",
                 "url" : "https://javascript.info/operators#string-concatenation-with-binary",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider how the '+' operator works with strings.",
+                        "question_description": "The '+' operator is used to concatenate two strings in JavaScript.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the operator used for concatenating strings.",
+                        "question_description": "Which operator is used to concatenate two strings in JavaScript?",
+                        "options": [
+                            "+",
+                            "-",
+                            "*",
+                            "/"
+                        ],
+                        "correct_answers": ["+"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how to append a string to an existing string.",
+                        "question_description": "To concatenate a string to an existing string using shorthand, you can use the ____ operator.",
+                        "options": ["+", "-", "*", "+="],
+                        "correct_answers": ["+="]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider the behavior of concatenation with strings.",
+                        "question_description": "What will be the result of the expression 'Hello ' + 'World'?",
+                        "options": [
+                            "'Hello World'",
+                            "'Hello'",
+                            "'World'",
+                            "'Hello' + 'World'"
+                        ],
+                        "correct_answers": ["'Hello World'"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Think about how to combine two strings into one.",
+                        "question_description": "The expression 'Hello ' + 'World' results in ____.",
+                        "options": ["'Hello World'", "'Hello'", "'World'", "'Hello' + 'World'"],
+                        "correct_answers": ["'Hello World'"]
                     }
                 ]
             },
@@ -501,13 +1185,51 @@
                 ],
                 "description" : "The ternary operator '? :' that returns one of two values based on a condition.",
                 "url" : "https://www.w3schools.com/js/js_comparisons.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Consider the basic functionality of the ternary operator.",
+                        "question_description": "The conditional (ternary) operator takes three operands.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the syntax of the ternary operator.",
+                        "question_description": "What is the correct syntax for using the ternary operator in JavaScript?",
+                        "options": [
+                            "condition ? val_for_true : val_for_false",
+                            "condition : val_for_true ? val_for_false",
+                            "condition ? val_for_true val_for_false",
+                            "condition val_for_true ? : val_for_false"
+                        ],
+                        "correct_answers": ["condition ? val_for_true : val_for_false"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how to structure the ternary operator.",
+                        "question_description": "The ternary operator has the following syntax: condition ? ____ : ____.",
+                        "options": ["val_for_true", "val_for_false", "condition", "value"],
+                        "correct_answers": ["val_for_true", "val_for_false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about what the ternary operator returns based on a condition.",
+                        "question_description": "What will be the result of the expression '5 > 3 ? 'Yes' : 'No' ?",
+                        "options": [
+                            "'Yes'",
+                            "'No'",
+                            "'5 > 3 ? 'Yes' : 'No''",
+                            "'Yes : No'"
+                        ],
+                        "correct_answers": ["'Yes'"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider what the ternary operator returns when the condition is true.",
+                        "question_description": "In the expression '5 > 3 ? 'Yes' : 'No'', if the condition is true, the result will be ____.",
+                        "options": ["'Yes'", "'No'", "'5 > 3'", "'Yes : No'"],
+                        "correct_answers": ["'Yes'"]
                     }
                 ]
             },
@@ -518,13 +1240,51 @@
                 ],
                 "description" : "An operator that allows multiple expressions to be evaluated in a single statement, returning the last expression's value." ,
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "The comma operator returns the value of the last expression.",
+                        "question_description": "The comma operator evaluates all expressions and returns the value of the first expression.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about what happens when multiple expressions are separated by commas.",
+                        "question_description": "What is the result of the expression '1, 2, 3' using the comma operator?",
+                        "options": [
+                            "1",
+                            "2",
+                            "3",
+                            "undefined"
+                        ],
+                        "correct_answers": ["3"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider how the comma operator processes multiple expressions.",
+                        "question_description": "In the expression 'x = (a = 1, b = 2, c = 3)', the value assigned to x will be ____.",
+                        "options": ["1", "2", "3", "undefined"],
+                        "correct_answers": ["3"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Think about the common use case for the comma operator.",
+                        "question_description": "Where is the comma operator commonly used in JavaScript?",
+                        "options": [
+                            "In for loop initialization and updates",
+                            "In function parameters",
+                            "In variable declarations",
+                            "In object literals"
+                        ],
+                        "correct_answers": ["In for loop initialization and updates"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Consider the comma operator's role in expressions within a for loop.",
+                        "question_description": "The comma operator allows multiple expressions to be evaluated in a single statement, returning the value of the ____ expression.",
+                        "options": ["first", "second", "last", "only"],
+                        "correct_answers": ["last"]
                     }
                 ]
             },
@@ -535,13 +1295,51 @@
                 ],
                 "description" : "Operators that operate on a single operand, such as 'typeof', 'delete', 'void', '+', '-', '!'.",
                 "url" : "https://www.educba.com/unary-operators-in-javascript/",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Unary operators require only a single operand to function.",
+                        "question_description": "Unary operators in JavaScript require more than one operand.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Unary operators include operations like incrementing and negating.",
+                        "question_description": "Which of the following is a unary operator?",
+                        "options": [
+                            "&&",
+                            "||",
+                            "+",
+                            "*"
+                        ],
+                        "correct_answers": ["+"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Unary operators work with a single operand.",
+                        "question_description": "The 'typeof' operator is an example of a ____ operator.",
+                        "options": ["binary", "unary", "ternary", "assignment"],
+                        "correct_answers": ["unary"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider operators that modify the operand's value.",
+                        "question_description": "Which of the following operators is used for prefix increment?",
+                        "options": [
+                            "++a",
+                            "a++",
+                            "a--",
+                            "--a"
+                        ],
+                        "correct_answers": ["++a"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Unary operators modify the value directly.",
+                        "question_description": "The unary operator '!' is used to ____ the boolean value of its operand.",
+                        "options": ["invert", "increment", "decrement", "add"],
+                        "correct_answers": ["invert"]
                     }
                 ]
             }
@@ -562,13 +1360,51 @@
                 ],
                 "description" : "Passing values into functions.",
                 "url" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_parameters",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Default parameters are used when no value is provided for a parameter.",
+                        "question_description": "Default function parameters can only be used if the value is `undefined` or not provided.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider how functions handle multiple arguments.",
+                        "question_description": "What does the rest parameter syntax allow a function to do?",
+                        "options": [
+                            "Accept a fixed number of arguments",
+                            "Ignore additional arguments",
+                            "Accept an indefinite number of arguments as an array",
+                            "Provide default values for parameters"
+                        ],
+                        "correct_answers": ["Accept an indefinite number of arguments as an array"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Default parameters provide fallback values.",
+                        "question_description": "In JavaScript, default parameters are used to provide default values when ____ is not passed.",
+                        "options": ["null", "undefined", "true", "false"],
+                        "correct_answers": ["undefined"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Identify the special syntax for default parameter values.",
+                        "question_description": "Which of the following syntax represents a default parameter?",
+                        "options": [
+                            "function myFunction(param = defaultValue) {}",
+                            "function myFunction(param) {} = defaultValue",
+                            "function myFunction(param: defaultValue) {}",
+                            "function myFunction(defaultValue) param {}"
+                        ],
+                        "correct_answers": ["function myFunction(param = defaultValue) {}"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Rest parameters collect additional arguments.",
+                        "question_description": "The rest parameter syntax in a function is represented by the ____ symbol.",
+                        "options": ["@", "$", "&", "..."],
+                        "correct_answers": ["..."]
                     }
                 ]
             },
@@ -579,13 +1415,51 @@
                 ],
                 "description" : "Concise syntax for defining functions.",
                 "url" : "https://www.w3schools.com/js/js_arrow_function.asp",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Arrow functions have a shorter syntax compared to regular function expressions.",
+                        "question_description": "Which of the following is the correct syntax for an arrow function that takes one parameter and returns its square?",
+                        "options": [
+                            "const square = x => x * x;",
+                            "const square = function(x) { return x * x; };",
+                            "const square = (x) { return x * x; };",
+                            "const square = x : x * x;"
+                        ],
+                        "correct_answers": ["const square = x => x * x;"]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Arrow functions do not have their own `this` binding.",
+                        "question_description": "Arrow functions have their own `this` binding.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["false"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider how arrow functions differ from regular functions regarding `this`.",
+                        "question_description": "How does an arrow function handle the `this` keyword compared to a regular function?",
+                        "options": [
+                            "Arrow functions create their own `this` binding.",
+                            "Arrow functions inherit `this` from the enclosing lexical scope.",
+                            "Arrow functions have no `this` binding.",
+                            "Arrow functions require `this` to be explicitly passed as a parameter."
+                        ],
+                        "correct_answers": ["Arrow functions inherit `this` from the enclosing lexical scope."]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Arrow functions use a different syntax for the function keyword.",
+                        "question_description": "In an arrow function, the function keyword is replaced with ____.",
+                        "options": ["=>", "->", "=>=", "->="],
+                        "correct_answers": ["=>"]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "Arrow functions are particularly useful for simple one-line operations.",
+                        "question_description": "Arrow functions can be used to create functions with only one expression, which will automatically return the result of that expression.",
+                        "options": [],
+                        "correct_answers": ["true"]
                     }
                 ]
             },
@@ -598,13 +1472,56 @@
                 ],
                 "description" : "Predefined functions provided by JavaScript, such as alert(), parseInt(), and setTimeout(), which perform common tasks." ,
                 "url" : "https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm",
-                "questions" : [
+                "questions": [
                     {
-                        "questionType": ,
-                        "hint": ,
-                        "questionDescription": ,
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider common functions used to display alerts or handle timing.",
+                        "question_description": "Which of the following is a built-in JavaScript function used to display an alert box?",
+                        "options": [
+                            "alert()",
+                            "prompt()",
+                            "console.log()",
+                            "document.write()"
+                        ],
+                        "correct_answers": ["alert()"]
+                    },
+                    {
+                        "question_type": "TRUE_FALSE",
+                        "hint": "parseInt() is used to convert strings to numbers.",
+                        "question_description": "The parseInt() function is used to convert a string into an integer in JavaScript.",
                         "options": [],
-                        "correctAnswers": []
+                        "correct_answers": ["true"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider functions that perform actions after a certain delay.",
+                        "question_description": "Which built-in JavaScript function calls a function or evaluates an expression after a specified number of milliseconds?",
+                        "options": [
+                            "setInterval()",
+                            "setTimeout()",
+                            "clearTimeout()",
+                            "clearInterval()"
+                        ],
+                        "correct_answers": ["setTimeout()"]
+                    },
+                    {
+                        "question_type": "FILL_IN_THE_BLANKS",
+                        "hint": "Think about the function that evaluates a string as JavaScript code.",
+                        "question_description": "The ____ function evaluates a string of JavaScript code in the context of the caller.",
+                        "options": ["eval()", "execute()", "parse()", "run()"],
+                        "correct_answers": ["eval()"]
+                    },
+                    {
+                        "question_type": "MULTIPLE_CHOICE",
+                        "hint": "Consider methods that belong to specific objects.",
+                        "question_description": "Which of the following is a method of the console object in JavaScript?",
+                        "options": [
+                            "console.alert()",
+                            "console.print()",
+                            "console.log()",
+                            "console.write()"
+                        ],
+                        "correct_answers": ["console.log()"]
                     }
                 ]
             }
