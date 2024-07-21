@@ -33,17 +33,15 @@ async def process_update(uid, new_score) -> Any:
             existing_ranking = ranking_ref.get()
 
             if existing_ranking:
-                # Update the rankings in Realtime Database
+                # Update the rankings in Realtime Database with initials
                 ranking_ref.update({
-                    'first_name': firstname,
-                    'last_name': lastname
+                    'initials': f"{firstname[0]}{lastname[0]}"
                 })
                 print(f"Ranking updated for user {uid} with score {new_score}.")
             else:
-                # Set the ranking in Realtime Database
+                # Set the ranking in Realtime Database with initials
                 ranking_ref.set({
-                    'first_name': firstname,
-                    'last_name': lastname
+                    'initials': f"{firstname[0]}{lastname[0]}"
                 })
 
                 print(f"Ranking updated for user {uid} with score {new_score}.")
