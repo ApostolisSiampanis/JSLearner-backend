@@ -11,7 +11,7 @@ def update_rankings(event):
     """
     Triggered when a user's experience score is updated.
     """
-    new_score = event.data.after.val()
+    new_score = event.data.after
     uid = event.params['uid']
 
     # Call the asynchronous function
@@ -21,7 +21,7 @@ def update_rankings(event):
 async def process_update(uid, new_score) -> Any:
     try:
         # Fetch user details from Firestore
-        user_ref = firestore.client().firestore_db.collection('users').document(uid)
+        user_ref = firestore.client().collection('users').document(uid)
         user_doc = user_ref.get()
 
         if user_doc.exists:
