@@ -1,9 +1,9 @@
+from typing import Any
 from firebase_functions import db_fn
 from firebase_admin import initialize_app, firestore, db
 import asyncio
 
 app = initialize_app()
-firestore_db = firestore.client()
 
 
 @db_fn.on_value_written(reference=r"/users/{uid}/experience_score", region="us-central1")
@@ -18,10 +18,10 @@ def update_rankings(event):
     asyncio.run(process_update(uid, new_score))
 
 
-async def process_update(uid, new_score):
+async def process_update(uid, new_score) -> Any:
     try:
         # Fetch user details from Firestore
-        user_ref = firestore_db.collection('users').document(uid)
+        user_ref = firestore.client().firestore_db.collection('users').document(uid)
         user_doc = user_ref.get()
 
         if user_doc.exists:
