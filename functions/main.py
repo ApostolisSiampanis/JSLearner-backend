@@ -57,24 +57,24 @@ async def check_and_update_user_experience(uid, new_score) -> Any:
     """
     try:
         experience_level_ref = db.reference(f"users/{uid}/experience_level")
-        experience_level = experience_level_ref.get()
+        experience_level = experience_level_ref.get()  # Assuming an async get method is available
 
         new_experience_level = experience_level
 
-        if experience_level is 'A_LOT_OF_EXPERIENCE':
+        if experience_level == 'A_LOT_OF_EXPERIENCE':
             if new_score < 1000:
                 new_experience_level = 'SOME_EXPERIENCE'
-        elif experience_level is 'SOME_EXPERIENCE':
+        elif experience_level == 'SOME_EXPERIENCE':
             if new_score < 300:
                 new_experience_level = 'NO_EXPERIENCE'
             elif new_score >= 1400:
                 new_experience_level = 'A_LOT_OF_EXPERIENCE'
-        elif experience_level is 'NO_EXPERIENCE':
+        elif experience_level == 'NO_EXPERIENCE':
             if new_score >= 600:
                 new_experience_level = 'SOME_EXPERIENCE'
 
         if new_experience_level != experience_level:
-            experience_level_ref.set(new_experience_level)
+            experience_level_ref.set(new_experience_level)  # Assuming an async set method is available
             print(f"User {uid} has reached {new_experience_level} level.")
         else:
             print(f"User {uid} remains at {experience_level} level.")
