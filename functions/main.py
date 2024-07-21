@@ -31,12 +31,12 @@ async def process_update(uid, new_score) -> Any:
             user_data = user_doc.to_dict()
             firstname = user_data.get('first_name', 'Unknown')
             lastname = user_data.get('last_name', 'Unknown')
-            initials = f"{firstname[0]}{lastname[0]}"
 
             # Define the leaderboard entry
             leaderboard_ref = db.reference(f"leaderboard/{uid}")
             leaderboard_entry = {
-                'initials': initials,
+                'firstname': firstname,
+                'lastname': lastname,
                 'score': new_score
             }
 
