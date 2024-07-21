@@ -5,7 +5,6 @@ import asyncio
 
 app = initialize_app()
 
-
 @db_fn.on_value_written(reference=r"/users/{uid}/experience_score", region="us-central1")
 def update_rankings(event):
     """
@@ -29,14 +28,25 @@ async def process_update(uid, new_score) -> Any:
             firstname = user_data.get('first_name', 'Unknown')
             lastname = user_data.get('last_name', 'Unknown')
 
-            # Update the rankings in Realtime Database
+            # Check if the user exists in the rankings
             ranking_ref = db.reference(f"rankings/{new_score}/{uid}")
-            ranking_ref.set({
-                'first_name': firstname,
-                'last_name': lastname
-            })
+            existing_ranking = ranking_ref.get()
 
-            print(f"Ranking updated for user {uid} with score {new_score}.")
+            if existing_ranking:
+                # Update the rankings in Realtime Database
+                ranking_ref.update({
+                    'first_name': firstname,
+                    'last_name': lastname
+                })
+                print(f"Ranking updated for user {uid} with score {new_score}.")
+            else:
+                # Set the ranking in Realtime Database
+                ranking_ref.set({
+                    'first_name': firstname,
+                    'last_name': lastname
+                })
+
+                print(f"Ranking updated for user {uid} with score {new_score}.")
         else:
             print(f"User {uid} not found in Firestore.")
 
