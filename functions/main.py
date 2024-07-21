@@ -29,22 +29,22 @@ async def process_update(uid, new_score) -> Any:
             lastname = user_data.get('last_name', 'Unknown')
 
             # Check if the user exists in the rankings
-            ranking_ref = db.reference(f"leaderboard/{new_score}/{uid}")
-            existing_ranking = ranking_ref.get()
+            leaderboard_ref = db.reference(f"leaderboard/{new_score}/{uid}")
+            existing_score = leaderboard_ref.get()
 
-            if existing_ranking:
+            if existing_score:
                 # Update the rankings in Realtime Database with initials
-                ranking_ref.update({
+                leaderboard_ref.update({
                     'initials': f"{firstname[0]}{lastname[0]}"
                 })
-                print(f"Ranking updated for user {uid} with score {new_score}.")
+                print(f"Leaderboard updated for user {uid} with score {new_score}.")
             else:
                 # Set the ranking in Realtime Database with initials
-                ranking_ref.set({
+                leaderboard_ref.set({
                     'initials': f"{firstname[0]}{lastname[0]}"
                 })
 
-                print(f"Ranking updated for user {uid} with score {new_score}.")
+                print(f"Leaderboard updated for user {uid} with score {new_score}.")
         else:
             print(f"User {uid} not found in Firestore.")
 
