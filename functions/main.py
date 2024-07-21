@@ -6,7 +6,7 @@ import asyncio
 app = initialize_app()
 
 @db_fn.on_value_written(reference=r"/users/{uid}/experience_score", region="us-central1")
-def update_rankings(event):
+def update_leaderboard(event):
     """
     Triggered when a user's experience score is updated.
     """
@@ -29,7 +29,7 @@ async def process_update(uid, new_score) -> Any:
             lastname = user_data.get('last_name', 'Unknown')
 
             # Check if the user exists in the rankings
-            ranking_ref = db.reference(f"rankings/{new_score}/{uid}")
+            ranking_ref = db.reference(f"leaderboard/{new_score}/{uid}")
             existing_ranking = ranking_ref.get()
 
             if existing_ranking:
