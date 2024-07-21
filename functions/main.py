@@ -76,6 +76,8 @@ async def check_and_update_user_experience(uid, new_score) -> Any:
         if new_experience_level != experience_level:
             experience_level_ref.set(new_experience_level)
             print(f"User {uid} has reached {new_experience_level} level.")
+        else:
+            print(f"User {uid} remains at {experience_level} level.")
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
