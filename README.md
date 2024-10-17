@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-The JSLearner Backend handles the backend logic for the JSLearner mobile app, providing real-time data synchronization, experience tracking, and leaderboard management. This serverless backend, developed using Firebase Cloud Functions and hosted on Google Cloud, supports all major functionalities required to track user progress, assess performance, and offer dynamic content based on user experience.
-
-This backend was developed for the "Educational Software" course in the 8th semester at the University of Piraeus, Department of Informatics (Academic Year 2023-2024).
+The **JSLearner Backend** is a team assignment for creating the backend infrastructure for the [JSLearner Mobile App](https://github.com/thkox/educational-software_2024-JSLearner), developed as part of the "Educational Software" course, offered in the 8th semester of the 2023-2024 academic year at the University of Piraeus, Department of Informatics. This serverless backend, developed using Firebase Cloud Functions and hosted on Google Cloud, provides real-time data synchronization, experience tracking, and leaderboard management for the JSLearner app. It supports key functionalities required to monitor user progress, assess performance, and dynamically adjust content based on user experience.
 
 ## Course Information
 
@@ -23,11 +21,11 @@ This backend was developed for the "Educational Software" course in the 8th seme
 
 ## Features
 
-1. **Cloud Functions**
+### 1. Cloud Functions
 
-   - **Experience Score Updates:** Cloud Functions trigger events to update user scores and adjust their experience levels based on their progress.
-   - **Automatic Level Adjustment:** Users are promoted or demoted between experience levels based on predefined thresholds (e.g., XP scores below 300 or above 1400).
-   - **Leaderboard Updates:** The leaderboard is refreshed dynamically when users gain or lose experience points.
+- **Experience Score Updates:** Cloud Functions trigger events to update user scores and adjust their experience levels based on progress.
+- **Automatic Level Adjustment:** Users are promoted or demoted between experience levels based on predefined thresholds (e.g., XP scores below 300 or above 1400).
+- **Leaderboard Updates:** The leaderboard is updated dynamically as users gain or lose experience points, ensuring real-time competition.
 
 ## Setup Instructions
 
@@ -36,7 +34,7 @@ This backend was developed for the "Educational Software" course in the 8th seme
     git clone https://github.com/thkox/JSLearner-backend.git
     ```
 
-2. Install dependencies and Firebase CLI tools.
+2. Install dependencies and Firebase CLI tools:
     ```bash
     pip install -r requirements.txt
     firebase login
@@ -48,14 +46,9 @@ This backend was developed for the "Educational Software" course in the 8th seme
     firebase deploy --only functions
     ```
 
-## Related Repositories
-**[JSLearner Mobile App](https://github.com/ApostolisSiampanis/JSLearner)**
+## Documentation and Resources
 
-The JSLearner Mobile App is the frontend interface for users to interact with the JSLearner platform. Built using Kotlin and Jetpack Compose for Android, the mobile app offers an engaging, interactive learning experience for users aiming to improve their JavaScript skills. It integrates seamlessly with the backend, utilizing Firebase Cloud Functions and Realtime Database to provide real-time data synchronization and user progress tracking.
-
-The app enables users to access lessons, take quizzes, and monitor their progress on a personalized learning roadmap. It also allows users to compete with others on a global leaderboard, which is updated dynamically through this backend. The mobile app retrieves and stores user experience points, quiz scores, and authentication details, all managed securely by the backend infrastructure.
-
-This frontend-backend collaboration ensures a smooth, cohesive learning environment, making JSLearner an effective tool for mastering JavaScript.
+- Full project details can be found in the [Project-documentation.pdf](./docs/Project-documentation.pdf).
 
 ## Contributors
 
