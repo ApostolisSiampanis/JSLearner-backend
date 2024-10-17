@@ -48,6 +48,25 @@ This backend was developed for the "Educational Software" course in the 8th seme
     firebase deploy --only functions
     ```
 
+## Related Repositories
+**[JSLearner Mobile App](https://github.com/ApostolisSiampanis/JSLearner)**
 
-### Front-end: [JSLearner](https://github.com/AlexanderCholis/JSLearner)
-### Project Team:  [Apostolis Siampanis](https://github.com/ApostolisSiampanis) | [Theodoros Koxanoglou](https://github.com/thkox) | [Alexander Cholis](https://github.com/AlexanderCholis)
+The JSLearner Mobile App is the frontend interface for users to interact with the JSLearner platform. Built using Kotlin and Jetpack Compose for Android, the mobile app offers an engaging, interactive learning experience for users aiming to improve their JavaScript skills. It integrates seamlessly with the backend, utilizing Firebase Cloud Functions and Realtime Database to provide real-time data synchronization and user progress tracking.
+
+The app enables users to access lessons, take quizzes, and monitor their progress on a personalized learning roadmap. It also allows users to compete with others on a global leaderboard, which is updated dynamically through this backend. The mobile app retrieves and stores user experience points, quiz scores, and authentication details, all managed securely by the backend infrastructure.
+
+This frontend-backend collaboration ensures a smooth, cohesive learning environment, making JSLearner an effective tool for mastering JavaScript.
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ApostolisSiampanis"><img src="https://avatars.githubusercontent.com/u/75365398?v=4" width="100px;" alt="Apostolis Siampanis"/><br /><sub><b>Apostolis Siampanis</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/thkox"><img src="https://avatars.githubusercontent.com/u/79880468?v=4" width="100px;" alt="Theodore Koxanoglou"/><br /><sub><b>Theodore Koxanoglou</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/AlexanderCholis"><img src="https://avatars.githubusercontent.com/u/66769337?v=4" width="100px;" alt="Alexander Cholis"/><br /><sub><b>Alexander Cholis</b></sub></a><br /></td>
+  </tr>
+</table>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
